@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_landing_page_ntouch_edge_card_s",
+  "info": {
+    "displayName": "nTouch Edge Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "default": "All-in-One Control"
+    },
+    "description": {
+      "type": "text",
+      "default": "No more juggling disconnected systems. Manage bookings, housekeeping, billing, and guest services from one single platform."
+    }
+  },
+  "config": {}
+} 

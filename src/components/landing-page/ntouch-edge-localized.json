@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_landing_page_ntouch_edge_localized_s",
+  "info": {
+    "displayName": "nTouch Edge (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "main_title": {
+      "type": "text",
+      "default": "The nTouch Edge"
+    },
+    "main_description": {
+      "type": "text",
+      "default": "Discover the intelligence, elegance, and efficiency that set nTouch apart from the rest."
+    },
+    "cards": {
+      "type": "component",
+      "component": "landing-page.ntouch-edge-card",
+      "repeatable": true,
+      "max": 5
+    }
+  },
+  "config": {}
+} 

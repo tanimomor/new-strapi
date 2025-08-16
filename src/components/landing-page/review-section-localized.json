@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_landing_page_review_section_localized_s",
+  "info": {
+    "displayName": "Review Section (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "statistics": {
+      "type": "component",
+      "component": "landing-page.statistic-card",
+      "repeatable": true,
+      "max": 3
+    },
+    "testimonials": {
+      "type": "component",
+      "component": "landing-page.testimonial-card",
+      "repeatable": true,
+      "max": 6
+    }
+  },
+  "config": {}
+} 

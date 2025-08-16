@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_landing_page_pms_faq_localized_s",
+  "info": {
+    "displayName": "PMS FAQ (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "main_title": {
+      "type": "text",
+      "default": "Frequently Asked Questions"
+    },
+    "main_description": {
+      "type": "text",
+      "default": "Clarity is luxury. Here are the questions we're asked most. And if there's anything more you need, we're just a message away."
+    },
+    "more_question_text": {
+      "type": "text",
+      "default": "Got more questions?"
+    },
+    "contact_button_text": {
+      "type": "text",
+      "default": "Contact Us"
+    },
+    "faq_tabs": {
+      "type": "component",
+      "component": "landing-page.faq-tab",
+      "repeatable": true,
+      "max": 4
+    }
+  },
+  "config": {}
+} 

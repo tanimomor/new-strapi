@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_landing_page_who_we_serve_localized_s",
+  "info": {
+    "displayName": "Who We Serve (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "main_title": {
+      "type": "text",
+      "default": "Who We Serve"
+    },
+    "subtitle": {
+      "type": "text",
+      "default": "Serving Iconic Hospitality in Saudi Arabia"
+    },
+    "button_text": {
+      "type": "text",
+      "default": "Reimagine Your Space"
+    },
+    "image_overlay_texts": {
+      "type": "json",
+      "default": [
+        "Apartments Hotels",
+        "Office Spaces",
+        "Luxury Hotels",
+        "Boutique Hotels",
+        "Vacation Rentals"
+      ]
+    }
+  },
+  "config": {}
+} 

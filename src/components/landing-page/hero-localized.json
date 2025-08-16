@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_landing_page_hero_localized_s",
+  "info": {
+    "displayName": "Hero (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "blocks"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "first_button": {
+      "type": "component",
+      "component": "common.button",
+      "repeatable": false
+    },
+    "second_button": {
+      "type": "component",
+      "component": "common.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

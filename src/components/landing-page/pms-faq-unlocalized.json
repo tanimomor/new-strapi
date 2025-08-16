@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_landing_page_pms_faq_unlocalized_s",
+  "info": {
+    "displayName": "PMS FAQ (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "faq_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+} 

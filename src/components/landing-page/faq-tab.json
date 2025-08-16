@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_landing_page_faq_tab_s",
+  "info": {
+    "displayName": "FAQ Tab"
+  },
+  "options": {},
+  "attributes": {
+    "tab_label": {
+      "type": "text",
+      "default": "General"
+    },
+    "accordion_items": {
+      "type": "component",
+      "component": "landing-page.faq-accordion-item",
+      "repeatable": true,
+      "max": 8
+    }
+  },
+  "config": {}
+} 

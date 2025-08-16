@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_landing_page_testimonial_card_s",
+  "info": {
+    "displayName": "Testimonial Card"
+  },
+  "options": {},
+  "attributes": {
+    "profile_name": {
+      "type": "text",
+      "default": "Omar Al-Fahad"
+    },
+    "profile_title": {
+      "type": "text",
+      "default": "General Manager, Zayana Luxury Hotels"
+    },
+    "testimonial_text": {
+      "type": "text",
+      "default": "With ntouch PMS, we finally have a system that understands how a luxury hotel operates—smart, seamless, and surprisingly intuitive. It's become the silent engine behind our elevated guest experience."
+    },
+    "button_text": {
+      "type": "text",
+      "default": "Watch Video"
+    }
+  },
+  "config": {}
+} 

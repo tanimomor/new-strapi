@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_landing_page_who_we_serve_unlocalized_s",
+  "info": {
+    "displayName": "Who We Serve (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "image_1": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    },
+    "image_2": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    },
+    "image_3": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    },
+    "image_4": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    },
+    "image_5": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+} 

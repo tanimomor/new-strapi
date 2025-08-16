@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_landing_page_about_us_localized_s",
+  "info": {
+    "displayName": "About Us (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "mini_title": {
+      "type": "text",
+      "default": "About us"
+    },
+    "main_title": {
+      "type": "text",
+      "default": "A Journey Untold"
+    },
+    "subtitle": {
+      "type": "text",
+      "default": "Inspired by Hospitality, Perfected by Technology"
+    },
+    "description_1": {
+      "type": "text",
+      "default": "Born in Saudi Arabia and inspired by the timeless grace of Arabian hospitality, nTouch blends years of industry insight with cutting-edge AI to transform how luxury is delivered."
+    },
+    "description_2": {
+      "type": "text",
+      "default": "We don't just automate—we elevate. Every solution is crafted with elegance, precision, and a deep understanding of what today's guests truly value."
+    },
+    "button_text": {
+      "type": "text",
+      "default": "Discover our Journey"
+    }
+  },
+  "config": {}
+} 

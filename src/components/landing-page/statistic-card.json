@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_landing_page_statistic_card_s",
+  "info": {
+    "displayName": "Statistic Card"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "text",
+      "default": "50+"
+    },
+    "description": {
+      "type": "text",
+      "default": "Properties Automated & Modernized"
+    }
+  },
+  "config": {}
+} 

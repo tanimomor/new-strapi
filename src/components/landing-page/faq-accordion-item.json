@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_landing_page_faq_accordion_item_s",
+  "info": {
+    "displayName": "FAQ Accordion Item"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "text",
+      "default": "What makes nTouch different from other PMS or automation providers?"
+    },
+    "answer": {
+      "type": "text",
+      "default": "nTouch PMS is an AI-driven platform designed to simplify property management across multiple properties, enhancing productivity and guest experiences."
+    }
+  },
+  "config": {}
+} 

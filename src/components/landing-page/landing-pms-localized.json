@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_landing_page_landing_pms_localized_s",
+  "info": {
+    "displayName": "Landing PMS (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "mini_title": {
+      "type": "text",
+      "default": "Our premium products"
+    },
+    "main_title": {
+      "type": "text",
+      "default": "nTouch PMS:"
+    },
+    "subtitle": {
+      "type": "text",
+      "default": "The AI-Enhanced Solution for Modern Hospitality"
+    },
+    "description": {
+      "type": "text",
+      "default": "Property Management, Perfected. Seamlessly manage every touchpoint of your property, from reservations to housekeeping, all within one beautifully intuitive system. Designed to simplify operations, empower staff, and deliver a flawless guest experience at every stage."
+    },
+    "feature_list": {
+      "type": "json",
+      "default": [
+        "Intuitive Front Desk & Reservation Controls",
+        "Real-time Room Status & Housekeeping Coordination",
+        "Automated Billing & Multi-currency Support",
+        "Guest Profile Intelligence",
+        "Centralized Command for Multi-property Chains"
+      ]
+    },
+    "button_text": {
+      "type": "text",
+      "default": "Explore PMS"
+    }
+  },
+  "config": {}
+} 

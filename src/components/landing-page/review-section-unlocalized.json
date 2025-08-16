@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_landing_page_review_section_unlocalized_s",
+  "info": {
+    "displayName": "Review Section (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "profile_images": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": true,
+      "max": 6
+    },
+    "quote_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    },
+    "video_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+} 

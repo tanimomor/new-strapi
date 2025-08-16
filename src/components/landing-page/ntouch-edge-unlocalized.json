@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_landing_page_ntouch_edge_unlocalized_s",
+  "info": {
+    "displayName": "nTouch Edge (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "card_images": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": true,
+      "max": 5
+    }
+  },
+  "config": {}
+} 
