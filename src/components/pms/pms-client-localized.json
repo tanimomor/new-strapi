@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_pms_pms_client_localized_s",
+  "info": {
+    "displayName": "PMS Client (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "section_subtitle": {
+      "type": "string"
+    },
+    "section_title": {
+      "type": "string"
+    },
+    "client_cards": {
+      "type": "component",
+      "component": "pms.client-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

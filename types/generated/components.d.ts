@@ -641,16 +641,94 @@ export interface OurStoryStatisticCard extends Struct.ComponentSchema {
   };
 }
 
-export interface PmsPmsFeatureTab extends Struct.ComponentSchema {
-  collectionName: 'components_pms_pms_feature_tabs';
+export interface PmsClientCard extends Struct.ComponentSchema {
+  collectionName: 'components_pms_client_cards';
   info: {
-    displayName: 'PMS Feature Tab';
+    displayName: 'Client Card';
   };
   attributes: {
-    is_active: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
-    tab_order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<1>;
-    tab_title: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Multi-Property Management'>;
+    client_image: Schema.Attribute.Component<'assets.image', false>;
+    image_caption: Schema.Attribute.String;
+  };
+}
+
+export interface PmsNtouchEdgeCard extends Struct.ComponentSchema {
+  collectionName: 'components_pms_ntouch_edge_cards';
+  info: {
+    displayName: 'nTouch Edge Card';
+  };
+  attributes: {
+    feature_icon: Schema.Attribute.Component<'assets.image', false>;
+    feature_text: Schema.Attribute.String;
+  };
+}
+
+export interface PmsPmsClientLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_pms_pms_client_localized_s';
+  info: {
+    displayName: 'PMS Client (Localized)';
+  };
+  attributes: {
+    client_cards: Schema.Attribute.Component<'pms.client-card', true>;
+    section_subtitle: Schema.Attribute.String;
+    section_title: Schema.Attribute.String;
+  };
+}
+
+export interface PmsPmsClientUnlocalized extends Struct.ComponentSchema {
+  collectionName: 'components_pms_pms_client_unlocalized_s';
+  info: {
+    displayName: 'PMS Client (Unlocalized)';
+  };
+  attributes: {};
+}
+
+export interface PmsPmsFeatureSectionLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_pms_pms_feature_section_localized_s';
+  info: {
+    displayName: 'PMS Feature Section (Localized)';
+  };
+  attributes: {
+    feature_description: Schema.Attribute.Text;
+    feature_list_items: Schema.Attribute.Text;
+    feature_subtitle: Schema.Attribute.String;
+    feature_title: Schema.Attribute.String;
+  };
+}
+
+export interface PmsPmsFeatureSectionReverseLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_pms_pms_feature_section_reverse_localized_s';
+  info: {
+    displayName: 'PMS Feature Section Reverse (Localized)';
+  };
+  attributes: {
+    feature_description: Schema.Attribute.Text;
+    feature_list_items: Schema.Attribute.Text;
+    feature_subtitle: Schema.Attribute.String;
+    feature_title: Schema.Attribute.String;
+  };
+}
+
+export interface PmsPmsFeatureSectionReverseUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_pms_pms_feature_section_reverse_unlocalized_s';
+  info: {
+    displayName: 'PMS Feature Section Reverse (Unlocalized)';
+  };
+  attributes: {
+    feature_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface PmsPmsFeatureSectionUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_pms_pms_feature_section_unlocalized_s';
+  info: {
+    displayName: 'PMS Feature Section (Unlocalized)';
+  };
+  attributes: {
+    feature_image: Schema.Attribute.Component<'assets.image', false>;
   };
 }
 
@@ -660,16 +738,116 @@ export interface PmsPmsFeatureTabsLocalized extends Struct.ComponentSchema {
     displayName: 'PMS Feature Tabs (Localized)';
   };
   attributes: {
-    feature_tabs: Schema.Attribute.Component<'pms.pms-feature-tab', true> &
-      Schema.Attribute.SetMinMax<
-        {
-          max: 10;
-        },
-        number
-      >;
-    section_title: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Explore PMS Exclusive Features'>;
+    feature_tabs: Schema.Attribute.Component<'common.button', true>;
+    section_title: Schema.Attribute.String;
   };
+}
+
+export interface PmsPmsFeatureTabsUnlocalized extends Struct.ComponentSchema {
+  collectionName: 'components_pms_pms_feature_tabs_unlocalized_s';
+  info: {
+    displayName: 'PMS Feature Tabs (Unlocalized)';
+  };
+  attributes: {};
+}
+
+export interface PmsPmsHeroLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_pms_pms_hero_localized_s';
+  info: {
+    displayName: 'PMS Hero (Localized)';
+  };
+  attributes: {
+    first_button: Schema.Attribute.Component<'common.button', false>;
+    second_button: Schema.Attribute.Component<'common.button', false>;
+    subtitle: Schema.Attribute.Text;
+    title: Schema.Attribute.Blocks;
+  };
+}
+
+export interface PmsPmsHeroUnlocalized extends Struct.ComponentSchema {
+  collectionName: 'components_pms_pms_hero_unlocalized_s';
+  info: {
+    displayName: 'PMS Hero (Unlocalized)';
+  };
+  attributes: {
+    hero_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface PmsPmsNtouchEdgeLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_pms_pms_ntouch_edge_localized_s';
+  info: {
+    displayName: 'PMS nTouch Edge (Localized)';
+  };
+  attributes: {
+    feature_boxes: Schema.Attribute.Component<'pms.ntouch-edge-card', true>;
+    section_title: Schema.Attribute.String;
+  };
+}
+
+export interface PmsPmsNtouchEdgeUnlocalized extends Struct.ComponentSchema {
+  collectionName: 'components_pms_pms_ntouch_edge_unlocalized_s';
+  info: {
+    displayName: 'PMS nTouch Edge (Unlocalized)';
+  };
+  attributes: {};
+}
+
+export interface PricingPricingCard extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_pricing_cards';
+  info: {
+    displayName: 'Pricing Card';
+  };
+  attributes: {
+    button_link: Schema.Attribute.String;
+    button_text: Schema.Attribute.String;
+    card_description: Schema.Attribute.Text;
+    card_icon: Schema.Attribute.Component<'assets.image', false>;
+    card_title: Schema.Attribute.String;
+    feature_list: Schema.Attribute.Text;
+  };
+}
+
+export interface PricingPricingHeroLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_pricing_hero_localized_s';
+  info: {
+    displayName: 'Pricing Hero (Localized)';
+  };
+  attributes: {
+    subtitle: Schema.Attribute.Text;
+    title: Schema.Attribute.Blocks;
+  };
+}
+
+export interface PricingPricingHeroUnlocalized extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_pricing_hero_unlocalized_s';
+  info: {
+    displayName: 'Pricing Hero (Unlocalized)';
+  };
+  attributes: {};
+}
+
+export interface PricingPricingSectionLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_pricing_section_localized_s';
+  info: {
+    displayName: 'Pricing Section (Localized)';
+  };
+  attributes: {
+    hero_localized: Schema.Attribute.Component<
+      'pricing.pricing-hero-localized',
+      false
+    >;
+    pricing_cards: Schema.Attribute.Component<'pricing.pricing-card', true>;
+  };
+}
+
+export interface PricingPricingSectionUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_pricing_section_unlocalized_s';
+  info: {
+    displayName: 'Pricing Section (Unlocalized)';
+  };
+  attributes: {};
 }
 
 declare module '@strapi/strapi' {
@@ -709,8 +887,25 @@ declare module '@strapi/strapi' {
       'our-story.our-story-hero-unlocalized': OurStoryOurStoryHeroUnlocalized;
       'our-story.review-section-localized': OurStoryReviewSectionLocalized;
       'our-story.statistic-card': OurStoryStatisticCard;
-      'pms.pms-feature-tab': PmsPmsFeatureTab;
+      'pms.client-card': PmsClientCard;
+      'pms.ntouch-edge-card': PmsNtouchEdgeCard;
+      'pms.pms-client-localized': PmsPmsClientLocalized;
+      'pms.pms-client-unlocalized': PmsPmsClientUnlocalized;
+      'pms.pms-feature-section-localized': PmsPmsFeatureSectionLocalized;
+      'pms.pms-feature-section-reverse-localized': PmsPmsFeatureSectionReverseLocalized;
+      'pms.pms-feature-section-reverse-unlocalized': PmsPmsFeatureSectionReverseUnlocalized;
+      'pms.pms-feature-section-unlocalized': PmsPmsFeatureSectionUnlocalized;
       'pms.pms-feature-tabs-localized': PmsPmsFeatureTabsLocalized;
+      'pms.pms-feature-tabs-unlocalized': PmsPmsFeatureTabsUnlocalized;
+      'pms.pms-hero-localized': PmsPmsHeroLocalized;
+      'pms.pms-hero-unlocalized': PmsPmsHeroUnlocalized;
+      'pms.pms-ntouch-edge-localized': PmsPmsNtouchEdgeLocalized;
+      'pms.pms-ntouch-edge-unlocalized': PmsPmsNtouchEdgeUnlocalized;
+      'pricing.pricing-card': PricingPricingCard;
+      'pricing.pricing-hero-localized': PricingPricingHeroLocalized;
+      'pricing.pricing-hero-unlocalized': PricingPricingHeroUnlocalized;
+      'pricing.pricing-section-localized': PricingPricingSectionLocalized;
+      'pricing.pricing-section-unlocalized': PricingPricingSectionUnlocalized;
     }
   }
 }

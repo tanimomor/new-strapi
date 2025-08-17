@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_pms_pms_hero_localized_s",
+  "info": {
+    "displayName": "PMS Hero (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "blocks"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "first_button": {
+      "type": "component",
+      "component": "common.button",
+      "repeatable": false
+    },
+    "second_button": {
+      "type": "component",
+      "component": "common.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

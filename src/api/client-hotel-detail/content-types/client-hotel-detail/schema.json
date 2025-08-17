@@ -1,0 +1,14 @@
+{
+  "kind": "singleType",
+  "collectionName": "client_hotel_details",
+  "info": {
+    "singularName": "client-hotel-detail",
+    "pluralName": "client-hotel-details",
+    "displayName": "Plans - Client Hotel Detail"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_pms_pms_feature_section_unlocalized_s",
+  "info": {
+    "displayName": "PMS Feature Section (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "feature_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

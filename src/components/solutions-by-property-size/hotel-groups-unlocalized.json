@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_solutions_by_property_size_hotel_groups_unlocalized_s",
+  "info": {
+    "displayName": "Hotel Groups (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "section_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

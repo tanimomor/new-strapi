@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_pms_pms_hero_unlocalized_s",
+  "info": {
+    "displayName": "PMS Hero (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "hero_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

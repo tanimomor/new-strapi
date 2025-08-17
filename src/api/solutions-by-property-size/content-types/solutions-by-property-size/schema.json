@@ -1,0 +1,65 @@
+{
+  "kind": "singleType",
+  "collectionName": "solutions_by_property_sizes",
+  "info": {
+    "singularName": "solutions-by-property-size",
+    "pluralName": "solutions-by-property-sizes",
+    "displayName": "Solutions - Property Size"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_localized": {
+      "type": "component",
+      "component": "solutions-by-property-size.hero-localized",
+      "repeatable": false
+    },
+    "hero_unlocalized": {
+      "type": "component",
+      "component": "solutions-by-property-size.hero-unlocalized",
+      "repeatable": false
+    },
+    "hotel_groups_localized": {
+      "type": "component",
+      "component": "solutions-by-property-size.hotel-groups-localized",
+      "repeatable": false
+    },
+    "hotel_groups_unlocalized": {
+      "type": "component",
+      "component": "solutions-by-property-size.hotel-groups-unlocalized",
+      "repeatable": false
+    },
+    "ntouch_edge_localized": {
+      "type": "component",
+      "component": "pms.pms-ntouch-edge-localized",
+      "repeatable": false
+    },
+    "ntouch_edge_unlocalized": {
+      "type": "component",
+      "component": "pms.pms-ntouch-edge-unlocalized",
+      "repeatable": false
+    },
+    "product_suite_localized": {
+      "type": "component",
+      "component": "solutions-by-property-size.product-suite-localized",
+      "repeatable": false
+    },
+    "product_suite_unlocalized": {
+      "type": "component",
+      "component": "solutions-by-property-size.product-suite-unlocalized",
+      "repeatable": false
+    },
+    "start_guide_localized": {
+      "type": "component",
+      "component": "solutions-by-property-size.start-guide-localized",
+      "repeatable": false
+    },
+    "start_guide_unlocalized": {
+      "type": "component",
+      "component": "solutions-by-property-size.start-guide-unlocalized",
+      "repeatable": false
+    }
+  }
+}

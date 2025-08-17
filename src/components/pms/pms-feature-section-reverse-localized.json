@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_pms_pms_feature_section_reverse_localized_s",
+  "info": {
+    "displayName": "PMS Feature Section Reverse (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "feature_subtitle": {
+      "type": "string"
+    },
+    "feature_title": {
+      "type": "string"
+    },
+    "feature_description": {
+      "type": "text"
+    },
+    "feature_list_items": {
+      "type": "text",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

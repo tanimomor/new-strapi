@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_pms_client_cards",
+  "info": {
+    "displayName": "Client Card"
+  },
+  "options": {},
+  "attributes": {
+    "image_caption": {
+      "type": "string"
+    },
+    "client_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

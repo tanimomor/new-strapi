@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_pricing_pricing_cards",
+  "info": {
+    "displayName": "Pricing Card"
+  },
+  "options": {},
+  "attributes": {
+    "card_title": {
+      "type": "string"
+    },
+    "card_description": {
+      "type": "text"
+    },
+    "feature_list": {
+      "type": "text",
+      "repeatable": true
+    },
+    "button_text": {
+      "type": "string"
+    },
+    "button_link": {
+      "type": "string"
+    },
+    "card_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

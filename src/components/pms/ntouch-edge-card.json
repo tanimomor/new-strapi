@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_pms_ntouch_edge_cards",
+  "info": {
+    "displayName": "nTouch Edge Card"
+  },
+  "options": {},
+  "attributes": {
+    "feature_text": {
+      "type": "string"
+    },
+    "feature_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

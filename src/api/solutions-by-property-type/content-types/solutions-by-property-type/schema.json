@@ -1,0 +1,14 @@
+{
+  "kind": "singleType",
+  "collectionName": "solutions_by_property_types",
+  "info": {
+    "singularName": "solutions-by-property-type",
+    "pluralName": "solutions-by-property-types",
+    "displayName": "Solutions - Property Type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}

@@ -1,16 +1,16 @@
 {
-  "collectionName": "components_pms_pms_feature_tabs_localized_s",
+  "collectionName": "components_pms_pms_ntouch_edge_localized_s",
   "info": {
-    "displayName": "PMS Feature Tabs (Localized)"
+    "displayName": "PMS nTouch Edge (Localized)"
   },
   "options": {},
   "attributes": {
     "section_title": {
       "type": "string"
     },
-    "feature_tabs": {
+    "feature_boxes": {
       "type": "component",
-      "component": "common.button",
+      "component": "pms.ntouch-edge-card",
       "repeatable": true
     }
   },

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_solutions_by_property_size_hotel_groups_localized_s",
+  "info": {
+    "displayName": "Hotel Groups (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "feature_list": {
+      "type": "text",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

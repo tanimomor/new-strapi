@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_pricing_pricing_hero_localized_s",
+  "info": {
+    "displayName": "Pricing Hero (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "blocks"
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

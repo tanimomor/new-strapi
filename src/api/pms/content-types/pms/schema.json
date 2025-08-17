@@ -1,0 +1,75 @@
+{
+  "kind": "singleType",
+  "collectionName": "pmss",
+  "info": {
+    "singularName": "pms",
+    "pluralName": "pmss",
+    "displayName": "Pms"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_localized": {
+      "type": "component",
+      "component": "pms.pms-hero-localized",
+      "repeatable": false
+    },
+    "hero_unlocalized": {
+      "type": "component",
+      "component": "pms.pms-hero-unlocalized",
+      "repeatable": false
+    },
+    "feature_tabs_localized": {
+      "type": "component",
+      "component": "pms.pms-feature-tabs-localized",
+      "repeatable": false
+    },
+    "feature_tabs_unlocalized": {
+      "type": "component",
+      "component": "pms.pms-feature-tabs-unlocalized",
+      "repeatable": false
+    },
+    "feature_section_localized": {
+      "type": "component",
+      "component": "pms.pms-feature-section-localized",
+      "repeatable": false
+    },
+    "feature_section_unlocalized": {
+      "type": "component",
+      "component": "pms.pms-feature-section-unlocalized",
+      "repeatable": false
+    },
+    "feature_section_reverse_localized": {
+      "type": "component",
+      "component": "pms.pms-feature-section-reverse-localized",
+      "repeatable": false
+    },
+    "feature_section_reverse_unlocalized": {
+      "type": "component",
+      "component": "pms.pms-feature-section-reverse-unlocalized",
+      "repeatable": false
+    },
+    "ntouch_edge_localized": {
+      "type": "component",
+      "component": "pms.pms-ntouch-edge-localized",
+      "repeatable": false
+    },
+    "ntouch_edge_unlocalized": {
+      "type": "component",
+      "component": "pms.pms-ntouch-edge-unlocalized",
+      "repeatable": false
+    },
+    "client_localized": {
+      "type": "component",
+      "component": "pms.pms-client-localized",
+      "repeatable": false
+    },
+    "client_unlocalized": {
+      "type": "component",
+      "component": "pms.pms-client-unlocalized",
+      "repeatable": false
+    }
+  }
+}

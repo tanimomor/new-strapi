@@ -1,0 +1,14 @@
+{
+  "kind": "singleType",
+  "collectionName": "summary_and_payments",
+  "info": {
+    "singularName": "summary-and-payment",
+    "pluralName": "summary-and-payments",
+    "displayName": "Plans - Summary & Payment"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}

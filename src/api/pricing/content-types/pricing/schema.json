@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "pricings",
+  "info": {
+    "singularName": "pricing",
+    "pluralName": "pricings",
+    "displayName": "Pricing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pricing_section_localized": {
+      "type": "component",
+      "component": "pricing.pricing-section-localized",
+      "repeatable": false
+    },
+    "pricing_section_unlocalized": {
+      "type": "component",
+      "component": "pricing.pricing-section-unlocalized",
+      "repeatable": false
+    }
+  }
+}

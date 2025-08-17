@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_solutions_by_property_size_start_guide_localized_s",
+  "info": {
+    "displayName": "Start Guide (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "section_subtitle": {
+      "type": "string"
+    },
+    "section_title": {
+      "type": "string"
+    },
+    "guide_steps": {
+      "type": "component",
+      "component": "solutions-by-property-size.guide-step",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
