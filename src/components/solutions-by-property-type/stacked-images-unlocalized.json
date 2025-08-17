@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_solutions_by_property_type_stacked_images_unlocalized_s",
+  "info": {
+    "displayName": "Stacked Images (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "main_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

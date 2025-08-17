@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_client_hotel_detail_client_hotel_detail_section_unlocalized_s",
+  "info": {
+    "displayName": "Client Hotel Detail Section (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "hero_unlocalized": {
+      "type": "component",
+      "component": "client-hotel-detail.client-hotel-detail-hero-unlocalized",
+      "repeatable": false
+    },
+    "client_form_unlocalized": {
+      "type": "component",
+      "component": "client-hotel-detail.client-form-unlocalized",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

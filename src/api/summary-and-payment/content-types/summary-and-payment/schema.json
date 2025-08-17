@@ -10,5 +10,16 @@
     "draftAndPublish": true
   },
   "pluginOptions": {},
-  "attributes": {}
+  "attributes": {
+    "summary_payment_section_localized": {
+      "type": "component",
+      "component": "summary-and-payment.summary-payment-section-localized",
+      "repeatable": false
+    },
+    "summary_payment_section_unlocalized": {
+      "type": "component",
+      "component": "summary-and-payment.summary-payment-section-unlocalized",
+      "repeatable": false
+    }
+  }
 }

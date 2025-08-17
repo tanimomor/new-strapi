@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_summary_and_payment_feature_accordion_localized_s",
+  "info": {
+    "displayName": "Feature Accordion (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "features": {
+      "type": "component",
+      "component": "summary-and-payment.feature-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

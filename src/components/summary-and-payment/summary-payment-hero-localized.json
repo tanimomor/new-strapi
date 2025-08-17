@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_summary_and_payment_summary_payment_hero_localized_s",
+  "info": {
+    "displayName": "Summary Payment Hero (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "back_button_text": {
+      "type": "string"
+    },
+    "page_title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

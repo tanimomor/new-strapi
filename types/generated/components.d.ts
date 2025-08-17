@@ -22,6 +22,134 @@ export interface AssetsVideo extends Struct.ComponentSchema {
   };
 }
 
+export interface ClientHotelDetailClientFormLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_client_hotel_detail_client_form_localized_s';
+  info: {
+    displayName: 'Client Form (Localized)';
+  };
+  attributes: {
+    back_button_link: Schema.Attribute.String;
+    back_button_text: Schema.Attribute.String;
+    business_email_label: Schema.Attribute.String;
+    business_email_placeholder: Schema.Attribute.String;
+    contact_number_label: Schema.Attribute.String;
+    contact_number_placeholder: Schema.Attribute.String;
+    country_label: Schema.Attribute.String;
+    country_placeholder: Schema.Attribute.String;
+    first_name_label: Schema.Attribute.String;
+    first_name_placeholder: Schema.Attribute.String;
+    form_title: Schema.Attribute.String;
+    job_role_label: Schema.Attribute.String;
+    job_role_placeholder: Schema.Attribute.String;
+    last_name_label: Schema.Attribute.String;
+    last_name_placeholder: Schema.Attribute.String;
+    next_button_link: Schema.Attribute.String;
+    next_button_text: Schema.Attribute.String;
+  };
+}
+
+export interface ClientHotelDetailClientFormUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_client_hotel_detail_client_form_unlocalized_s';
+  info: {
+    displayName: 'Client Form (Unlocalized)';
+  };
+  attributes: {
+    form_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface ClientHotelDetailClientHotelDetailHeroLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_client_hotel_detail_client_hotel_detail_hero_localized_s';
+  info: {
+    displayName: 'Client Hotel Detail Hero (Localized)';
+  };
+  attributes: {
+    back_button_text: Schema.Attribute.String;
+    page_title: Schema.Attribute.String;
+  };
+}
+
+export interface ClientHotelDetailClientHotelDetailHeroUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_client_hotel_detail_client_hotel_detail_hero_unlocalized_s';
+  info: {
+    displayName: 'Client Hotel Detail Hero (Unlocalized)';
+  };
+  attributes: {
+    back_button_icon: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface ClientHotelDetailClientHotelDetailSectionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_client_hotel_detail_client_hotel_detail_section_localized_s';
+  info: {
+    displayName: 'Client Hotel Detail Section (Localized)';
+  };
+  attributes: {
+    client_form_localized: Schema.Attribute.Component<
+      'client-hotel-detail.client-form-localized',
+      false
+    >;
+    hero_localized: Schema.Attribute.Component<
+      'client-hotel-detail.client-hotel-detail-hero-localized',
+      false
+    >;
+    progress_steps_localized: Schema.Attribute.Component<
+      'client-hotel-detail.progress-steps-localized',
+      false
+    >;
+  };
+}
+
+export interface ClientHotelDetailClientHotelDetailSectionUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_client_hotel_detail_client_hotel_detail_section_unlocalized_s';
+  info: {
+    displayName: 'Client Hotel Detail Section (Unlocalized)';
+  };
+  attributes: {
+    client_form_unlocalized: Schema.Attribute.Component<
+      'client-hotel-detail.client-form-unlocalized',
+      false
+    >;
+    hero_unlocalized: Schema.Attribute.Component<
+      'client-hotel-detail.client-hotel-detail-hero-unlocalized',
+      false
+    >;
+  };
+}
+
+export interface ClientHotelDetailProgressStep extends Struct.ComponentSchema {
+  collectionName: 'components_client_hotel_detail_progress_steps';
+  info: {
+    displayName: 'Progress Step';
+  };
+  attributes: {
+    is_active: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    is_completed: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    progress_value: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    step_text: Schema.Attribute.String;
+  };
+}
+
+export interface ClientHotelDetailProgressStepsLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_client_hotel_detail_progress_steps_localized_s';
+  info: {
+    displayName: 'Progress Steps (Localized)';
+  };
+  attributes: {
+    steps: Schema.Attribute.Component<
+      'client-hotel-detail.progress-step',
+      true
+    >;
+  };
+}
+
 export interface CommonButton extends Struct.ComponentSchema {
   collectionName: 'components_common_buttons';
   info: {
@@ -43,33 +171,38 @@ export interface ContactContactFormLocalized extends Struct.ComponentSchema {
     displayName: 'Contact Form (Localized)';
   };
   attributes: {
-    back_button_text: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Back'>;
-    business_email_label: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Business Email'>;
-    business_email_placeholder: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Enter your business email'>;
-    contact_number_label: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Contact Number'>;
-    contact_number_placeholder: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Enter your phone number'>;
-    first_name_label: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'First Name'>;
-    first_name_placeholder: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Enter your first name'>;
-    form_title: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<"Let's Connect">;
-    last_name_label: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Last Name'>;
-    last_name_placeholder: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Enter your last name'>;
-    message_label: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'How can we help you?'>;
-    message_placeholder: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Write your message here...'>;
-    submit_button_text: Schema.Attribute.String &
-      Schema.Attribute.DefaultTo<'Send'>;
+    back_button_text: Schema.Attribute.String;
+    business_email_label: Schema.Attribute.String;
+    business_email_placeholder: Schema.Attribute.String;
+    contact_number_label: Schema.Attribute.String;
+    contact_number_placeholder: Schema.Attribute.String;
+    first_name_label: Schema.Attribute.String;
+    first_name_placeholder: Schema.Attribute.String;
+    form_title: Schema.Attribute.String;
+    last_name_label: Schema.Attribute.String;
+    last_name_placeholder: Schema.Attribute.String;
+    message_label: Schema.Attribute.String;
+    message_placeholder: Schema.Attribute.String;
+    submit_button_text: Schema.Attribute.String;
   };
+}
+
+export interface ContactContactFormUnlocalized extends Struct.ComponentSchema {
+  collectionName: 'components_contact_contact_form_unlocalized_s';
+  info: {
+    displayName: 'Contact Form (Unlocalized)';
+  };
+  attributes: {
+    back_button_icon: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface ContactContactSliderLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_contact_contact_slider_localized_s';
+  info: {
+    displayName: 'Contact Slider (Localized)';
+  };
+  attributes: {};
 }
 
 export interface ContactContactSliderUnlocalized
@@ -79,13 +212,7 @@ export interface ContactContactSliderUnlocalized
     displayName: 'Contact Slider (Unlocalized)';
   };
   attributes: {
-    slider_images: Schema.Attribute.Component<'assets.image', true> &
-      Schema.Attribute.SetMinMax<
-        {
-          max: 5;
-        },
-        number
-      >;
+    slider_images: Schema.Attribute.Component<'assets.image', true>;
   };
 }
 
@@ -641,6 +768,179 @@ export interface OurStoryStatisticCard extends Struct.ComponentSchema {
   };
 }
 
+export interface PlansPackageDetailAddonItem extends Struct.ComponentSchema {
+  collectionName: 'components_plans_package_detail_addon_items';
+  info: {
+    displayName: 'Addon Item';
+  };
+  attributes: {
+    addon_description: Schema.Attribute.Text;
+    addon_price: Schema.Attribute.String;
+    addon_title: Schema.Attribute.String;
+    is_checked: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+  };
+}
+
+export interface PlansPackageDetailAddonsSectionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_plans_package_detail_addons_section_localized_s';
+  info: {
+    displayName: 'Add-ons Section (Localized)';
+  };
+  attributes: {
+    addons: Schema.Attribute.Component<'plans-package-detail.addon-item', true>;
+    addons_title: Schema.Attribute.String;
+    integrations: Schema.Attribute.Component<
+      'plans-package-detail.addon-item',
+      true
+    >;
+    integrations_title: Schema.Attribute.String;
+    next_button_link: Schema.Attribute.String;
+    next_button_text: Schema.Attribute.String;
+    section_description: Schema.Attribute.Text;
+    section_title: Schema.Attribute.String;
+  };
+}
+
+export interface PlansPackageDetailFeatureAccordionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_plans_package_detail_feature_accordion_localized_s';
+  info: {
+    displayName: 'Feature Accordion (Localized)';
+  };
+  attributes: {
+    features: Schema.Attribute.Component<
+      'plans-package-detail.feature-item',
+      true
+    >;
+  };
+}
+
+export interface PlansPackageDetailFeatureItem extends Struct.ComponentSchema {
+  collectionName: 'components_plans_package_detail_feature_items';
+  info: {
+    displayName: 'Feature Item';
+  };
+  attributes: {
+    feature_icon: Schema.Attribute.Component<'assets.image', false>;
+    feature_list: Schema.Attribute.Text;
+    feature_title: Schema.Attribute.String;
+    is_expanded: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+  };
+}
+
+export interface PlansPackageDetailPackageDetailsHeroLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_plans_package_detail_package_details_hero_localized_s';
+  info: {
+    displayName: 'Package Details Hero (Localized)';
+  };
+  attributes: {
+    back_button_text: Schema.Attribute.String;
+    page_title: Schema.Attribute.String;
+  };
+}
+
+export interface PlansPackageDetailPackageDetailsHeroUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_plans_package_detail_package_details_hero_unlocalized_s';
+  info: {
+    displayName: 'Package Details Hero (Unlocalized)';
+  };
+  attributes: {
+    back_button_icon: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface PlansPackageDetailPackageDetailsSectionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_plans_package_detail_package_details_section_localized_s';
+  info: {
+    displayName: 'Package Details Section (Localized)';
+  };
+  attributes: {
+    addons_section_localized: Schema.Attribute.Component<
+      'plans-package-detail.addons-section-localized',
+      false
+    >;
+    feature_accordion_localized: Schema.Attribute.Component<
+      'plans-package-detail.feature-accordion-localized',
+      false
+    >;
+    hero_localized: Schema.Attribute.Component<
+      'plans-package-detail.package-details-hero-localized',
+      false
+    >;
+    pricing_section_localized: Schema.Attribute.Component<
+      'plans-package-detail.pricing-section-localized',
+      false
+    >;
+    progress_steps_localized: Schema.Attribute.Component<
+      'plans-package-detail.progress-steps-localized',
+      false
+    >;
+  };
+}
+
+export interface PlansPackageDetailPackageDetailsSectionUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_plans_package_detail_package_details_section_unlocalized_s';
+  info: {
+    displayName: 'Package Details Section (Unlocalized)';
+  };
+  attributes: {
+    hero_unlocalized: Schema.Attribute.Component<
+      'plans-package-detail.package-details-hero-unlocalized',
+      false
+    >;
+  };
+}
+
+export interface PlansPackageDetailPricingSectionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_plans_package_detail_pricing_section_localized_s';
+  info: {
+    displayName: 'Pricing Section (Localized)';
+  };
+  attributes: {
+    annually_label: Schema.Attribute.String;
+    channels_label: Schema.Attribute.String;
+    features_title: Schema.Attribute.String;
+    monthly_label: Schema.Attribute.String;
+    plan_includes_title: Schema.Attribute.String;
+    price_amount: Schema.Attribute.String;
+    price_period: Schema.Attribute.String;
+    rooms_label: Schema.Attribute.String;
+    total_price_title: Schema.Attribute.String;
+  };
+}
+
+export interface PlansPackageDetailProgressStep extends Struct.ComponentSchema {
+  collectionName: 'components_plans_package_detail_progress_steps';
+  info: {
+    displayName: 'Progress Step';
+  };
+  attributes: {
+    is_active: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    progress_value: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    step_text: Schema.Attribute.String;
+  };
+}
+
+export interface PlansPackageDetailProgressStepsLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_plans_package_detail_progress_steps_localized_s';
+  info: {
+    displayName: 'Progress Steps (Localized)';
+  };
+  attributes: {
+    steps: Schema.Attribute.Component<
+      'plans-package-detail.progress-step',
+      true
+    >;
+  };
+}
+
 export interface PmsClientCard extends Struct.ComponentSchema {
   collectionName: 'components_pms_client_cards';
   info: {
@@ -850,13 +1150,457 @@ export interface PricingPricingSectionUnlocalized
   attributes: {};
 }
 
+export interface SolutionsByPropertySizeGuideStep
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_size_guide_steps';
+  info: {
+    displayName: 'Guide Step';
+  };
+  attributes: {
+    step_description: Schema.Attribute.Text;
+    step_number: Schema.Attribute.String;
+    step_title: Schema.Attribute.String;
+  };
+}
+
+export interface SolutionsByPropertySizeHeroLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_size_hero_localized_s';
+  info: {
+    displayName: 'Solutions by Property Size Hero (Localized)';
+  };
+  attributes: {
+    button: Schema.Attribute.Component<'common.button', false>;
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.Blocks;
+  };
+}
+
+export interface SolutionsByPropertySizeHeroUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_size_hero_unlocalized_s';
+  info: {
+    displayName: 'Solutions by Property Size Hero (Unlocalized)';
+  };
+  attributes: {
+    hero_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface SolutionsByPropertySizeHotelGroupsLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_size_hotel_groups_localized_s';
+  info: {
+    displayName: 'Hotel Groups (Localized)';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    feature_list: Schema.Attribute.Text;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SolutionsByPropertySizeHotelGroupsUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_size_hotel_groups_unlocalized_s';
+  info: {
+    displayName: 'Hotel Groups (Unlocalized)';
+  };
+  attributes: {
+    section_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface SolutionsByPropertySizeProductCard
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_size_product_cards';
+  info: {
+    displayName: 'Product Card';
+  };
+  attributes: {
+    button_link: Schema.Attribute.String;
+    button_text: Schema.Attribute.String;
+    card_background_image: Schema.Attribute.Component<'assets.image', false>;
+    card_description: Schema.Attribute.Text;
+    card_icon: Schema.Attribute.Component<'assets.image', false>;
+    card_title: Schema.Attribute.String;
+    feature_tags: Schema.Attribute.String;
+  };
+}
+
+export interface SolutionsByPropertySizeProductSuiteLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_size_product_suite_localized_s';
+  info: {
+    displayName: 'Product Suite (Localized)';
+  };
+  attributes: {
+    product_cards: Schema.Attribute.Component<
+      'solutions-by-property-size.product-card',
+      true
+    >;
+    section_description: Schema.Attribute.Text;
+    section_subtitle: Schema.Attribute.String;
+    section_title: Schema.Attribute.String;
+  };
+}
+
+export interface SolutionsByPropertySizeProductSuiteUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_size_product_suite_unlocalized_s';
+  info: {
+    displayName: 'Product Suite (Unlocalized)';
+  };
+  attributes: {};
+}
+
+export interface SolutionsByPropertySizeStartGuideLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_size_start_guide_localized_s';
+  info: {
+    displayName: 'Start Guide (Localized)';
+  };
+  attributes: {
+    guide_steps: Schema.Attribute.Component<
+      'solutions-by-property-size.guide-step',
+      true
+    >;
+    section_subtitle: Schema.Attribute.String;
+    section_title: Schema.Attribute.String;
+  };
+}
+
+export interface SolutionsByPropertySizeStartGuideUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_size_start_guide_unlocalized_s';
+  info: {
+    displayName: 'Start Guide (Unlocalized)';
+  };
+  attributes: {
+    guide_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface SolutionsByPropertyTypeGuideStep
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_type_guide_steps';
+  info: {
+    displayName: 'Guide Step';
+  };
+  attributes: {
+    step_description: Schema.Attribute.Text;
+    step_number: Schema.Attribute.String;
+    step_title: Schema.Attribute.String;
+  };
+}
+
+export interface SolutionsByPropertyTypeHeroLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_type_hero_localized_s';
+  info: {
+    displayName: 'Solutions by Property Type Hero (Localized)';
+  };
+  attributes: {
+    button: Schema.Attribute.Component<'common.button', false>;
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.Blocks;
+  };
+}
+
+export interface SolutionsByPropertyTypeHeroUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_type_hero_unlocalized_s';
+  info: {
+    displayName: 'Solutions by Property Type Hero (Unlocalized)';
+  };
+  attributes: {
+    hero_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface SolutionsByPropertyTypeProductCard
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_type_product_cards';
+  info: {
+    displayName: 'Product Card';
+  };
+  attributes: {
+    button_link: Schema.Attribute.String;
+    button_text: Schema.Attribute.String;
+    card_background_image: Schema.Attribute.Component<'assets.image', false>;
+    card_description: Schema.Attribute.Text;
+    card_icon: Schema.Attribute.Component<'assets.image', false>;
+    card_title: Schema.Attribute.String;
+    feature_tags: Schema.Attribute.String;
+  };
+}
+
+export interface SolutionsByPropertyTypeProductSuiteLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_type_product_suite_localized_s';
+  info: {
+    displayName: 'Product Suite (Localized)';
+  };
+  attributes: {
+    product_cards: Schema.Attribute.Component<
+      'solutions-by-property-type.product-card',
+      true
+    >;
+    section_description: Schema.Attribute.Text;
+    section_subtitle: Schema.Attribute.String;
+    section_title: Schema.Attribute.String;
+  };
+}
+
+export interface SolutionsByPropertyTypeProductSuiteUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_type_product_suite_unlocalized_s';
+  info: {
+    displayName: 'Product Suite (Unlocalized)';
+  };
+  attributes: {};
+}
+
+export interface SolutionsByPropertyTypeStackedImagesLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_type_stacked_images_localized_s';
+  info: {
+    displayName: 'Stacked Images (Localized)';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    feature_list: Schema.Attribute.Text;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SolutionsByPropertyTypeStackedImagesUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_type_stacked_images_unlocalized_s';
+  info: {
+    displayName: 'Stacked Images (Unlocalized)';
+  };
+  attributes: {
+    main_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface SolutionsByPropertyTypeStartGuideLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_type_start_guide_localized_s';
+  info: {
+    displayName: 'Start Guide (Localized)';
+  };
+  attributes: {
+    guide_steps: Schema.Attribute.Component<
+      'solutions-by-property-type.guide-step',
+      true
+    >;
+    section_subtitle: Schema.Attribute.String;
+    section_title: Schema.Attribute.String;
+  };
+}
+
+export interface SolutionsByPropertyTypeStartGuideUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_type_start_guide_unlocalized_s';
+  info: {
+    displayName: 'Start Guide (Unlocalized)';
+  };
+  attributes: {
+    guide_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface SummaryAndPaymentFeatureAccordionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_summary_and_payment_feature_accordion_localized_s';
+  info: {
+    displayName: 'Feature Accordion (Localized)';
+  };
+  attributes: {
+    features: Schema.Attribute.Component<
+      'summary-and-payment.feature-item',
+      true
+    >;
+  };
+}
+
+export interface SummaryAndPaymentFeatureItem extends Struct.ComponentSchema {
+  collectionName: 'components_summary_and_payment_feature_items';
+  info: {
+    displayName: 'Feature Item';
+  };
+  attributes: {
+    feature_icon: Schema.Attribute.Component<'assets.image', false>;
+    feature_list: Schema.Attribute.Text;
+    feature_title: Schema.Attribute.String;
+    is_expanded: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+  };
+}
+
+export interface SummaryAndPaymentPaymentSectionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_summary_and_payment_payment_section_localized_s';
+  info: {
+    displayName: 'Payment Section (Localized)';
+  };
+  attributes: {
+    apply_button_text: Schema.Attribute.String;
+    back_button_link: Schema.Attribute.String;
+    back_button_text: Schema.Attribute.String;
+    bank_transfer_button_text: Schema.Attribute.String;
+    card_button_text: Schema.Attribute.String;
+    card_save_text: Schema.Attribute.Text;
+    monthly_button_text: Schema.Attribute.String;
+    next_button_link: Schema.Attribute.String;
+    next_button_text: Schema.Attribute.String;
+    payment_details_title: Schema.Attribute.String;
+    promo_code_placeholder: Schema.Attribute.String;
+    promo_code_title: Schema.Attribute.String;
+    selected_text: Schema.Attribute.Text;
+    sub_total_label: Schema.Attribute.String;
+    subscription_fee_label: Schema.Attribute.String;
+    terms_description: Schema.Attribute.Text;
+    terms_title: Schema.Attribute.String;
+    total_amount_title: Schema.Attribute.String;
+    vat_label: Schema.Attribute.String;
+    yearly_button_text: Schema.Attribute.String;
+  };
+}
+
+export interface SummaryAndPaymentPricingSectionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_summary_and_payment_pricing_section_localized_s';
+  info: {
+    displayName: 'Pricing Section (Localized)';
+  };
+  attributes: {
+    annually_label: Schema.Attribute.String;
+    channels_label: Schema.Attribute.String;
+    features_title: Schema.Attribute.String;
+    monthly_label: Schema.Attribute.String;
+    plan_includes_title: Schema.Attribute.String;
+    price_amount: Schema.Attribute.String;
+    price_period: Schema.Attribute.String;
+    rooms_label: Schema.Attribute.String;
+    total_price_title: Schema.Attribute.String;
+  };
+}
+
+export interface SummaryAndPaymentProgressStep extends Struct.ComponentSchema {
+  collectionName: 'components_summary_and_payment_progress_steps';
+  info: {
+    displayName: 'Progress Step';
+  };
+  attributes: {
+    is_active: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    is_completed: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    progress_value: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    step_text: Schema.Attribute.String;
+  };
+}
+
+export interface SummaryAndPaymentProgressStepsLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_summary_and_payment_progress_steps_localized_s';
+  info: {
+    displayName: 'Progress Steps (Localized)';
+  };
+  attributes: {
+    steps: Schema.Attribute.Component<
+      'summary-and-payment.progress-step',
+      true
+    >;
+  };
+}
+
+export interface SummaryAndPaymentSummaryPaymentHeroLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_summary_and_payment_summary_payment_hero_localized_s';
+  info: {
+    displayName: 'Summary Payment Hero (Localized)';
+  };
+  attributes: {
+    back_button_text: Schema.Attribute.String;
+    page_title: Schema.Attribute.String;
+  };
+}
+
+export interface SummaryAndPaymentSummaryPaymentHeroUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_summary_and_payment_summary_payment_hero_unlocalized_s';
+  info: {
+    displayName: 'Summary Payment Hero (Unlocalized)';
+  };
+  attributes: {
+    back_button_icon: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface SummaryAndPaymentSummaryPaymentSectionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_summary_and_payment_summary_payment_section_localized_s';
+  info: {
+    displayName: 'Summary Payment Section (Localized)';
+  };
+  attributes: {
+    feature_accordion_localized: Schema.Attribute.Component<
+      'summary-and-payment.feature-accordion-localized',
+      false
+    >;
+    hero_localized: Schema.Attribute.Component<
+      'summary-and-payment.summary-payment-hero-localized',
+      false
+    >;
+    payment_section_localized: Schema.Attribute.Component<
+      'summary-and-payment.payment-section-localized',
+      false
+    >;
+    pricing_section_localized: Schema.Attribute.Component<
+      'summary-and-payment.pricing-section-localized',
+      false
+    >;
+    progress_steps_localized: Schema.Attribute.Component<
+      'summary-and-payment.progress-steps-localized',
+      false
+    >;
+  };
+}
+
+export interface SummaryAndPaymentSummaryPaymentSectionUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_summary_and_payment_summary_payment_section_unlocalized_s';
+  info: {
+    displayName: 'Summary Payment Section (Unlocalized)';
+  };
+  attributes: {
+    hero_unlocalized: Schema.Attribute.Component<
+      'summary-and-payment.summary-payment-hero-unlocalized',
+      false
+    >;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'assets.image': AssetsImage;
       'assets.video': AssetsVideo;
+      'client-hotel-detail.client-form-localized': ClientHotelDetailClientFormLocalized;
+      'client-hotel-detail.client-form-unlocalized': ClientHotelDetailClientFormUnlocalized;
+      'client-hotel-detail.client-hotel-detail-hero-localized': ClientHotelDetailClientHotelDetailHeroLocalized;
+      'client-hotel-detail.client-hotel-detail-hero-unlocalized': ClientHotelDetailClientHotelDetailHeroUnlocalized;
+      'client-hotel-detail.client-hotel-detail-section-localized': ClientHotelDetailClientHotelDetailSectionLocalized;
+      'client-hotel-detail.client-hotel-detail-section-unlocalized': ClientHotelDetailClientHotelDetailSectionUnlocalized;
+      'client-hotel-detail.progress-step': ClientHotelDetailProgressStep;
+      'client-hotel-detail.progress-steps-localized': ClientHotelDetailProgressStepsLocalized;
       'common.button': CommonButton;
       'contact.contact-form-localized': ContactContactFormLocalized;
+      'contact.contact-form-unlocalized': ContactContactFormUnlocalized;
+      'contact.contact-slider-localized': ContactContactSliderLocalized;
       'contact.contact-slider-unlocalized': ContactContactSliderUnlocalized;
       'landing-page.about-us-localized': LandingPageAboutUsLocalized;
       'landing-page.about-us-unlocalized': LandingPageAboutUsUnlocalized;
@@ -887,6 +1631,17 @@ declare module '@strapi/strapi' {
       'our-story.our-story-hero-unlocalized': OurStoryOurStoryHeroUnlocalized;
       'our-story.review-section-localized': OurStoryReviewSectionLocalized;
       'our-story.statistic-card': OurStoryStatisticCard;
+      'plans-package-detail.addon-item': PlansPackageDetailAddonItem;
+      'plans-package-detail.addons-section-localized': PlansPackageDetailAddonsSectionLocalized;
+      'plans-package-detail.feature-accordion-localized': PlansPackageDetailFeatureAccordionLocalized;
+      'plans-package-detail.feature-item': PlansPackageDetailFeatureItem;
+      'plans-package-detail.package-details-hero-localized': PlansPackageDetailPackageDetailsHeroLocalized;
+      'plans-package-detail.package-details-hero-unlocalized': PlansPackageDetailPackageDetailsHeroUnlocalized;
+      'plans-package-detail.package-details-section-localized': PlansPackageDetailPackageDetailsSectionLocalized;
+      'plans-package-detail.package-details-section-unlocalized': PlansPackageDetailPackageDetailsSectionUnlocalized;
+      'plans-package-detail.pricing-section-localized': PlansPackageDetailPricingSectionLocalized;
+      'plans-package-detail.progress-step': PlansPackageDetailProgressStep;
+      'plans-package-detail.progress-steps-localized': PlansPackageDetailProgressStepsLocalized;
       'pms.client-card': PmsClientCard;
       'pms.ntouch-edge-card': PmsNtouchEdgeCard;
       'pms.pms-client-localized': PmsPmsClientLocalized;
@@ -906,6 +1661,36 @@ declare module '@strapi/strapi' {
       'pricing.pricing-hero-unlocalized': PricingPricingHeroUnlocalized;
       'pricing.pricing-section-localized': PricingPricingSectionLocalized;
       'pricing.pricing-section-unlocalized': PricingPricingSectionUnlocalized;
+      'solutions-by-property-size.guide-step': SolutionsByPropertySizeGuideStep;
+      'solutions-by-property-size.hero-localized': SolutionsByPropertySizeHeroLocalized;
+      'solutions-by-property-size.hero-unlocalized': SolutionsByPropertySizeHeroUnlocalized;
+      'solutions-by-property-size.hotel-groups-localized': SolutionsByPropertySizeHotelGroupsLocalized;
+      'solutions-by-property-size.hotel-groups-unlocalized': SolutionsByPropertySizeHotelGroupsUnlocalized;
+      'solutions-by-property-size.product-card': SolutionsByPropertySizeProductCard;
+      'solutions-by-property-size.product-suite-localized': SolutionsByPropertySizeProductSuiteLocalized;
+      'solutions-by-property-size.product-suite-unlocalized': SolutionsByPropertySizeProductSuiteUnlocalized;
+      'solutions-by-property-size.start-guide-localized': SolutionsByPropertySizeStartGuideLocalized;
+      'solutions-by-property-size.start-guide-unlocalized': SolutionsByPropertySizeStartGuideUnlocalized;
+      'solutions-by-property-type.guide-step': SolutionsByPropertyTypeGuideStep;
+      'solutions-by-property-type.hero-localized': SolutionsByPropertyTypeHeroLocalized;
+      'solutions-by-property-type.hero-unlocalized': SolutionsByPropertyTypeHeroUnlocalized;
+      'solutions-by-property-type.product-card': SolutionsByPropertyTypeProductCard;
+      'solutions-by-property-type.product-suite-localized': SolutionsByPropertyTypeProductSuiteLocalized;
+      'solutions-by-property-type.product-suite-unlocalized': SolutionsByPropertyTypeProductSuiteUnlocalized;
+      'solutions-by-property-type.stacked-images-localized': SolutionsByPropertyTypeStackedImagesLocalized;
+      'solutions-by-property-type.stacked-images-unlocalized': SolutionsByPropertyTypeStackedImagesUnlocalized;
+      'solutions-by-property-type.start-guide-localized': SolutionsByPropertyTypeStartGuideLocalized;
+      'solutions-by-property-type.start-guide-unlocalized': SolutionsByPropertyTypeStartGuideUnlocalized;
+      'summary-and-payment.feature-accordion-localized': SummaryAndPaymentFeatureAccordionLocalized;
+      'summary-and-payment.feature-item': SummaryAndPaymentFeatureItem;
+      'summary-and-payment.payment-section-localized': SummaryAndPaymentPaymentSectionLocalized;
+      'summary-and-payment.pricing-section-localized': SummaryAndPaymentPricingSectionLocalized;
+      'summary-and-payment.progress-step': SummaryAndPaymentProgressStep;
+      'summary-and-payment.progress-steps-localized': SummaryAndPaymentProgressStepsLocalized;
+      'summary-and-payment.summary-payment-hero-localized': SummaryAndPaymentSummaryPaymentHeroLocalized;
+      'summary-and-payment.summary-payment-hero-unlocalized': SummaryAndPaymentSummaryPaymentHeroUnlocalized;
+      'summary-and-payment.summary-payment-section-localized': SummaryAndPaymentSummaryPaymentSectionLocalized;
+      'summary-and-payment.summary-payment-section-unlocalized': SummaryAndPaymentSummaryPaymentSectionUnlocalized;
     }
   }
 }

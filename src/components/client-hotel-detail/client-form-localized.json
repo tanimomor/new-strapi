@@ -1,13 +1,10 @@
 {
-  "collectionName": "components_contact_contact_form_localized_s",
+  "collectionName": "components_client_hotel_detail_client_form_localized_s",
   "info": {
-    "displayName": "Contact Form (Localized)"
+    "displayName": "Client Form (Localized)"
   },
   "options": {},
   "attributes": {
-    "back_button_text": {
-      "type": "string"
-    },
     "form_title": {
       "type": "string"
     },
@@ -29,21 +26,36 @@
     "business_email_placeholder": {
       "type": "string"
     },
+    "job_role_label": {
+      "type": "string"
+    },
+    "job_role_placeholder": {
+      "type": "string"
+    },
+    "country_label": {
+      "type": "string"
+    },
+    "country_placeholder": {
+      "type": "string"
+    },
     "contact_number_label": {
       "type": "string"
     },
     "contact_number_placeholder": {
       "type": "string"
     },
-    "message_label": {
+    "back_button_text": {
       "type": "string"
     },
-    "message_placeholder": {
+    "next_button_text": {
       "type": "string"
     },
-    "submit_button_text": {
+    "back_button_link": {
+      "type": "string"
+    },
+    "next_button_link": {
       "type": "string"
     }
   },
   "config": {}
-} 
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_summary_and_payment_progress_steps_localized_s",
+  "info": {
+    "displayName": "Progress Steps (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "steps": {
+      "type": "component",
+      "component": "summary-and-payment.progress-step",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

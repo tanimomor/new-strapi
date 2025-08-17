@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Contact"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "contact_form_localized": {
+      "type": "component",
+      "component": "contact.contact-form-localized",
+      "repeatable": false
+    },
+    "contact_form_unlocalized": {
+      "type": "component",
+      "component": "contact.contact-form-unlocalized",
+      "repeatable": false
+    },
+    "contact_slider_localized": {
+      "type": "component",
+      "component": "contact.contact-slider-localized",
+      "repeatable": false
+    },
+    "contact_slider_unlocalized": {
+      "type": "component",
+      "component": "contact.contact-slider-unlocalized",
+      "repeatable": false
+    }
+  }
+}

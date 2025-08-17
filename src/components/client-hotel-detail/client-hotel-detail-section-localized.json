@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_client_hotel_detail_client_hotel_detail_section_localized_s",
+  "info": {
+    "displayName": "Client Hotel Detail Section (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "hero_localized": {
+      "type": "component",
+      "component": "client-hotel-detail.client-hotel-detail-hero-localized",
+      "repeatable": false
+    },
+    "progress_steps_localized": {
+      "type": "component",
+      "component": "client-hotel-detail.progress-steps-localized",
+      "repeatable": false
+    },
+    "client_form_localized": {
+      "type": "component",
+      "component": "client-hotel-detail.client-form-localized",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

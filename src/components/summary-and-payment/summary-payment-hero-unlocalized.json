@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_summary_and_payment_summary_payment_hero_unlocalized_s",
+  "info": {
+    "displayName": "Summary Payment Hero (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "back_button_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

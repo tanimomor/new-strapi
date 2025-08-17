@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "plans_package_details",
+  "info": {
+    "singularName": "plans-package-detail",
+    "pluralName": "plans-package-details",
+    "displayName": "Plans - Package Detail"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "package_details_section_localized": {
+      "type": "component",
+      "component": "plans-package-detail.package-details-section-localized",
+      "repeatable": false
+    },
+    "package_details_section_unlocalized": {
+      "type": "component",
+      "component": "plans-package-detail.package-details-section-unlocalized",
+      "repeatable": false
+    }
+  }
+}

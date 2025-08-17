@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_summary_and_payment_progress_steps",
+  "info": {
+    "displayName": "Progress Step"
+  },
+  "options": {},
+  "attributes": {
+    "step_text": {
+      "type": "string"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_completed": {
+      "type": "boolean",
+      "default": false
+    },
+    "progress_value": {
+      "type": "integer",
+      "default": 0
+    }
+  },
+  "config": {}
+}

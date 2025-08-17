@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_solutions_by_property_type_guide_steps",
+  "info": {
+    "displayName": "Guide Step"
+  },
+  "options": {},
+  "attributes": {
+    "step_number": {
+      "type": "string"
+    },
+    "step_title": {
+      "type": "string"
+    },
+    "step_description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

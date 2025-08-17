@@ -10,5 +10,16 @@
     "draftAndPublish": true
   },
   "pluginOptions": {},
-  "attributes": {}
+  "attributes": {
+    "client_hotel_detail_section_localized": {
+      "type": "component",
+      "component": "client-hotel-detail.client-hotel-detail-section-localized",
+      "repeatable": false
+    },
+    "client_hotel_detail_section_unlocalized": {
+      "type": "component",
+      "component": "client-hotel-detail.client-hotel-detail-section-unlocalized",
+      "repeatable": false
+    }
+  }
 }

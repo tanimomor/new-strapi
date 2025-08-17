@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_solutions_by_property_type_product_suite_localized_s",
+  "info": {
+    "displayName": "Product Suite (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "section_subtitle": {
+      "type": "string"
+    },
+    "section_title": {
+      "type": "string"
+    },
+    "section_description": {
+      "type": "text"
+    },
+    "product_cards": {
+      "type": "component",
+      "component": "solutions-by-property-type.product-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
+
+

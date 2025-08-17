@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_solutions_by_property_type_start_guide_unlocalized_s",
+  "info": {
+    "displayName": "Start Guide (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "guide_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

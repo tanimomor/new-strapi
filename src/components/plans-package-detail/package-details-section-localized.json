@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_plans_package_detail_package_details_section_localized_s",
+  "info": {
+    "displayName": "Package Details Section (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "hero_localized": {
+      "type": "component",
+      "component": "plans-package-detail.package-details-hero-localized",
+      "repeatable": false
+    },
+    "progress_steps_localized": {
+      "type": "component",
+      "component": "plans-package-detail.progress-steps-localized",
+      "repeatable": false
+    },
+    "pricing_section_localized": {
+      "type": "component",
+      "component": "plans-package-detail.pricing-section-localized",
+      "repeatable": false
+    },
+    "feature_accordion_localized": {
+      "type": "component",
+      "component": "plans-package-detail.feature-accordion-localized",
+      "repeatable": false
+    },
+    "addons_section_localized": {
+      "type": "component",
+      "component": "plans-package-detail.addons-section-localized",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

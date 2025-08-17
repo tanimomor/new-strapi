@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_plans_package_detail_pricing_section_localized_s",
+  "info": {
+    "displayName": "Pricing Section (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "total_price_title": {
+      "type": "string"
+    },
+    "monthly_label": {
+      "type": "string"
+    },
+    "annually_label": {
+      "type": "string"
+    },
+    "price_amount": {
+      "type": "string"
+    },
+    "price_period": {
+      "type": "string"
+    },
+    "plan_includes_title": {
+      "type": "string"
+    },
+    "rooms_label": {
+      "type": "string"
+    },
+    "channels_label": {
+      "type": "string"
+    },
+    "features_title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

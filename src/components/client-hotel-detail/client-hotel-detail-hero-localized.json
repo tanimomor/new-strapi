@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_client_hotel_detail_client_hotel_detail_hero_localized_s",
+  "info": {
+    "displayName": "Client Hotel Detail Hero (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "back_button_text": {
+      "type": "string"
+    },
+    "page_title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

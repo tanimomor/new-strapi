@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_solutions_by_property_type_hero_unlocalized_s",
+  "info": {
+    "displayName": "Solutions by Property Type Hero (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "hero_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

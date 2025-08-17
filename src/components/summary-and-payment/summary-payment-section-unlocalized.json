@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_summary_and_payment_summary_payment_section_unlocalized_s",
+  "info": {
+    "displayName": "Summary Payment Section (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "hero_unlocalized": {
+      "type": "component",
+      "component": "summary-and-payment.summary-payment-hero-unlocalized",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

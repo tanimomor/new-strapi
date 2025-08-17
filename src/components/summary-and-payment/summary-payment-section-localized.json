@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_summary_and_payment_summary_payment_section_localized_s",
+  "info": {
+    "displayName": "Summary Payment Section (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "hero_localized": {
+      "type": "component",
+      "component": "summary-and-payment.summary-payment-hero-localized",
+      "repeatable": false
+    },
+    "progress_steps_localized": {
+      "type": "component",
+      "component": "summary-and-payment.progress-steps-localized",
+      "repeatable": false
+    },
+    "pricing_section_localized": {
+      "type": "component",
+      "component": "summary-and-payment.pricing-section-localized",
+      "repeatable": false
+    },
+    "feature_accordion_localized": {
+      "type": "component",
+      "component": "summary-and-payment.feature-accordion-localized",
+      "repeatable": false
+    },
+    "payment_section_localized": {
+      "type": "component",
+      "component": "summary-and-payment.payment-section-localized",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

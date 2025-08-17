@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_plans_package_detail_package_details_hero_unlocalized_s",
+  "info": {
+    "displayName": "Package Details Hero (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "back_button_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

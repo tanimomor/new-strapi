@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_plans_package_detail_package_details_section_unlocalized_s",
+  "info": {
+    "displayName": "Package Details Section (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "hero_unlocalized": {
+      "type": "component",
+      "component": "plans-package-detail.package-details-hero-unlocalized",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

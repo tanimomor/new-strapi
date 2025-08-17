@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_plans_package_detail_addon_items",
+  "info": {
+    "displayName": "Addon Item"
+  },
+  "options": {},
+  "attributes": {
+    "addon_title": {
+      "type": "string"
+    },
+    "addon_price": {
+      "type": "string"
+    },
+    "addon_description": {
+      "type": "text"
+    },
+    "is_checked": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

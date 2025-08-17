@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_contact_contact_form_unlocalized_s",
+  "info": {
+    "displayName": "Contact Form (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "back_button_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

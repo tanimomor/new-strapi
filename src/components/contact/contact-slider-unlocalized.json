@@ -8,8 +8,7 @@
     "slider_images": {
       "type": "component",
       "component": "assets.image",
-      "repeatable": true,
-      "max": 5
+      "repeatable": true
     }
   },
   "config": {}

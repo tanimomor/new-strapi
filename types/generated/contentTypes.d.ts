@@ -373,34 +373,6 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiCalculatePriceCalculatePrice
-  extends Struct.SingleTypeSchema {
-  collectionName: 'calculate_prices';
-  info: {
-    displayName: 'Plans - Calculate Price';
-    pluralName: 'calculate-prices';
-    singularName: 'calculate-price';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::calculate-price.calculate-price'
-    > &
-      Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
 export interface ApiClientHotelDetailClientHotelDetail
   extends Struct.SingleTypeSchema {
   collectionName: 'client_hotel_details';
@@ -413,6 +385,14 @@ export interface ApiClientHotelDetailClientHotelDetail
     draftAndPublish: true;
   };
   attributes: {
+    client_hotel_detail_section_localized: Schema.Attribute.Component<
+      'client-hotel-detail.client-hotel-detail-section-localized',
+      false
+    >;
+    client_hotel_detail_section_unlocalized: Schema.Attribute.Component<
+      'client-hotel-detail.client-hotel-detail-section-unlocalized',
+      false
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -420,6 +400,49 @@ export interface ApiClientHotelDetailClientHotelDetail
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::client-hotel-detail.client-hotel-detail'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiContactContact extends Struct.SingleTypeSchema {
+  collectionName: 'contacts';
+  info: {
+    displayName: 'Contact';
+    pluralName: 'contacts';
+    singularName: 'contact';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contact_form_localized: Schema.Attribute.Component<
+      'contact.contact-form-localized',
+      false
+    >;
+    contact_form_unlocalized: Schema.Attribute.Component<
+      'contact.contact-form-unlocalized',
+      false
+    >;
+    contact_slider_localized: Schema.Attribute.Component<
+      'contact.contact-slider-localized',
+      false
+    >;
+    contact_slider_unlocalized: Schema.Attribute.Component<
+      'contact.contact-slider-unlocalized',
+      false
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact.contact'
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
@@ -575,6 +598,42 @@ export interface ApiOurStoryOurStory extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiPlansPackageDetailPlansPackageDetail
+  extends Struct.SingleTypeSchema {
+  collectionName: 'plans_package_details';
+  info: {
+    displayName: 'Plans - Package Detail';
+    pluralName: 'plans-package-details';
+    singularName: 'plans-package-detail';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::plans-package-detail.plans-package-detail'
+    > &
+      Schema.Attribute.Private;
+    package_details_section_localized: Schema.Attribute.Component<
+      'plans-package-detail.package-details-section-localized',
+      false
+    >;
+    package_details_section_unlocalized: Schema.Attribute.Component<
+      'plans-package-detail.package-details-section-unlocalized',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPmsPms extends Struct.SingleTypeSchema {
   collectionName: 'pmss';
   info: {
@@ -694,13 +753,53 @@ export interface ApiSolutionsByPropertySizeSolutionsByPropertySize
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    hero_localized: Schema.Attribute.Component<
+      'solutions-by-property-size.hero-localized',
+      false
+    >;
+    hero_unlocalized: Schema.Attribute.Component<
+      'solutions-by-property-size.hero-unlocalized',
+      false
+    >;
+    hotel_groups_localized: Schema.Attribute.Component<
+      'solutions-by-property-size.hotel-groups-localized',
+      false
+    >;
+    hotel_groups_unlocalized: Schema.Attribute.Component<
+      'solutions-by-property-size.hotel-groups-unlocalized',
+      false
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::solutions-by-property-size.solutions-by-property-size'
     > &
       Schema.Attribute.Private;
+    ntouch_edge_localized: Schema.Attribute.Component<
+      'pms.pms-ntouch-edge-localized',
+      false
+    >;
+    ntouch_edge_unlocalized: Schema.Attribute.Component<
+      'pms.pms-ntouch-edge-unlocalized',
+      false
+    >;
+    product_suite_localized: Schema.Attribute.Component<
+      'solutions-by-property-size.product-suite-localized',
+      false
+    >;
+    product_suite_unlocalized: Schema.Attribute.Component<
+      'solutions-by-property-size.product-suite-unlocalized',
+      false
+    >;
     publishedAt: Schema.Attribute.DateTime;
+    start_guide_localized: Schema.Attribute.Component<
+      'solutions-by-property-size.start-guide-localized',
+      false
+    >;
+    start_guide_unlocalized: Schema.Attribute.Component<
+      'solutions-by-property-size.start-guide-unlocalized',
+      false
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -722,13 +821,53 @@ export interface ApiSolutionsByPropertyTypeSolutionsByPropertyType
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    hero_localized: Schema.Attribute.Component<
+      'solutions-by-property-type.hero-localized',
+      false
+    >;
+    hero_unlocalized: Schema.Attribute.Component<
+      'solutions-by-property-type.hero-unlocalized',
+      false
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::solutions-by-property-type.solutions-by-property-type'
     > &
       Schema.Attribute.Private;
+    ntouch_edge_localized: Schema.Attribute.Component<
+      'pms.pms-ntouch-edge-localized',
+      false
+    >;
+    ntouch_edge_unlocalized: Schema.Attribute.Component<
+      'pms.pms-ntouch-edge-unlocalized',
+      false
+    >;
+    product_suite_localized: Schema.Attribute.Component<
+      'solutions-by-property-type.product-suite-localized',
+      false
+    >;
+    product_suite_unlocalized: Schema.Attribute.Component<
+      'solutions-by-property-type.product-suite-unlocalized',
+      false
+    >;
     publishedAt: Schema.Attribute.DateTime;
+    stacked_images_localized: Schema.Attribute.Component<
+      'solutions-by-property-type.stacked-images-localized',
+      false
+    >;
+    stacked_images_unlocalized: Schema.Attribute.Component<
+      'solutions-by-property-type.stacked-images-unlocalized',
+      false
+    >;
+    start_guide_localized: Schema.Attribute.Component<
+      'solutions-by-property-type.start-guide-localized',
+      false
+    >;
+    start_guide_unlocalized: Schema.Attribute.Component<
+      'solutions-by-property-type.start-guide-unlocalized',
+      false
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -757,6 +896,14 @@ export interface ApiSummaryAndPaymentSummaryAndPayment
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    summary_payment_section_localized: Schema.Attribute.Component<
+      'summary-and-payment.summary-payment-section-localized',
+      false
+    >;
+    summary_payment_section_unlocalized: Schema.Attribute.Component<
+      'summary-and-payment.summary-payment-section-unlocalized',
+      false
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1272,10 +1419,11 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
-      'api::calculate-price.calculate-price': ApiCalculatePriceCalculatePrice;
       'api::client-hotel-detail.client-hotel-detail': ApiClientHotelDetailClientHotelDetail;
+      'api::contact.contact': ApiContactContact;
       'api::landing-page.landing-page': ApiLandingPageLandingPage;
       'api::our-story.our-story': ApiOurStoryOurStory;
+      'api::plans-package-detail.plans-package-detail': ApiPlansPackageDetailPlansPackageDetail;
       'api::pms.pms': ApiPmsPms;
       'api::pricing.pricing': ApiPricingPricing;
       'api::solutions-by-property-size.solutions-by-property-size': ApiSolutionsByPropertySizeSolutionsByPropertySize;

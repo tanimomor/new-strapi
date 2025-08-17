@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_solutions_by_property_type_product_cards",
+  "info": {
+    "displayName": "Product Card"
+  },
+  "options": {},
+  "attributes": {
+    "card_title": {
+      "type": "string"
+    },
+    "card_description": {
+      "type": "text"
+    },
+    "feature_tags": {
+      "type": "string",
+      "repeatable": true
+    },
+    "button_text": {
+      "type": "string"
+    },
+    "button_link": {
+      "type": "string"
+    },
+    "card_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    },
+    "card_background_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

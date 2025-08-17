@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_client_hotel_detail_client_form_unlocalized_s",
+  "info": {
+    "displayName": "Client Form (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "form_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

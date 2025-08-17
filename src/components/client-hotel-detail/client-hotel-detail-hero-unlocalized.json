@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_client_hotel_detail_client_hotel_detail_hero_unlocalized_s",
+  "info": {
+    "displayName": "Client Hotel Detail Hero (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "back_button_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

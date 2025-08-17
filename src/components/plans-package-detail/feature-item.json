@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_plans_package_detail_feature_items",
+  "info": {
+    "displayName": "Feature Item"
+  },
+  "options": {},
+  "attributes": {
+    "feature_title": {
+      "type": "string"
+    },
+    "feature_list": {
+      "type": "text",
+      "repeatable": true
+    },
+    "feature_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    },
+    "is_expanded": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_solutions_by_property_type_stacked_images_localized_s",
+  "info": {
+    "displayName": "Stacked Images (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "feature_list": {
+      "type": "text",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

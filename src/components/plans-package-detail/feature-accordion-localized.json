@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_plans_package_detail_feature_accordion_localized_s",
+  "info": {
+    "displayName": "Feature Accordion (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "features": {
+      "type": "component",
+      "component": "plans-package-detail.feature-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

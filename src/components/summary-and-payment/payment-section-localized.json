@@ -1,0 +1,70 @@
+{
+  "collectionName": "components_summary_and_payment_payment_section_localized_s",
+  "info": {
+    "displayName": "Payment Section (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "payment_details_title": {
+      "type": "string"
+    },
+    "monthly_button_text": {
+      "type": "string"
+    },
+    "yearly_button_text": {
+      "type": "string"
+    },
+    "selected_text": {
+      "type": "text"
+    },
+    "subscription_fee_label": {
+      "type": "string"
+    },
+    "sub_total_label": {
+      "type": "string"
+    },
+    "vat_label": {
+      "type": "string"
+    },
+    "promo_code_title": {
+      "type": "string"
+    },
+    "promo_code_placeholder": {
+      "type": "string"
+    },
+    "apply_button_text": {
+      "type": "string"
+    },
+    "total_amount_title": {
+      "type": "string"
+    },
+    "card_button_text": {
+      "type": "string"
+    },
+    "bank_transfer_button_text": {
+      "type": "string"
+    },
+    "card_save_text": {
+      "type": "text"
+    },
+    "terms_title": {
+      "type": "string"
+    },
+    "terms_description": {
+      "type": "text"
+    },
+    "back_button_text": {
+      "type": "string"
+    },
+    "next_button_text": {
+      "type": "string"
+    },
+    "back_button_link": {
+      "type": "string"
+    },
+    "next_button_link": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

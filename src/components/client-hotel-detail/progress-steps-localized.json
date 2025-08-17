@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_client_hotel_detail_progress_steps_localized_s",
+  "info": {
+    "displayName": "Progress Steps (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "steps": {
+      "type": "component",
+      "component": "client-hotel-detail.progress-step",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
