@@ -9,75 +9,149 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "hero_localized": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "component": "landing-page.hero-localized",
       "repeatable": false
     },
     "hero_unlocalized": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
       "component": "landing-page.hero-unlocalized",
       "repeatable": false
     },
     "landing_pms_localized": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "component": "landing-page.landing-pms-localized",
       "repeatable": false
     },
     "landing_pms_unlocalized": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
       "component": "landing-page.landing-pms-unlocalized",
       "repeatable": false
     },
     "who_we_serve_localized": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "component": "landing-page.who-we-serve-localized",
       "repeatable": false
     },
     "who_we_serve_unlocalized": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
       "component": "landing-page.who-we-serve-unlocalized",
       "repeatable": false
     },
     "ntouch_edge_localized": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "component": "landing-page.ntouch-edge-localized",
       "repeatable": false
     },
     "ntouch_edge_unlocalized": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
       "component": "landing-page.ntouch-edge-unlocalized",
       "repeatable": false
     },
     "about_us_localized": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "component": "landing-page.about-us-localized",
       "repeatable": false
     },
     "about_us_unlocalized": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
       "component": "landing-page.about-us-unlocalized",
       "repeatable": false
     },
     "review_section_localized": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "component": "landing-page.review-section-localized",
       "repeatable": false
     },
     "review_section_unlocalized": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
       "component": "landing-page.review-section-unlocalized",
       "repeatable": false
     },
     "pms_faq_localized": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "component": "landing-page.pms-faq-localized",
       "repeatable": false
     },
     "pms_faq_unlocalized": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
       "component": "landing-page.pms-faq-unlocalized",
       "repeatable": false
     }

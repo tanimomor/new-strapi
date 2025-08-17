@@ -462,76 +462,150 @@ export interface ApiLandingPageLandingPage extends Struct.SingleTypeSchema {
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
     about_us_localized: Schema.Attribute.Component<
       'landing-page.about-us-localized',
       false
-    >;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     about_us_unlocalized: Schema.Attribute.Component<
       'landing-page.about-us-unlocalized',
       false
-    >;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     hero_localized: Schema.Attribute.Component<
       'landing-page.hero-localized',
       false
-    >;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     hero_unlocalized: Schema.Attribute.Component<
       'landing-page.hero-unlocalized',
       false
-    >;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     landing_pms_localized: Schema.Attribute.Component<
       'landing-page.landing-pms-localized',
       false
-    >;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     landing_pms_unlocalized: Schema.Attribute.Component<
       'landing-page.landing-pms-unlocalized',
       false
-    >;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::landing-page.landing-page'
-    > &
-      Schema.Attribute.Private;
+    >;
     ntouch_edge_localized: Schema.Attribute.Component<
       'landing-page.ntouch-edge-localized',
       false
-    >;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     ntouch_edge_unlocalized: Schema.Attribute.Component<
       'landing-page.ntouch-edge-unlocalized',
       false
-    >;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     pms_faq_localized: Schema.Attribute.Component<
       'landing-page.pms-faq-localized',
       false
-    >;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     pms_faq_unlocalized: Schema.Attribute.Component<
       'landing-page.pms-faq-unlocalized',
       false
-    >;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     publishedAt: Schema.Attribute.DateTime;
     review_section_localized: Schema.Attribute.Component<
       'landing-page.review-section-localized',
       false
-    >;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     review_section_unlocalized: Schema.Attribute.Component<
       'landing-page.review-section-unlocalized',
       false
-    >;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     who_we_serve_localized: Schema.Attribute.Component<
       'landing-page.who-we-serve-localized',
       false
-    >;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     who_we_serve_unlocalized: Schema.Attribute.Component<
       'landing-page.who-we-serve-unlocalized',
       false
-    >;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
   };
 }
 
