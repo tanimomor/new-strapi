@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_our_story_our_story_hero_unlocalized_s",
+  "info": {
+    "displayName": "Our Story Hero (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "hero_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+} 

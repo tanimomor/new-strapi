@@ -1,0 +1,14 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_sales_pages",
+  "info": {
+    "singularName": "contact-sales-page",
+    "pluralName": "contact-sales-pages",
+    "displayName": "Contact Sales Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}

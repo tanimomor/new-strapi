@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_our_story_our_clients_localized_s",
+  "info": {
+    "displayName": "Our Clients (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "section_title": {
+      "type": "string",
+      "default": "our clients"
+    },
+    "main_title": {
+      "type": "blocks",
+      "default": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Built for the",
+              "type": "text"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Visionaries of Hospitality",
+              "type": "text",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    "description": {
+      "type": "text",
+      "default": "Our clients are more than customers—they're co-creators of a smarter, more soulful hospitality experience. From luxury hotels and boutique properties to modern vacation rentals and serviced apartments, we partner with those who dare to offer something unforgettable. Together, we've transformed operations and elevated guest journeys across 50+ properties and counting—all united by a commitment to excellence and innovation."
+    }
+  },
+  "config": {}
+} 

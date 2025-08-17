@@ -1,0 +1,60 @@
+{
+  "collectionName": "components_our_story_our_mission_localized_s",
+  "info": {
+    "displayName": "Our Mission (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "section_title": {
+      "type": "string",
+      "default": "our mission"
+    },
+    "main_title": {
+      "type": "blocks",
+      "default": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "To",
+              "type": "text"
+            },
+            {
+              "text": " Make",
+              "type": "text",
+              "bold": true
+            },
+            {
+              "text": " Smart",
+              "type": "text"
+            },
+            {
+              "text": " Hospitality",
+              "type": "text",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": " Feel",
+              "type": "text"
+            },
+            {
+              "text": " Effortless",
+              "type": "text",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    "description": {
+      "type": "text",
+      "default": "At ntouch, our mission is simple yet ambitious: to blend comfort with intelligence. We believe operational efficiency and guest delight should go hand in hand. By infusing automation and AI into the fabric of hotel operations, we help properties deliver seamless service, meaningful moments, and elevated experiences—ones that don't just satisfy but stay with people. Because in the end, hospitality isn't about systems. It's about memories."
+    }
+  },
+  "config": {}
+} 

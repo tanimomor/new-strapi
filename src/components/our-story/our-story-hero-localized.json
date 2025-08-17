@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_our_story_our_story_hero_localized_s",
+  "info": {
+    "displayName": "Our Story Hero (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "hero_title": {
+      "type": "blocks",
+      "default": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "From Concept to Creation, ",
+              "type": "text"
+            },
+            {
+              "text": "A Journey Untold!",
+              "type": "text",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    "description": {
+      "type": "text",
+      "default": "Born in Saudi Arabia, inspired by the warmth of Arabian hospitality, and built for the future—ntouch reimagines traditional service through the lens of AI and smart luxury. We don't just automate operations; we craft experiences that stay with guests for life."
+    },
+    "button": {
+      "type": "component",
+      "component": "common.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+} 

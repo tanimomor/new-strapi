@@ -30,6 +30,62 @@ export interface CommonButton extends Struct.ComponentSchema {
   attributes: {
     link: Schema.Attribute.String;
     title: Schema.Attribute.String;
+    variant: Schema.Attribute.Enumeration<
+      ['primary', 'secondary', 'outline', 'light']
+    > &
+      Schema.Attribute.DefaultTo<'primary'>;
+  };
+}
+
+export interface ContactContactFormLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_contact_contact_form_localized_s';
+  info: {
+    displayName: 'Contact Form (Localized)';
+  };
+  attributes: {
+    back_button_text: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Back'>;
+    business_email_label: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Business Email'>;
+    business_email_placeholder: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Enter your business email'>;
+    contact_number_label: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Contact Number'>;
+    contact_number_placeholder: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Enter your phone number'>;
+    first_name_label: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'First Name'>;
+    first_name_placeholder: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Enter your first name'>;
+    form_title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<"Let's Connect">;
+    last_name_label: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Last Name'>;
+    last_name_placeholder: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Enter your last name'>;
+    message_label: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'How can we help you?'>;
+    message_placeholder: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Write your message here...'>;
+    submit_button_text: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Send'>;
+  };
+}
+
+export interface ContactContactSliderUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_contact_contact_slider_unlocalized_s';
+  info: {
+    displayName: 'Contact Slider (Unlocalized)';
+  };
+  attributes: {
+    slider_images: Schema.Attribute.Component<'assets.image', true> &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 5;
+        },
+        number
+      >;
   };
 }
 
@@ -363,12 +419,267 @@ export interface LandingPageWhoWeServeUnlocalized
   };
 }
 
+export interface OurStoryOurClientsLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_our_story_our_clients_localized_s';
+  info: {
+    displayName: 'Our Clients (Localized)';
+  };
+  attributes: {
+    description: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<"Our clients are more than customers\u2014they're co-creators of a smarter, more soulful hospitality experience. From luxury hotels and boutique properties to modern vacation rentals and serviced apartments, we partner with those who dare to offer something unforgettable. Together, we've transformed operations and elevated guest journeys across 50+ properties and counting\u2014all united by a commitment to excellence and innovation.">;
+    main_title: Schema.Attribute.Blocks &
+      Schema.Attribute.DefaultTo<
+        [
+          {
+            children: [
+              {
+                text: 'Built for the';
+                type: 'text';
+              },
+            ];
+            type: 'paragraph';
+          },
+          {
+            children: [
+              {
+                bold: true;
+                text: 'Visionaries of Hospitality';
+                type: 'text';
+              },
+            ];
+            type: 'paragraph';
+          },
+        ]
+      >;
+    section_title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'our clients'>;
+  };
+}
+
+export interface OurStoryOurClientsUnlocalized extends Struct.ComponentSchema {
+  collectionName: 'components_our_story_our_clients_unlocalized_s';
+  info: {
+    displayName: 'Our Clients (Unlocalized)';
+  };
+  attributes: {
+    clients_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface OurStoryOurMissionLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_our_story_our_mission_localized_s';
+  info: {
+    displayName: 'Our Mission (Localized)';
+  };
+  attributes: {
+    description: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<"At ntouch, our mission is simple yet ambitious: to blend comfort with intelligence. We believe operational efficiency and guest delight should go hand in hand. By infusing automation and AI into the fabric of hotel operations, we help properties deliver seamless service, meaningful moments, and elevated experiences\u2014ones that don't just satisfy but stay with people. Because in the end, hospitality isn't about systems. It's about memories.">;
+    main_title: Schema.Attribute.Blocks &
+      Schema.Attribute.DefaultTo<
+        [
+          {
+            children: [
+              {
+                text: 'To';
+                type: 'text';
+              },
+              {
+                bold: true;
+                text: ' Make';
+                type: 'text';
+              },
+              {
+                text: ' Smart';
+                type: 'text';
+              },
+              {
+                bold: true;
+                text: ' Hospitality';
+                type: 'text';
+              },
+            ];
+            type: 'paragraph';
+          },
+          {
+            children: [
+              {
+                text: ' Feel';
+                type: 'text';
+              },
+              {
+                bold: true;
+                text: ' Effortless';
+                type: 'text';
+              },
+            ];
+            type: 'paragraph';
+          },
+        ]
+      >;
+    section_title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'our mission'>;
+  };
+}
+
+export interface OurStoryOurMissionUnlocalized extends Struct.ComponentSchema {
+  collectionName: 'components_our_story_our_mission_unlocalized_s';
+  info: {
+    displayName: 'Our Mission (Unlocalized)';
+  };
+  attributes: {
+    mission_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface OurStoryOurRootsLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_our_story_our_roots_localized_s';
+  info: {
+    displayName: 'Our Roots (Localized)';
+  };
+  attributes: {
+    description: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<"Our story begins in the heart of Saudi Arabia\u2014a land where generosity, hospitality, and human connection have always been sacred. At ntouch, we took these timeless values and asked a bold question: what if the soul of Arabian hospitality could meet the precision of intelligent technology? The result is a platform that honours tradition while delivering the speed, personalization, and sophistication today's world demands.">;
+    main_title: Schema.Attribute.Blocks &
+      Schema.Attribute.DefaultTo<
+        [
+          {
+            children: [
+              {
+                text: 'Rooted in Heritage,\nBuilt for Tomorrow';
+                type: 'text';
+              },
+            ];
+            type: 'paragraph';
+          },
+        ]
+      >;
+    mini_title: Schema.Attribute.Text & Schema.Attribute.DefaultTo<'our roots'>;
+  };
+}
+
+export interface OurStoryOurRootsUnlocalized extends Struct.ComponentSchema {
+  collectionName: 'components_our_story_our_roots_unlocalized_s';
+  info: {
+    displayName: 'Our Roots (Unlocalized)';
+  };
+  attributes: {
+    roots_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface OurStoryOurStoryHeroLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_our_story_our_story_hero_localized_s';
+  info: {
+    displayName: 'Our Story Hero (Localized)';
+  };
+  attributes: {
+    button: Schema.Attribute.Component<'common.button', false>;
+    description: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<"Born in Saudi Arabia, inspired by the warmth of Arabian hospitality, and built for the future\u2014ntouch reimagines traditional service through the lens of AI and smart luxury. We don't just automate operations; we craft experiences that stay with guests for life.">;
+    hero_title: Schema.Attribute.Blocks &
+      Schema.Attribute.DefaultTo<
+        [
+          {
+            children: [
+              {
+                text: 'From Concept to Creation, ';
+                type: 'text';
+              },
+              {
+                bold: true;
+                text: 'A Journey Untold!';
+                type: 'text';
+              },
+            ];
+            type: 'paragraph';
+          },
+        ]
+      >;
+  };
+}
+
+export interface OurStoryOurStoryHeroUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_our_story_our_story_hero_unlocalized_s';
+  info: {
+    displayName: 'Our Story Hero (Unlocalized)';
+  };
+  attributes: {
+    hero_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface OurStoryReviewSectionLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_our_story_review_section_localized_s';
+  info: {
+    displayName: 'Review Section (Localized)';
+  };
+  attributes: {
+    stat_cards: Schema.Attribute.Component<'our-story.statistic-card', true> &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 5;
+        },
+        number
+      >;
+  };
+}
+
+export interface OurStoryStatisticCard extends Struct.ComponentSchema {
+  collectionName: 'components_our_story_statistic_cards';
+  info: {
+    displayName: 'Statistic Card';
+  };
+  attributes: {
+    card_style: Schema.Attribute.Enumeration<
+      ['stat-card-1', 'stat-card-2', 'stat-card-3']
+    > &
+      Schema.Attribute.DefaultTo<'stat-card-1'>;
+    stat_description: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Properties Automated & Modernized'>;
+    stat_number: Schema.Attribute.String & Schema.Attribute.DefaultTo<'50+'>;
+  };
+}
+
+export interface PmsPmsFeatureTab extends Struct.ComponentSchema {
+  collectionName: 'components_pms_pms_feature_tabs';
+  info: {
+    displayName: 'PMS Feature Tab';
+  };
+  attributes: {
+    is_active: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    tab_order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<1>;
+    tab_title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Multi-Property Management'>;
+  };
+}
+
+export interface PmsPmsFeatureTabsLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_pms_pms_feature_tabs_localized_s';
+  info: {
+    displayName: 'PMS Feature Tabs (Localized)';
+  };
+  attributes: {
+    feature_tabs: Schema.Attribute.Component<'pms.pms-feature-tab', true> &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 10;
+        },
+        number
+      >;
+    section_title: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Explore PMS Exclusive Features'>;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'assets.image': AssetsImage;
       'assets.video': AssetsVideo;
       'common.button': CommonButton;
+      'contact.contact-form-localized': ContactContactFormLocalized;
+      'contact.contact-slider-unlocalized': ContactContactSliderUnlocalized;
       'landing-page.about-us-localized': LandingPageAboutUsLocalized;
       'landing-page.about-us-unlocalized': LandingPageAboutUsUnlocalized;
       'landing-page.faq-accordion-item': LandingPageFaqAccordionItem;
@@ -388,6 +699,18 @@ declare module '@strapi/strapi' {
       'landing-page.testimonial-card': LandingPageTestimonialCard;
       'landing-page.who-we-serve-localized': LandingPageWhoWeServeLocalized;
       'landing-page.who-we-serve-unlocalized': LandingPageWhoWeServeUnlocalized;
+      'our-story.our-clients-localized': OurStoryOurClientsLocalized;
+      'our-story.our-clients-unlocalized': OurStoryOurClientsUnlocalized;
+      'our-story.our-mission-localized': OurStoryOurMissionLocalized;
+      'our-story.our-mission-unlocalized': OurStoryOurMissionUnlocalized;
+      'our-story.our-roots-localized': OurStoryOurRootsLocalized;
+      'our-story.our-roots-unlocalized': OurStoryOurRootsUnlocalized;
+      'our-story.our-story-hero-localized': OurStoryOurStoryHeroLocalized;
+      'our-story.our-story-hero-unlocalized': OurStoryOurStoryHeroUnlocalized;
+      'our-story.review-section-localized': OurStoryReviewSectionLocalized;
+      'our-story.statistic-card': OurStoryStatisticCard;
+      'pms.pms-feature-tab': PmsPmsFeatureTab;
+      'pms.pms-feature-tabs-localized': PmsPmsFeatureTabsLocalized;
     }
   }
 }

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_our_story_our_roots_unlocalized_s",
+  "info": {
+    "displayName": "Our Roots (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "roots_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+} 

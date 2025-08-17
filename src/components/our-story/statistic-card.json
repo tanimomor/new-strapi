@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_our_story_statistic_cards",
+  "info": {
+    "displayName": "Statistic Card"
+  },
+  "options": {},
+  "attributes": {
+    "stat_number": {
+      "type": "string",
+      "default": "50+"
+    },
+    "stat_description": {
+      "type": "string",
+      "default": "Properties Automated & Modernized"
+    },
+    "card_style": {
+      "type": "enumeration",
+      "enum": [
+        "stat-card-1",
+        "stat-card-2", 
+        "stat-card-3"
+      ],
+      "default": "stat-card-1"
+    }
+  },
+  "config": {}
+} 

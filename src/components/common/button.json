@@ -10,6 +10,16 @@
     },
     "link": {
       "type": "string"
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "outline",
+        "light"
+      ],
+      "default": "primary"
     }
   },
   "config": {}

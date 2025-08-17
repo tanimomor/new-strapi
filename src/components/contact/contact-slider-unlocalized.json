@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_contact_contact_slider_unlocalized_s",
+  "info": {
+    "displayName": "Contact Slider (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "slider_images": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": true,
+      "max": 5
+    }
+  },
+  "config": {}
+} 

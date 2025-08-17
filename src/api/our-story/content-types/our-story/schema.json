@@ -1,0 +1,60 @@
+{
+  "kind": "singleType",
+  "collectionName": "our_stories",
+  "info": {
+    "singularName": "our-story",
+    "pluralName": "our-stories",
+    "displayName": "Our Story"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_localized": {
+      "type": "component",
+      "component": "our-story.our-story-hero-localized",
+      "repeatable": false
+    },
+    "hero_unlocalized": {
+      "type": "component",
+      "component": "our-story.our-story-hero-unlocalized",
+      "repeatable": false
+    },
+    "our_roots_localized": {
+      "type": "component",
+      "component": "our-story.our-roots-localized",
+      "repeatable": false
+    },
+    "our_roots_unlocalized": {
+      "type": "component",
+      "component": "our-story.our-roots-unlocalized",
+      "repeatable": false
+    },
+    "our_clients_localized": {
+      "type": "component",
+      "component": "our-story.our-clients-localized",
+      "repeatable": false
+    },
+    "our_clients_unlocalized": {
+      "type": "component",
+      "component": "our-story.our-clients-unlocalized",
+      "repeatable": false
+    },
+    "our_mission_localized": {
+      "type": "component",
+      "component": "our-story.our-mission-localized",
+      "repeatable": false
+    },
+    "our_mission_unlocalized": {
+      "type": "component",
+      "component": "our-story.our-mission-unlocalized",
+      "repeatable": false
+    },
+    "review_section": {
+      "type": "component",
+      "component": "our-story.review-section-localized",
+      "repeatable": false
+    }
+  }
+}

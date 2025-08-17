@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_our_story_review_section_localized_s",
+  "info": {
+    "displayName": "Review Section (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "stat_cards": {
+      "type": "component",
+      "component": "our-story.statistic-card",
+      "repeatable": true,
+      "max": 5
+    }
+  },
+  "config": {}
+} 

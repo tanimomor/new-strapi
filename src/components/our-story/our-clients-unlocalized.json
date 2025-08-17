@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_our_story_our_clients_unlocalized_s",
+  "info": {
+    "displayName": "Our Clients (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "clients_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+} 

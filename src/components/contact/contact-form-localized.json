@@ -1,0 +1,62 @@
+{
+  "collectionName": "components_contact_contact_form_localized_s",
+  "info": {
+    "displayName": "Contact Form (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "form_title": {
+      "type": "string",
+      "default": "Let's Connect"
+    },
+    "back_button_text": {
+      "type": "string",
+      "default": "Back"
+    },
+    "first_name_label": {
+      "type": "string",
+      "default": "First Name"
+    },
+    "first_name_placeholder": {
+      "type": "string",
+      "default": "Enter your first name"
+    },
+    "last_name_label": {
+      "type": "string",
+      "default": "Last Name"
+    },
+    "last_name_placeholder": {
+      "type": "string",
+      "default": "Enter your last name"
+    },
+    "business_email_label": {
+      "type": "string",
+      "default": "Business Email"
+    },
+    "business_email_placeholder": {
+      "type": "string",
+      "default": "Enter your business email"
+    },
+    "contact_number_label": {
+      "type": "string",
+      "default": "Contact Number"
+    },
+    "contact_number_placeholder": {
+      "type": "string",
+      "default": "Enter your phone number"
+    },
+    "message_label": {
+      "type": "string",
+      "default": "How can we help you?"
+    },
+    "message_placeholder": {
+      "type": "string",
+      "default": "Write your message here..."
+    },
+    "submit_button_text": {
+      "type": "string",
+      "default": "Send"
+    }
+  },
+  "config": {}
+} 

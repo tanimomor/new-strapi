@@ -373,6 +373,34 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiContactSalesPageContactSalesPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'contact_sales_pages';
+  info: {
+    displayName: 'Contact Sales Page';
+    pluralName: 'contact-sales-pages';
+    singularName: 'contact-sales-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-sales-page.contact-sales-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiLandingPageLandingPage extends Struct.SingleTypeSchema {
   collectionName: 'landing_pages';
   info: {
@@ -456,70 +484,66 @@ export interface ApiLandingPageLandingPage extends Struct.SingleTypeSchema {
   };
 }
 
-export interface ApiOurStoryPageOurStoryPage extends Struct.SingleTypeSchema {
-  collectionName: 'our_story_pages';
+export interface ApiOurStoryOurStory extends Struct.SingleTypeSchema {
+  collectionName: 'our_stories';
   info: {
-    displayName: 'Our Story Page';
-    pluralName: 'our-story-pages';
-    singularName: 'our-story-page';
+    displayName: 'Our Story';
+    pluralName: 'our-stories';
+    singularName: 'our-story';
   };
   options: {
     draftAndPublish: true;
-  };
-  pluginOptions: {
-    i18n: {
-      localized: true;
-    };
   };
   attributes: {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    locale: Schema.Attribute.String;
+    hero_localized: Schema.Attribute.Component<
+      'our-story.our-story-hero-localized',
+      false
+    >;
+    hero_unlocalized: Schema.Attribute.Component<
+      'our-story.our-story-hero-unlocalized',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
-      'api::our-story-page.our-story-page'
-    >;
-    nothero: Schema.Attribute.DynamicZone<
-      [
-        'landing-page.who-we-serve-unlocalized',
-        'landing-page.who-we-serve-localized',
-        'landing-page.ntouch-edge-unlocalized',
-        'landing-page.ntouch-edge-localized',
-        'landing-page.ntouch-edge-card',
-        'landing-page.landing-pms-unlocalized',
-        'landing-page.landing-pms-localized',
-        'landing-page.hero-unlocalized',
-        'landing-page.hero-localized',
-      ]
+      'api::our-story.our-story'
     > &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: false;
-        };
-      }>;
+      Schema.Attribute.Private;
+    our_clients_localized: Schema.Attribute.Component<
+      'our-story.our-clients-localized',
+      false
+    >;
+    our_clients_unlocalized: Schema.Attribute.Component<
+      'our-story.our-clients-unlocalized',
+      false
+    >;
+    our_mission_localized: Schema.Attribute.Component<
+      'our-story.our-mission-localized',
+      false
+    >;
+    our_mission_unlocalized: Schema.Attribute.Component<
+      'our-story.our-mission-unlocalized',
+      false
+    >;
+    our_roots_localized: Schema.Attribute.Component<
+      'our-story.our-roots-localized',
+      false
+    >;
+    our_roots_unlocalized: Schema.Attribute.Component<
+      'our-story.our-roots-unlocalized',
+      false
+    >;
     publishedAt: Schema.Attribute.DateTime;
+    review_section: Schema.Attribute.Component<
+      'our-story.review-section-localized',
+      false
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Zone: Schema.Attribute.DynamicZone<
-      [
-        'landing-page.who-we-serve-unlocalized',
-        'landing-page.who-we-serve-localized',
-        'landing-page.ntouch-edge-unlocalized',
-        'landing-page.ntouch-edge-localized',
-        'landing-page.ntouch-edge-card',
-        'landing-page.landing-pms-unlocalized',
-        'landing-page.landing-pms-localized',
-        'landing-page.hero-unlocalized',
-        'landing-page.hero-localized',
-      ]
-    > &
-      Schema.Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
   };
 }
 
@@ -1032,8 +1056,9 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::contact-sales-page.contact-sales-page': ApiContactSalesPageContactSalesPage;
       'api::landing-page.landing-page': ApiLandingPageLandingPage;
-      'api::our-story-page.our-story-page': ApiOurStoryPageOurStoryPage;
+      'api::our-story.our-story': ApiOurStoryOurStory;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

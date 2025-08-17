@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_our_story_our_roots_localized_s",
+  "info": {
+    "displayName": "Our Roots (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "mini_title": {
+      "type": "text",
+      "default": "our roots"
+    },
+    "description": {
+      "type": "text",
+      "default": "Our story begins in the heart of Saudi Arabia—a land where generosity, hospitality, and human connection have always been sacred. At ntouch, we took these timeless values and asked a bold question: what if the soul of Arabian hospitality could meet the precision of intelligent technology? The result is a platform that honours tradition while delivering the speed, personalization, and sophistication today's world demands."
+    },
+    "main_title": {
+      "type": "blocks",
+      "default": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "text": "Rooted in Heritage,\nBuilt for Tomorrow",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "config": {}
+} 
