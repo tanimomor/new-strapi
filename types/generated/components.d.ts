@@ -165,25 +165,26 @@ export interface CommonButton extends Struct.ComponentSchema {
   };
 }
 
+export interface CommonFeatureItem extends Struct.ComponentSchema {
+  collectionName: 'components_common_feature_items';
+  info: {
+    displayName: 'Text Item';
+  };
+  attributes: {
+    title: Schema.Attribute.JSON;
+  };
+}
+
 export interface ContactContactFormLocalized extends Struct.ComponentSchema {
   collectionName: 'components_contact_contact_form_localized_s';
   info: {
     displayName: 'Contact Form (Localized)';
   };
   attributes: {
-    back_button_text: Schema.Attribute.String;
-    business_email_label: Schema.Attribute.String;
-    business_email_placeholder: Schema.Attribute.String;
-    contact_number_label: Schema.Attribute.String;
-    contact_number_placeholder: Schema.Attribute.String;
-    first_name_label: Schema.Attribute.String;
-    first_name_placeholder: Schema.Attribute.String;
+    back_button: Schema.Attribute.Component<'common.button', false>;
+    form_section: Schema.Attribute.Component<'contact.form-section', false>;
     form_title: Schema.Attribute.String;
-    last_name_label: Schema.Attribute.String;
-    last_name_placeholder: Schema.Attribute.String;
-    message_label: Schema.Attribute.String;
-    message_placeholder: Schema.Attribute.String;
-    submit_button_text: Schema.Attribute.String;
+    submit_button: Schema.Attribute.Component<'common.button', false>;
   };
 }
 
@@ -213,6 +214,25 @@ export interface ContactContactSliderUnlocalized
   };
   attributes: {
     slider_images: Schema.Attribute.Component<'assets.image', true>;
+  };
+}
+
+export interface ContactFormSection extends Struct.ComponentSchema {
+  collectionName: 'components_contact_form_sections';
+  info: {
+    displayName: 'Form Section';
+  };
+  attributes: {
+    business_email_label: Schema.Attribute.String;
+    business_email_placeholder: Schema.Attribute.String;
+    contact_number_label: Schema.Attribute.String;
+    contact_number_placeholder: Schema.Attribute.String;
+    first_name_label: Schema.Attribute.String;
+    first_name_placeholder: Schema.Attribute.String;
+    last_name_label: Schema.Attribute.String;
+    last_name_placeholder: Schema.Attribute.String;
+    message_label: Schema.Attribute.String;
+    message_placeholder: Schema.Attribute.String;
   };
 }
 
@@ -963,6 +983,26 @@ export interface PmsNtouchEdgeCard extends Struct.ComponentSchema {
   };
 }
 
+export interface PmsNtouchEdgeCardLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_pms_ntouch_edge_card_localized_s';
+  info: {
+    displayName: 'nTouch Edge Card (Localized)';
+  };
+  attributes: {
+    feature_text: Schema.Attribute.String;
+  };
+}
+
+export interface PmsNtouchEdgeCardUnlocalized extends Struct.ComponentSchema {
+  collectionName: 'components_pms_ntouch_edge_card_unlocalized_s';
+  info: {
+    displayName: 'nTouch Edge Card (Unlocalized)';
+  };
+  attributes: {
+    feature_icon: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
 export interface PmsPmsClientLocalized extends Struct.ComponentSchema {
   collectionName: 'components_pms_pms_client_localized_s';
   info: {
@@ -1080,7 +1120,30 @@ export interface PmsPmsNtouchEdgeLocalized extends Struct.ComponentSchema {
     displayName: 'PMS nTouch Edge (Localized)';
   };
   attributes: {
-    feature_boxes: Schema.Attribute.Component<'pms.ntouch-edge-card', true>;
+    feature_box_1: Schema.Attribute.Component<
+      'pms.ntouch-edge-card-localized',
+      false
+    >;
+    feature_box_2: Schema.Attribute.Component<
+      'pms.ntouch-edge-card-localized',
+      false
+    >;
+    feature_box_3: Schema.Attribute.Component<
+      'pms.ntouch-edge-card-localized',
+      false
+    >;
+    feature_box_4: Schema.Attribute.Component<
+      'pms.ntouch-edge-card-localized',
+      false
+    >;
+    feature_box_5: Schema.Attribute.Component<
+      'pms.ntouch-edge-card-localized',
+      false
+    >;
+    feature_box_6: Schema.Attribute.Component<
+      'pms.ntouch-edge-card-localized',
+      false
+    >;
     section_title: Schema.Attribute.String;
   };
 }
@@ -1090,7 +1153,78 @@ export interface PmsPmsNtouchEdgeUnlocalized extends Struct.ComponentSchema {
   info: {
     displayName: 'PMS nTouch Edge (Unlocalized)';
   };
-  attributes: {};
+  attributes: {
+    ntouch_box_1: Schema.Attribute.Component<
+      'pms.ntouch-edge-card-unlocalized',
+      false
+    >;
+    ntouch_box_2: Schema.Attribute.Component<
+      'pms.ntouch-edge-card-unlocalized',
+      false
+    >;
+    ntouch_box_3: Schema.Attribute.Component<
+      'pms.ntouch-edge-card-unlocalized',
+      false
+    >;
+    ntouch_box_4: Schema.Attribute.Component<
+      'pms.ntouch-edge-card-unlocalized',
+      false
+    >;
+    ntouch_box_5: Schema.Attribute.Component<
+      'pms.ntouch-edge-card-unlocalized',
+      false
+    >;
+    ntouch_box_6: Schema.Attribute.Component<
+      'pms.ntouch-edge-card-unlocalized',
+      false
+    >;
+  };
+}
+
+export interface PricingDiscoverLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_discover_localized_s';
+  info: {
+    displayName: 'Discover (Localized)';
+  };
+  attributes: {
+    discover_button_text: Schema.Attribute.String;
+    discover_description: Schema.Attribute.Text;
+    discover_title: Schema.Attribute.RichText;
+  };
+}
+
+export interface PricingDiscoverSectionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_discover_section_localized_s';
+  info: {
+    displayName: 'Discover Section (Localized)';
+  };
+  attributes: {
+    discover_button_text: Schema.Attribute.String;
+    discover_description: Schema.Attribute.Text;
+    discover_title: Schema.Attribute.RichText;
+  };
+}
+
+export interface PricingDiscoverSectionUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_discover_section_unlocalized_s';
+  info: {
+    displayName: 'Discover Section (Unlocalized)';
+  };
+  attributes: {
+    discover_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface PricingDiscoverUnlocalized extends Struct.ComponentSchema {
+  collectionName: 'components_pricing_discover_unlocalized_s';
+  info: {
+    displayName: 'Discover (Unlocalized)';
+  };
+  attributes: {
+    discover_image: Schema.Attribute.Component<'assets.image', false>;
+  };
 }
 
 export interface PricingPricingCard extends Struct.ComponentSchema {
@@ -1099,12 +1233,10 @@ export interface PricingPricingCard extends Struct.ComponentSchema {
     displayName: 'Pricing Card';
   };
   attributes: {
-    button_link: Schema.Attribute.String;
-    button_text: Schema.Attribute.String;
+    button: Schema.Attribute.Component<'common.button', false>;
     card_description: Schema.Attribute.Text;
-    card_icon: Schema.Attribute.Component<'assets.image', false>;
     card_title: Schema.Attribute.String;
-    feature_list: Schema.Attribute.Text;
+    feature_list: Schema.Attribute.Component<'common.feature-item', false>;
   };
 }
 
@@ -1115,7 +1247,7 @@ export interface PricingPricingHeroLocalized extends Struct.ComponentSchema {
   };
   attributes: {
     subtitle: Schema.Attribute.Text;
-    title: Schema.Attribute.Blocks;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -1137,7 +1269,8 @@ export interface PricingPricingSectionLocalized extends Struct.ComponentSchema {
       'pricing.pricing-hero-localized',
       false
     >;
-    pricing_cards: Schema.Attribute.Component<'pricing.pricing-card', true>;
+    left_card: Schema.Attribute.Component<'pricing.pricing-card', false>;
+    right_card: Schema.Attribute.Component<'pricing.pricing-card', false>;
   };
 }
 
@@ -1147,7 +1280,9 @@ export interface PricingPricingSectionUnlocalized
   info: {
     displayName: 'Pricing Section (Unlocalized)';
   };
-  attributes: {};
+  attributes: {
+    card_icon: Schema.Attribute.Component<'assets.image', false>;
+  };
 }
 
 export interface SolutionsByPropertySizeGuideStep
@@ -1229,6 +1364,32 @@ export interface SolutionsByPropertySizeProductCard
   };
 }
 
+export interface SolutionsByPropertySizeProductCardLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_size_product_card_localized_s';
+  info: {
+    displayName: 'Product Card (Localized)';
+  };
+  attributes: {
+    button: Schema.Attribute.Component<'common.button', false>;
+    card_description: Schema.Attribute.Text;
+    card_title: Schema.Attribute.String;
+    feature_tags: Schema.Attribute.String;
+  };
+}
+
+export interface SolutionsByPropertySizeProductCardUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_size_product_card_unlocalized_s';
+  info: {
+    displayName: 'Product Card (Unlocalized)';
+  };
+  attributes: {
+    card_background_image: Schema.Attribute.Component<'assets.image', false>;
+    card_icon: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
 export interface SolutionsByPropertySizeProductSuiteLocalized
   extends Struct.ComponentSchema {
   collectionName: 'components_solutions_by_property_size_product_suite_localized_s';
@@ -1236,9 +1397,13 @@ export interface SolutionsByPropertySizeProductSuiteLocalized
     displayName: 'Product Suite (Localized)';
   };
   attributes: {
-    product_cards: Schema.Attribute.Component<
-      'solutions-by-property-size.product-card',
-      true
+    left_card: Schema.Attribute.Component<
+      'solutions-by-property-size.product-card-localized',
+      false
+    >;
+    right_card: Schema.Attribute.Component<
+      'solutions-by-property-size.product-card-localized',
+      false
     >;
     section_description: Schema.Attribute.Text;
     section_subtitle: Schema.Attribute.String;
@@ -1252,7 +1417,68 @@ export interface SolutionsByPropertySizeProductSuiteUnlocalized
   info: {
     displayName: 'Product Suite (Unlocalized)';
   };
-  attributes: {};
+  attributes: {
+    left_card_images: Schema.Attribute.Component<
+      'solutions-by-property-size.product-card-unlocalized',
+      false
+    >;
+    right_card_images: Schema.Attribute.Component<
+      'solutions-by-property-size.product-card-unlocalized',
+      false
+    >;
+  };
+}
+
+export interface SolutionsByPropertySizePropertySizeSection
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_size_property_size_sections';
+  info: {
+    displayName: 'Property Size Section';
+  };
+  attributes: {
+    hero_localized: Schema.Attribute.Component<
+      'solutions-by-property-size.hero-localized',
+      false
+    >;
+    hero_unlocalized: Schema.Attribute.Component<
+      'solutions-by-property-size.hero-unlocalized',
+      false
+    >;
+    hotel_groups_localized: Schema.Attribute.Component<
+      'solutions-by-property-size.hotel-groups-localized',
+      false
+    >;
+    hotel_groups_unlocalized: Schema.Attribute.Component<
+      'solutions-by-property-size.hotel-groups-unlocalized',
+      false
+    >;
+  };
+}
+
+export interface SolutionsByPropertySizePropertyTypeSection
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_size_property_type_sections';
+  info: {
+    displayName: 'Property Type Section';
+  };
+  attributes: {
+    hero_localized: Schema.Attribute.Component<
+      'solutions-by-property-type.hero-localized',
+      false
+    >;
+    hero_unlocalized: Schema.Attribute.Component<
+      'solutions-by-property-type.hero-unlocalized',
+      false
+    >;
+    hotel_groups_localized: Schema.Attribute.Component<
+      'solutions-by-property-type.hotel-groups-localized',
+      false
+    >;
+    hotel_groups_unlocalized: Schema.Attribute.Component<
+      'solutions-by-property-type.hotel-groups-unlocalized',
+      false
+    >;
+  };
 }
 
 export interface SolutionsByPropertySizeStartGuideLocalized
@@ -1319,6 +1545,31 @@ export interface SolutionsByPropertyTypeHeroUnlocalized
   };
 }
 
+export interface SolutionsByPropertyTypeHotelGroupsLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_type_hotel_groups_localized_s';
+  info: {
+    displayName: 'Hotel Groups (Localized)';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    feature_list: Schema.Attribute.Text;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SolutionsByPropertyTypeHotelGroupsUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_type_hotel_groups_unlocalized_s';
+  info: {
+    displayName: 'Hotel Groups (Unlocalized)';
+  };
+  attributes: {
+    section_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
 export interface SolutionsByPropertyTypeProductCard
   extends Struct.ComponentSchema {
   collectionName: 'components_solutions_by_property_type_product_cards';
@@ -1336,6 +1587,32 @@ export interface SolutionsByPropertyTypeProductCard
   };
 }
 
+export interface SolutionsByPropertyTypeProductCardLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_type_product_card_localized_s';
+  info: {
+    displayName: 'Product Card (Localized)';
+  };
+  attributes: {
+    button: Schema.Attribute.Component<'common.button', false>;
+    card_description: Schema.Attribute.Text;
+    card_title: Schema.Attribute.String;
+    feature_tags: Schema.Attribute.String;
+  };
+}
+
+export interface SolutionsByPropertyTypeProductCardUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_type_product_card_unlocalized_s';
+  info: {
+    displayName: 'Product Card (Unlocalized)';
+  };
+  attributes: {
+    card_background_image: Schema.Attribute.Component<'assets.image', false>;
+    card_icon: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
 export interface SolutionsByPropertyTypeProductSuiteLocalized
   extends Struct.ComponentSchema {
   collectionName: 'components_solutions_by_property_type_product_suite_localized_s';
@@ -1343,9 +1620,13 @@ export interface SolutionsByPropertyTypeProductSuiteLocalized
     displayName: 'Product Suite (Localized)';
   };
   attributes: {
-    product_cards: Schema.Attribute.Component<
-      'solutions-by-property-type.product-card',
-      true
+    left_card: Schema.Attribute.Component<
+      'solutions-by-property-type.product-card-localized',
+      false
+    >;
+    right_card: Schema.Attribute.Component<
+      'solutions-by-property-type.product-card-localized',
+      false
     >;
     section_description: Schema.Attribute.Text;
     section_subtitle: Schema.Attribute.String;
@@ -1359,7 +1640,16 @@ export interface SolutionsByPropertyTypeProductSuiteUnlocalized
   info: {
     displayName: 'Product Suite (Unlocalized)';
   };
-  attributes: {};
+  attributes: {
+    left_card_images: Schema.Attribute.Component<
+      'solutions-by-property-type.product-card-unlocalized',
+      false
+    >;
+    right_card_images: Schema.Attribute.Component<
+      'solutions-by-property-type.product-card-unlocalized',
+      false
+    >;
+  };
 }
 
 export interface SolutionsByPropertyTypeStackedImagesLocalized
@@ -1370,7 +1660,7 @@ export interface SolutionsByPropertyTypeStackedImagesLocalized
   };
   attributes: {
     description: Schema.Attribute.Text;
-    feature_list: Schema.Attribute.Text;
+    feature_list: Schema.Attribute.JSON;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -1598,10 +1888,12 @@ declare module '@strapi/strapi' {
       'client-hotel-detail.progress-step': ClientHotelDetailProgressStep;
       'client-hotel-detail.progress-steps-localized': ClientHotelDetailProgressStepsLocalized;
       'common.button': CommonButton;
+      'common.feature-item': CommonFeatureItem;
       'contact.contact-form-localized': ContactContactFormLocalized;
       'contact.contact-form-unlocalized': ContactContactFormUnlocalized;
       'contact.contact-slider-localized': ContactContactSliderLocalized;
       'contact.contact-slider-unlocalized': ContactContactSliderUnlocalized;
+      'contact.form-section': ContactFormSection;
       'landing-page.about-us-localized': LandingPageAboutUsLocalized;
       'landing-page.about-us-unlocalized': LandingPageAboutUsUnlocalized;
       'landing-page.faq-accordion-item': LandingPageFaqAccordionItem;
@@ -1644,6 +1936,8 @@ declare module '@strapi/strapi' {
       'plans-package-detail.progress-steps-localized': PlansPackageDetailProgressStepsLocalized;
       'pms.client-card': PmsClientCard;
       'pms.ntouch-edge-card': PmsNtouchEdgeCard;
+      'pms.ntouch-edge-card-localized': PmsNtouchEdgeCardLocalized;
+      'pms.ntouch-edge-card-unlocalized': PmsNtouchEdgeCardUnlocalized;
       'pms.pms-client-localized': PmsPmsClientLocalized;
       'pms.pms-client-unlocalized': PmsPmsClientUnlocalized;
       'pms.pms-feature-section-localized': PmsPmsFeatureSectionLocalized;
@@ -1656,6 +1950,10 @@ declare module '@strapi/strapi' {
       'pms.pms-hero-unlocalized': PmsPmsHeroUnlocalized;
       'pms.pms-ntouch-edge-localized': PmsPmsNtouchEdgeLocalized;
       'pms.pms-ntouch-edge-unlocalized': PmsPmsNtouchEdgeUnlocalized;
+      'pricing.discover-localized': PricingDiscoverLocalized;
+      'pricing.discover-section-localized': PricingDiscoverSectionLocalized;
+      'pricing.discover-section-unlocalized': PricingDiscoverSectionUnlocalized;
+      'pricing.discover-unlocalized': PricingDiscoverUnlocalized;
       'pricing.pricing-card': PricingPricingCard;
       'pricing.pricing-hero-localized': PricingPricingHeroLocalized;
       'pricing.pricing-hero-unlocalized': PricingPricingHeroUnlocalized;
@@ -1667,14 +1965,22 @@ declare module '@strapi/strapi' {
       'solutions-by-property-size.hotel-groups-localized': SolutionsByPropertySizeHotelGroupsLocalized;
       'solutions-by-property-size.hotel-groups-unlocalized': SolutionsByPropertySizeHotelGroupsUnlocalized;
       'solutions-by-property-size.product-card': SolutionsByPropertySizeProductCard;
+      'solutions-by-property-size.product-card-localized': SolutionsByPropertySizeProductCardLocalized;
+      'solutions-by-property-size.product-card-unlocalized': SolutionsByPropertySizeProductCardUnlocalized;
       'solutions-by-property-size.product-suite-localized': SolutionsByPropertySizeProductSuiteLocalized;
       'solutions-by-property-size.product-suite-unlocalized': SolutionsByPropertySizeProductSuiteUnlocalized;
+      'solutions-by-property-size.property-size-section': SolutionsByPropertySizePropertySizeSection;
+      'solutions-by-property-size.property-type-section': SolutionsByPropertySizePropertyTypeSection;
       'solutions-by-property-size.start-guide-localized': SolutionsByPropertySizeStartGuideLocalized;
       'solutions-by-property-size.start-guide-unlocalized': SolutionsByPropertySizeStartGuideUnlocalized;
       'solutions-by-property-type.guide-step': SolutionsByPropertyTypeGuideStep;
       'solutions-by-property-type.hero-localized': SolutionsByPropertyTypeHeroLocalized;
       'solutions-by-property-type.hero-unlocalized': SolutionsByPropertyTypeHeroUnlocalized;
+      'solutions-by-property-type.hotel-groups-localized': SolutionsByPropertyTypeHotelGroupsLocalized;
+      'solutions-by-property-type.hotel-groups-unlocalized': SolutionsByPropertyTypeHotelGroupsUnlocalized;
       'solutions-by-property-type.product-card': SolutionsByPropertyTypeProductCard;
+      'solutions-by-property-type.product-card-localized': SolutionsByPropertyTypeProductCardLocalized;
+      'solutions-by-property-type.product-card-unlocalized': SolutionsByPropertyTypeProductCardUnlocalized;
       'solutions-by-property-type.product-suite-localized': SolutionsByPropertyTypeProductSuiteLocalized;
       'solutions-by-property-type.product-suite-unlocalized': SolutionsByPropertyTypeProductSuiteUnlocalized;
       'solutions-by-property-type.stacked-images-localized': SolutionsByPropertyTypeStackedImagesLocalized;

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_solutions_by_property_size_property_size_sections",
+  "info": {
+    "displayName": "Property Size Section"
+  },
+  "options": {},
+  "attributes": {
+    "hero_localized": {
+      "type": "component",
+      "component": "solutions-by-property-size.hero-localized",
+      "repeatable": false
+    },
+    "hero_unlocalized": {
+      "type": "component",
+      "component": "solutions-by-property-size.hero-unlocalized",
+      "repeatable": false
+    },
+    "hotel_groups_localized": {
+      "type": "component",
+      "component": "solutions-by-property-size.hotel-groups-localized",
+      "repeatable": false
+    },
+    "hotel_groups_unlocalized": {
+      "type": "component",
+      "component": "solutions-by-property-size.hotel-groups-unlocalized",
+      "repeatable": false
+    }
+  },
+  "config": {}
+} 

@@ -5,44 +5,23 @@
   },
   "options": {},
   "attributes": {
-    "back_button_text": {
-      "type": "string"
+    "back_button": {
+      "type": "component",
+      "component": "common.button",
+      "repeatable": false
     },
     "form_title": {
       "type": "string"
     },
-    "first_name_label": {
-      "type": "string"
+    "form_section": {
+      "type": "component",
+      "component": "contact.form-section",
+      "repeatable": false
     },
-    "first_name_placeholder": {
-      "type": "string"
-    },
-    "last_name_label": {
-      "type": "string"
-    },
-    "last_name_placeholder": {
-      "type": "string"
-    },
-    "business_email_label": {
-      "type": "string"
-    },
-    "business_email_placeholder": {
-      "type": "string"
-    },
-    "contact_number_label": {
-      "type": "string"
-    },
-    "contact_number_placeholder": {
-      "type": "string"
-    },
-    "message_label": {
-      "type": "string"
-    },
-    "message_placeholder": {
-      "type": "string"
-    },
-    "submit_button_text": {
-      "type": "string"
+    "submit_button": {
+      "type": "component",
+      "component": "common.button",
+      "repeatable": false
     }
   },
   "config": {}

@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_pricing_pricing_cards",
+  "collectionName": "components_solutions_by_property_type_product_card_localized_s",
   "info": {
-    "displayName": "Pricing Card"
+    "displayName": "Product Card (Localized)"
   },
   "options": {},
   "attributes": {
@@ -11,10 +11,9 @@
     "card_description": {
       "type": "text"
     },
-    "feature_list": {
-      "type": "component",
-      "component": "common.feature-item",
-      "repeatable": false
+    "feature_tags": {
+      "type": "string",
+      "repeatable": true
     },
     "button": {
       "type": "component",
@@ -23,4 +22,4 @@
     }
   },
   "config": {}
-}
+} 

@@ -4,31 +4,21 @@
   "info": {
     "singularName": "solutions-by-property-size",
     "pluralName": "solutions-by-property-sizes",
-    "displayName": "Solutions - Property Size"
+    "displayName": "Solutions"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "hero_localized": {
+    "property_size_section": {
       "type": "component",
-      "component": "solutions-by-property-size.hero-localized",
+      "component": "solutions-by-property-size.property-size-section",
       "repeatable": false
     },
-    "hero_unlocalized": {
+    "property_type_section": {
       "type": "component",
-      "component": "solutions-by-property-size.hero-unlocalized",
-      "repeatable": false
-    },
-    "hotel_groups_localized": {
-      "type": "component",
-      "component": "solutions-by-property-size.hotel-groups-localized",
-      "repeatable": false
-    },
-    "hotel_groups_unlocalized": {
-      "type": "component",
-      "component": "solutions-by-property-size.hotel-groups-unlocalized",
+      "component": "solutions-by-property-size.property-type-section",
       "repeatable": false
     },
     "ntouch_edge_localized": {

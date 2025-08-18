@@ -4,5 +4,16 @@
     "displayName": "Product Suite (Unlocalized)"
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "left_card_images": {
+      "type": "component",
+      "component": "solutions-by-property-size.product-card-unlocalized",
+      "repeatable": false
+    },
+    "right_card_images": {
+      "type": "component",
+      "component": "solutions-by-property-size.product-card-unlocalized",
+      "repeatable": false
+    }
+  }
 }

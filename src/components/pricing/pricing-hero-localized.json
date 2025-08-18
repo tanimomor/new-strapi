@@ -6,7 +6,7 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "blocks"
+      "type": "string"
     },
     "subtitle": {
       "type": "text"

@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_contact_form_sections",
+  "info": {
+    "displayName": "Form Section"
+  },
+  "options": {},
+  "attributes": {
+    "first_name_label": {
+      "type": "string"
+    },
+    "first_name_placeholder": {
+      "type": "string"
+    },
+    "last_name_label": {
+      "type": "string"
+    },
+    "last_name_placeholder": {
+      "type": "string"
+    },
+    "business_email_label": {
+      "type": "string"
+    },
+    "business_email_placeholder": {
+      "type": "string"
+    },
+    "contact_number_label": {
+      "type": "string"
+    },
+    "contact_number_placeholder": {
+      "type": "string"
+    },
+    "message_label": {
+      "type": "string"
+    },
+    "message_placeholder": {
+      "type": "string"
+    }
+  },
+  "config": {}
+} 

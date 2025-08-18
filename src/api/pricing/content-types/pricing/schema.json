@@ -20,6 +20,16 @@
       "type": "component",
       "component": "pricing.pricing-section-unlocalized",
       "repeatable": false
+    },
+    "discover_localized": {
+      "type": "component",
+      "component": "pricing.discover-localized",
+      "repeatable": false
+    },
+    "discover_unlocalized": {
+      "type": "component",
+      "component": "pricing.discover-unlocalized",
+      "repeatable": false
     }
   }
 }

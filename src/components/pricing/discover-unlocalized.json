@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_pricing_discover_unlocalized_s",
+  "info": {
+    "displayName": "Discover (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "discover_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+} 

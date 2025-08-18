@@ -4,5 +4,11 @@
     "displayName": "Pricing Section (Unlocalized)"
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "card_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  }
 }

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_pms_ntouch_edge_card_localized_s",
+  "info": {
+    "displayName": "nTouch Edge Card (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "feature_text": {
+      "type": "string"
+    }
+  },
+  "config": {}
+} 

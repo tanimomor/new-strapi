@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_solutions_by_property_size_product_card_unlocalized_s",
+  "info": {
+    "displayName": "Product Card (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "card_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    },
+    "card_background_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+} 

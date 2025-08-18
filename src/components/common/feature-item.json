@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_common_feature_items",
+  "info": {
+    "displayName": "Text Item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "json"
+    }
+  },
+  "config": {}
+} 

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_pricing_discover_section_localized_s",
+  "info": {
+    "displayName": "Discover Section (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "discover_title": {
+      "type": "richtext"
+    },
+    "discover_description": {
+      "type": "text"
+    },
+    "discover_button_text": {
+      "type": "string"
+    }
+  },
+  "config": {}
+} 

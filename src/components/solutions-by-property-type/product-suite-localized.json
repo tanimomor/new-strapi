@@ -14,13 +14,16 @@
     "section_description": {
       "type": "text"
     },
-    "product_cards": {
+    "left_card": {
       "type": "component",
-      "component": "solutions-by-property-type.product-card",
-      "repeatable": true
+      "component": "solutions-by-property-type.product-card-localized",
+      "repeatable": false
+    },
+    "right_card": {
+      "type": "component",
+      "component": "solutions-by-property-type.product-card-localized",
+      "repeatable": false
     }
   },
   "config": {}
 }
-
-

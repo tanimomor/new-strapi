@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_solutions_by_property_type_stacked_images_localized_s",
+  "collectionName": "components_solutions_by_property_type_hotel_groups_localized_s",
   "info": {
-    "displayName": "Stacked Images (Localized)"
+    "displayName": "Hotel Groups (Localized)"
   },
   "options": {},
   "attributes": {
@@ -15,7 +15,8 @@
       "type": "text"
     },
     "feature_list": {
-      "type": "json"
+      "type": "text",
+      "repeatable": true
     }
   },
   "config": {}

@@ -10,10 +10,15 @@
       "component": "pricing.pricing-hero-localized",
       "repeatable": false
     },
-    "pricing_cards": {
+    "left_card": {
       "type": "component",
       "component": "pricing.pricing-card",
-      "repeatable": true
+      "repeatable": false
+    },
+    "right_card": {
+      "type": "component",
+      "component": "pricing.pricing-card",
+      "repeatable": false
     }
   },
   "config": {}

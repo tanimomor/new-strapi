@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_pricing_discover_localized_s",
+  "info": {
+    "displayName": "Discover (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "discover_title": {
+      "type": "richtext"
+    },
+    "discover_description": {
+      "type": "text"
+    },
+    "discover_button_text": {
+      "type": "string"
+    }
+  },
+  "config": {}
+} 

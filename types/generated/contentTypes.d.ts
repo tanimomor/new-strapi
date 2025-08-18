@@ -791,6 +791,14 @@ export interface ApiPricingPricing extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    discover_localized: Schema.Attribute.Component<
+      'pricing.discover-localized',
+      false
+    >;
+    discover_unlocalized: Schema.Attribute.Component<
+      'pricing.discover-unlocalized',
+      false
+    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -816,7 +824,7 @@ export interface ApiSolutionsByPropertySizeSolutionsByPropertySize
   extends Struct.SingleTypeSchema {
   collectionName: 'solutions_by_property_sizes';
   info: {
-    displayName: 'Solutions - Property Size';
+    displayName: 'Solutions';
     pluralName: 'solutions-by-property-sizes';
     singularName: 'solutions-by-property-size';
   };
@@ -827,22 +835,6 @@ export interface ApiSolutionsByPropertySizeSolutionsByPropertySize
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    hero_localized: Schema.Attribute.Component<
-      'solutions-by-property-size.hero-localized',
-      false
-    >;
-    hero_unlocalized: Schema.Attribute.Component<
-      'solutions-by-property-size.hero-unlocalized',
-      false
-    >;
-    hotel_groups_localized: Schema.Attribute.Component<
-      'solutions-by-property-size.hotel-groups-localized',
-      false
-    >;
-    hotel_groups_unlocalized: Schema.Attribute.Component<
-      'solutions-by-property-size.hotel-groups-unlocalized',
-      false
-    >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -863,6 +855,14 @@ export interface ApiSolutionsByPropertySizeSolutionsByPropertySize
     >;
     product_suite_unlocalized: Schema.Attribute.Component<
       'solutions-by-property-size.product-suite-unlocalized',
+      false
+    >;
+    property_size_section: Schema.Attribute.Component<
+      'solutions-by-property-size.property-size-section',
+      false
+    >;
+    property_type_section: Schema.Attribute.Component<
+      'solutions-by-property-size.property-type-section',
       false
     >;
     publishedAt: Schema.Attribute.DateTime;
