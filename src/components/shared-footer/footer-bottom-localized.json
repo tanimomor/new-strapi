@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_footer_footer_bottom_localized_s",
+  "info": {
+    "displayName": "Footer Bottom (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "social_links": {
+      "type": "component",
+      "component": "shared-footer.social-links-localized",
+      "repeatable": false,
+      "displayName": "Social Media Links"
+    },
+    "legal_links": {
+      "type": "component",
+      "component": "shared-footer.legal-links-localized",
+      "repeatable": false,
+      "displayName": "Legal Links"
+    }
+  },
+  "config": {}
+}

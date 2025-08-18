@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_shared_navbar_navbar_unlocalized_s",
+  "info": {
+    "displayName": "Navbar (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false,
+      "displayName": "Navbar Logo"
+    },
+    "products_mega_menu_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false,
+      "displayName": "Products Mega Menu Image"
+    },
+    "solutions_mega_menu_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false,
+      "displayName": "Solutions Mega Menu Image"
+    },
+    "pms_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false,
+      "displayName": "PMS Icon"
+    },
+    "guest_experience_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false,
+      "displayName": "Guest Experience Icon"
+    },
+    "property_type_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false,
+      "displayName": "Property Type Icon"
+    },
+    "property_size_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false,
+      "displayName": "Property Size Icon"
+    }
+  },
+  "config": {}
+}

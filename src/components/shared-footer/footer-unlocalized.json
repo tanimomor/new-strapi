@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_footer_footer_unlocalized_s",
+  "info": {
+    "displayName": "Footer (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "footer_logo": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

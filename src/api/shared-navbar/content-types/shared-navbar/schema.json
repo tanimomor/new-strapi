@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "shared_navbars",
+  "info": {
+    "singularName": "shared-navbar",
+    "pluralName": "shared-navbars",
+    "displayName": "Shared - Navbar"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "navbar_localized": {
+      "type": "component",
+      "component": "shared-navbar.navbar-localized",
+      "repeatable": false
+    },
+    "navbar_unlocalized": {
+      "type": "component",
+      "component": "shared-navbar.navbar-unlocalized",
+      "repeatable": false
+    }
+  }
+}

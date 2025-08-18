@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_navbar_menu_item_localized_s",
+  "info": {
+    "displayName": "Menu Item (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "item_title": {
+      "type": "string",
+      "displayName": "Item Title"
+    },
+    "item_link": {
+      "type": "string",
+      "displayName": "Item Link"
+    }
+  },
+  "config": {}
+}

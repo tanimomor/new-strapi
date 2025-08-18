@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_navbar_solutions_menu_localized_s",
+  "info": {
+    "displayName": "Solutions Menu (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "menu_title": {
+      "type": "string",
+      "displayName": "Menu Title"
+    },
+    "isDropdown": {
+      "type": "boolean",
+      "displayName": "Is Dropdown Menu"
+    },
+    "property_type_section": {
+      "type": "component",
+      "component": "shared-navbar.property-type-section-localized",
+      "repeatable": false,
+      "displayName": "Property Type Section"
+    },
+    "property_size_section": {
+      "type": "component",
+      "component": "shared-navbar.property-size-section-localized",
+      "repeatable": false,
+      "displayName": "Property Size Section"
+    }
+  },
+  "config": {}
+}

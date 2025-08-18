@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_footer_legal_links_localized_s",
+  "info": {
+    "displayName": "Legal Links (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "terms_of_use_link": {
+      "type": "string",
+      "displayName": "Terms of Use Link"
+    },
+    "privacy_policy_link": {
+      "type": "string",
+      "displayName": "Privacy Policy Link"
+    }
+  },
+  "config": {}
+}

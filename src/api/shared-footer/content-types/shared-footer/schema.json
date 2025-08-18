@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "shared_footers",
+  "info": {
+    "singularName": "shared-footer",
+    "pluralName": "shared-footers",
+    "displayName": "Shared - Footer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "footer_localized": {
+      "type": "component",
+      "component": "shared-footer.footer-localized",
+      "repeatable": false
+    },
+    "footer_unlocalized": {
+      "type": "component",
+      "component": "shared-footer.footer-unlocalized",
+      "repeatable": false
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_navbar_pricing_menu_localized_s",
+  "info": {
+    "displayName": "Pricing Menu (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "menu_title": {
+      "type": "string",
+      "displayName": "Menu Title"
+    },
+    "isDropdown": {
+      "type": "boolean",
+      "displayName": "Is Dropdown Menu"
+    },
+    "menu_link": {
+      "type": "string",
+      "displayName": "Menu Link"
+    }
+  },
+  "config": {}
+}

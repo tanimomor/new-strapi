@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_shared_navbar_navbar_localized_s",
+  "info": {
+    "displayName": "Navbar (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "dropdown_menu_1": {
+      "type": "component",
+      "component": "shared-navbar.products-menu-localized",
+      "repeatable": false,
+      "displayName": "Dropdown Menu 1"
+    },
+    "dropdown_menu_2": {
+      "type": "component",
+      "component": "shared-navbar.solutions-menu-localized",
+      "repeatable": false,
+      "displayName": "Dropdown Menu 2"
+    },
+    "nav_link_1": {
+      "type": "component",
+      "component": "shared-navbar.nav-link-localized",
+      "repeatable": false,
+      "displayName": "Navigation Link 1"
+    },
+    "nav_link_2": {
+      "type": "component",
+      "component": "shared-navbar.nav-link-localized",
+      "repeatable": false,
+      "displayName": "Navigation Link 2"
+    }
+  },
+  "config": {}
+}

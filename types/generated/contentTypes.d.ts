@@ -855,6 +855,76 @@ export interface ApiPricingPricing extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiSharedFooterSharedFooter extends Struct.SingleTypeSchema {
+  collectionName: 'shared_footers';
+  info: {
+    displayName: 'Shared - Footer';
+    pluralName: 'shared-footers';
+    singularName: 'shared-footer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    footer_localized: Schema.Attribute.Component<
+      'shared-footer.footer-localized',
+      false
+    >;
+    footer_unlocalized: Schema.Attribute.Component<
+      'shared-footer.footer-unlocalized',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::shared-footer.shared-footer'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiSharedNavbarSharedNavbar extends Struct.SingleTypeSchema {
+  collectionName: 'shared_navbars';
+  info: {
+    displayName: 'Shared - Navbar';
+    pluralName: 'shared-navbars';
+    singularName: 'shared-navbar';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::shared-navbar.shared-navbar'
+    > &
+      Schema.Attribute.Private;
+    navbar_localized: Schema.Attribute.Component<
+      'shared-navbar.navbar-localized',
+      false
+    >;
+    navbar_unlocalized: Schema.Attribute.Component<
+      'shared-navbar.navbar-unlocalized',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiSolutionsByPropertySizeSolutionsByPropertySize
   extends Struct.SingleTypeSchema {
   collectionName: 'solutions_by_property_sizes';
@@ -907,74 +977,6 @@ export interface ApiSolutionsByPropertySizeSolutionsByPropertySize
     >;
     start_guide_unlocalized: Schema.Attribute.Component<
       'solutions-by-property-size.start-guide-unlocalized',
-      false
-    >;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
-export interface ApiSolutionsByPropertyTypeSolutionsByPropertyType
-  extends Struct.SingleTypeSchema {
-  collectionName: 'solutions_by_property_types';
-  info: {
-    displayName: 'Solutions - Property Type';
-    pluralName: 'solutions-by-property-types';
-    singularName: 'solutions-by-property-type';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    hero_localized: Schema.Attribute.Component<
-      'solutions-by-property-type.hero-localized',
-      false
-    >;
-    hero_unlocalized: Schema.Attribute.Component<
-      'solutions-by-property-type.hero-unlocalized',
-      false
-    >;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::solutions-by-property-type.solutions-by-property-type'
-    > &
-      Schema.Attribute.Private;
-    ntouch_edge_localized: Schema.Attribute.Component<
-      'pms.pms-ntouch-edge-localized',
-      false
-    >;
-    ntouch_edge_unlocalized: Schema.Attribute.Component<
-      'pms.pms-ntouch-edge-unlocalized',
-      false
-    >;
-    product_suite_localized: Schema.Attribute.Component<
-      'solutions-by-property-type.product-suite-localized',
-      false
-    >;
-    product_suite_unlocalized: Schema.Attribute.Component<
-      'solutions-by-property-type.product-suite-unlocalized',
-      false
-    >;
-    publishedAt: Schema.Attribute.DateTime;
-    stacked_images_localized: Schema.Attribute.Component<
-      'solutions-by-property-type.stacked-images-localized',
-      false
-    >;
-    stacked_images_unlocalized: Schema.Attribute.Component<
-      'solutions-by-property-type.stacked-images-unlocalized',
-      false
-    >;
-    start_guide_localized: Schema.Attribute.Component<
-      'solutions-by-property-type.start-guide-localized',
-      false
-    >;
-    start_guide_unlocalized: Schema.Attribute.Component<
-      'solutions-by-property-type.start-guide-unlocalized',
       false
     >;
     updatedAt: Schema.Attribute.DateTime;
@@ -1536,8 +1538,9 @@ declare module '@strapi/strapi' {
       'api::plans-package-detail.plans-package-detail': ApiPlansPackageDetailPlansPackageDetail;
       'api::pms.pms': ApiPmsPms;
       'api::pricing.pricing': ApiPricingPricing;
+      'api::shared-footer.shared-footer': ApiSharedFooterSharedFooter;
+      'api::shared-navbar.shared-navbar': ApiSharedNavbarSharedNavbar;
       'api::solutions-by-property-size.solutions-by-property-size': ApiSolutionsByPropertySizeSolutionsByPropertySize;
-      'api::solutions-by-property-type.solutions-by-property-type': ApiSolutionsByPropertyTypeSolutionsByPropertyType;
       'api::summary-and-payment.summary-and-payment': ApiSummaryAndPaymentSummaryAndPayment;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_footer_footer_hero_localized_s",
+  "info": {
+    "displayName": "Footer Hero (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "displayName": "Hero Title"
+    },
+    "subtitle": {
+      "type": "text",
+      "displayName": "Hero Subtitle"
+    },
+    "button_text": {
+      "type": "string",
+      "displayName": "Button Text"
+    },
+    "button_link": {
+      "type": "string",
+      "displayName": "Button Link"
+    }
+  },
+  "config": {}
+}

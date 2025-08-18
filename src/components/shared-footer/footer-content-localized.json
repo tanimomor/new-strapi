@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_shared_footer_footer_content_localized_s",
+  "info": {
+    "displayName": "Footer Content (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "bio_title": {
+      "type": "string",
+      "displayName": "Company Bio Title"
+    },
+    "bio_description": {
+      "type": "text",
+      "displayName": "Company Bio Description"
+    },
+    "footer_section_1": {
+      "type": "component",
+      "component": "shared-footer.footer-links-section-localized",
+      "repeatable": false,
+      "displayName": "Footer Section 1"
+    },
+    "footer_section_2": {
+      "type": "component",
+      "component": "shared-footer.footer-links-section-localized",
+      "repeatable": false,
+      "displayName": "Footer Section 2"
+    },
+    "footer_section_3": {
+      "type": "component",
+      "component": "shared-footer.footer-links-section-localized",
+      "repeatable": false,
+      "displayName": "Footer Section 3"
+    }
+  },
+  "config": {}
+}

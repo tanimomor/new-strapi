@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_footer_footer_link_item_localized_s",
+  "info": {
+    "displayName": "Footer Link Item (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "link_title": {
+      "type": "string",
+      "displayName": "Link Title"
+    },
+    "link_url": {
+      "type": "string",
+      "displayName": "Link URL"
+    }
+  },
+  "config": {}
+}

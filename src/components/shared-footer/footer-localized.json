@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_footer_footer_localized_s",
+  "info": {
+    "displayName": "Footer (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "footer_top": {
+      "type": "component",
+      "component": "shared-footer.footer-hero-localized",
+      "repeatable": false
+    },
+    "footer_content": {
+      "type": "component",
+      "component": "shared-footer.footer-content-localized",
+      "repeatable": false
+    },
+    "footer_bottom": {
+      "type": "component",
+      "component": "shared-footer.footer-bottom-localized",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_navbar_products_menu_localized_s",
+  "info": {
+    "displayName": "Products Menu (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "menu_title": {
+      "type": "string",
+      "displayName": "Menu Title"
+    },
+    "isDropdown": {
+      "type": "boolean",
+      "displayName": "Is Dropdown Menu"
+    },
+    "pms_section": {
+      "type": "component",
+      "component": "shared-navbar.pms-section-localized",
+      "repeatable": false,
+      "displayName": "PMS Section"
+    },
+    "guest_experience_section": {
+      "type": "component",
+      "component": "shared-navbar.guest-experience-section-localized",
+      "repeatable": false,
+      "displayName": "Guest Experience Section"
+    }
+  },
+  "config": {}
+}

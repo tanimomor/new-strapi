@@ -1368,6 +1368,329 @@ export interface PricingPricingSectionUnlocalized
   };
 }
 
+export interface SharedFooterFooterBottomLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_shared_footer_footer_bottom_localized_s';
+  info: {
+    displayName: 'Footer Bottom (Localized)';
+  };
+  attributes: {
+    legal_links: Schema.Attribute.Component<
+      'shared-footer.legal-links-localized',
+      false
+    >;
+    social_links: Schema.Attribute.Component<
+      'shared-footer.social-links-localized',
+      false
+    >;
+  };
+}
+
+export interface SharedFooterFooterContentLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_shared_footer_footer_content_localized_s';
+  info: {
+    displayName: 'Footer Content (Localized)';
+  };
+  attributes: {
+    bio_description: Schema.Attribute.Text;
+    bio_title: Schema.Attribute.String;
+    footer_section_1: Schema.Attribute.Component<
+      'shared-footer.footer-links-section-localized',
+      false
+    >;
+    footer_section_2: Schema.Attribute.Component<
+      'shared-footer.footer-links-section-localized',
+      false
+    >;
+    footer_section_3: Schema.Attribute.Component<
+      'shared-footer.footer-links-section-localized',
+      false
+    >;
+  };
+}
+
+export interface SharedFooterFooterHeroLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_shared_footer_footer_hero_localized_s';
+  info: {
+    displayName: 'Footer Hero (Localized)';
+  };
+  attributes: {
+    button_link: Schema.Attribute.String;
+    button_text: Schema.Attribute.String;
+    subtitle: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedFooterFooterLinkItemLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_shared_footer_footer_link_item_localized_s';
+  info: {
+    displayName: 'Footer Link Item (Localized)';
+  };
+  attributes: {
+    link_title: Schema.Attribute.String;
+    link_url: Schema.Attribute.String;
+  };
+}
+
+export interface SharedFooterFooterLinksSectionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_shared_footer_footer_links_section_localized_s';
+  info: {
+    displayName: 'Footer Links Section (Localized)';
+  };
+  attributes: {
+    links: Schema.Attribute.Component<
+      'shared-footer.footer-link-item-localized',
+      true
+    >;
+    section_title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedFooterFooterLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_shared_footer_footer_localized_s';
+  info: {
+    displayName: 'Footer (Localized)';
+  };
+  attributes: {
+    footer_bottom: Schema.Attribute.Component<
+      'shared-footer.footer-bottom-localized',
+      false
+    >;
+    footer_content: Schema.Attribute.Component<
+      'shared-footer.footer-content-localized',
+      false
+    >;
+    footer_top: Schema.Attribute.Component<
+      'shared-footer.footer-hero-localized',
+      false
+    >;
+  };
+}
+
+export interface SharedFooterFooterUnlocalized extends Struct.ComponentSchema {
+  collectionName: 'components_shared_footer_footer_unlocalized_s';
+  info: {
+    displayName: 'Footer (Unlocalized)';
+  };
+  attributes: {
+    footer_logo: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface SharedFooterLegalLinksLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_shared_footer_legal_links_localized_s';
+  info: {
+    displayName: 'Legal Links (Localized)';
+  };
+  attributes: {
+    privacy_policy_link: Schema.Attribute.String;
+    terms_of_use_link: Schema.Attribute.String;
+  };
+}
+
+export interface SharedFooterSocialLinksLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_shared_footer_social_links_localized_s';
+  info: {
+    displayName: 'Social Links (Localized)';
+  };
+  attributes: {
+    facebook_link: Schema.Attribute.String;
+    instagram_link: Schema.Attribute.String;
+    twitter_link: Schema.Attribute.String;
+    youtube_link: Schema.Attribute.String;
+  };
+}
+
+export interface SharedNavbarGuestExperienceSectionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_shared_navbar_guest_experience_section_localized_s';
+  info: {
+    displayName: 'Guest Experience Section (Localized)';
+  };
+  attributes: {
+    menu_items: Schema.Attribute.Component<
+      'shared-navbar.menu-item-localized',
+      true
+    >;
+    section_link: Schema.Attribute.String;
+    section_title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedNavbarMenuItemLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_shared_navbar_menu_item_localized_s';
+  info: {
+    displayName: 'Menu Item (Localized)';
+  };
+  attributes: {
+    item_link: Schema.Attribute.String;
+    item_title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedNavbarNavLinkLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_shared_navbar_nav_link_localized_s';
+  info: {
+    displayName: 'Nav Link (Localized)';
+  };
+  attributes: {
+    link_title: Schema.Attribute.String;
+    link_url: Schema.Attribute.String;
+  };
+}
+
+export interface SharedNavbarNavbarLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_shared_navbar_navbar_localized_s';
+  info: {
+    displayName: 'Navbar (Localized)';
+  };
+  attributes: {
+    dropdown_menu_1: Schema.Attribute.Component<
+      'shared-navbar.products-menu-localized',
+      false
+    >;
+    dropdown_menu_2: Schema.Attribute.Component<
+      'shared-navbar.solutions-menu-localized',
+      false
+    >;
+    nav_link_1: Schema.Attribute.Component<
+      'shared-navbar.nav-link-localized',
+      false
+    >;
+    nav_link_2: Schema.Attribute.Component<
+      'shared-navbar.nav-link-localized',
+      false
+    >;
+  };
+}
+
+export interface SharedNavbarNavbarUnlocalized extends Struct.ComponentSchema {
+  collectionName: 'components_shared_navbar_navbar_unlocalized_s';
+  info: {
+    displayName: 'Navbar (Unlocalized)';
+  };
+  attributes: {
+    guest_experience_icon: Schema.Attribute.Component<'assets.image', false>;
+    logo: Schema.Attribute.Component<'assets.image', false>;
+    pms_icon: Schema.Attribute.Component<'assets.image', false>;
+    products_mega_menu_image: Schema.Attribute.Component<'assets.image', false>;
+    property_size_icon: Schema.Attribute.Component<'assets.image', false>;
+    property_type_icon: Schema.Attribute.Component<'assets.image', false>;
+    solutions_mega_menu_image: Schema.Attribute.Component<
+      'assets.image',
+      false
+    >;
+  };
+}
+
+export interface SharedNavbarPmsSectionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_shared_navbar_pms_section_localized_s';
+  info: {
+    displayName: 'PMS Section (Localized)';
+  };
+  attributes: {
+    menu_items: Schema.Attribute.Component<
+      'shared-navbar.menu-item-localized',
+      true
+    >;
+    section_link: Schema.Attribute.String;
+    section_title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedNavbarPricingMenuLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_shared_navbar_pricing_menu_localized_s';
+  info: {
+    displayName: 'Pricing Menu (Localized)';
+  };
+  attributes: {
+    isDropdown: Schema.Attribute.Boolean;
+    menu_link: Schema.Attribute.String;
+    menu_title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedNavbarProductsMenuLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_shared_navbar_products_menu_localized_s';
+  info: {
+    displayName: 'Products Menu (Localized)';
+  };
+  attributes: {
+    guest_experience_section: Schema.Attribute.Component<
+      'shared-navbar.guest-experience-section-localized',
+      false
+    >;
+    isDropdown: Schema.Attribute.Boolean;
+    menu_title: Schema.Attribute.String;
+    pms_section: Schema.Attribute.Component<
+      'shared-navbar.pms-section-localized',
+      false
+    >;
+  };
+}
+
+export interface SharedNavbarPropertySizeSectionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_shared_navbar_property_size_section_localized_s';
+  info: {
+    displayName: 'Property Size Section (Localized)';
+  };
+  attributes: {
+    menu_items: Schema.Attribute.Component<
+      'shared-navbar.menu-item-localized',
+      true
+    >;
+    section_link: Schema.Attribute.String;
+    section_title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedNavbarPropertyTypeSectionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_shared_navbar_property_type_section_localized_s';
+  info: {
+    displayName: 'Property Type Section (Localized)';
+  };
+  attributes: {
+    menu_items: Schema.Attribute.Component<
+      'shared-navbar.menu-item-localized',
+      true
+    >;
+    section_link: Schema.Attribute.String;
+    section_title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedNavbarSolutionsMenuLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_shared_navbar_solutions_menu_localized_s';
+  info: {
+    displayName: 'Solutions Menu (Localized)';
+  };
+  attributes: {
+    isDropdown: Schema.Attribute.Boolean;
+    menu_title: Schema.Attribute.String;
+    property_size_section: Schema.Attribute.Component<
+      'shared-navbar.property-size-section-localized',
+      false
+    >;
+    property_type_section: Schema.Attribute.Component<
+      'shared-navbar.property-type-section-localized',
+      false
+    >;
+  };
+}
+
 export interface SolutionsByPropertySizeGuideStep
   extends Struct.ComponentSchema {
   collectionName: 'components_solutions_by_property_size_guide_steps';
@@ -2048,6 +2371,26 @@ declare module '@strapi/strapi' {
       'pricing.pricing-hero-unlocalized': PricingPricingHeroUnlocalized;
       'pricing.pricing-section-localized': PricingPricingSectionLocalized;
       'pricing.pricing-section-unlocalized': PricingPricingSectionUnlocalized;
+      'shared-footer.footer-bottom-localized': SharedFooterFooterBottomLocalized;
+      'shared-footer.footer-content-localized': SharedFooterFooterContentLocalized;
+      'shared-footer.footer-hero-localized': SharedFooterFooterHeroLocalized;
+      'shared-footer.footer-link-item-localized': SharedFooterFooterLinkItemLocalized;
+      'shared-footer.footer-links-section-localized': SharedFooterFooterLinksSectionLocalized;
+      'shared-footer.footer-localized': SharedFooterFooterLocalized;
+      'shared-footer.footer-unlocalized': SharedFooterFooterUnlocalized;
+      'shared-footer.legal-links-localized': SharedFooterLegalLinksLocalized;
+      'shared-footer.social-links-localized': SharedFooterSocialLinksLocalized;
+      'shared-navbar.guest-experience-section-localized': SharedNavbarGuestExperienceSectionLocalized;
+      'shared-navbar.menu-item-localized': SharedNavbarMenuItemLocalized;
+      'shared-navbar.nav-link-localized': SharedNavbarNavLinkLocalized;
+      'shared-navbar.navbar-localized': SharedNavbarNavbarLocalized;
+      'shared-navbar.navbar-unlocalized': SharedNavbarNavbarUnlocalized;
+      'shared-navbar.pms-section-localized': SharedNavbarPmsSectionLocalized;
+      'shared-navbar.pricing-menu-localized': SharedNavbarPricingMenuLocalized;
+      'shared-navbar.products-menu-localized': SharedNavbarProductsMenuLocalized;
+      'shared-navbar.property-size-section-localized': SharedNavbarPropertySizeSectionLocalized;
+      'shared-navbar.property-type-section-localized': SharedNavbarPropertyTypeSectionLocalized;
+      'shared-navbar.solutions-menu-localized': SharedNavbarSolutionsMenuLocalized;
       'solutions-by-property-size.guide-step': SolutionsByPropertySizeGuideStep;
       'solutions-by-property-size.hero-localized': SolutionsByPropertySizeHeroLocalized;
       'solutions-by-property-size.hero-unlocalized': SolutionsByPropertySizeHeroUnlocalized;

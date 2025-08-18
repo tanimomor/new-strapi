@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_footer_social_links_localized_s",
+  "info": {
+    "displayName": "Social Links (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "facebook_link": {
+      "type": "string",
+      "displayName": "Facebook Link"
+    },
+    "instagram_link": {
+      "type": "string",
+      "displayName": "Instagram Link"
+    },
+    "twitter_link": {
+      "type": "string",
+      "displayName": "Twitter Link"
+    },
+    "youtube_link": {
+      "type": "string",
+      "displayName": "YouTube Link"
+    }
+  },
+  "config": {}
+}

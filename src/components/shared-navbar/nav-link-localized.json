@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_shared_navbar_nav_link_localized_s",
+  "info": {
+    "displayName": "Nav Link (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "link_title": {
+      "type": "string",
+      "displayName": "Link Title"
+    },
+    "link_url": {
+      "type": "string",
+      "displayName": "Link URL"
+    }
+  },
+  "config": {}
+}
