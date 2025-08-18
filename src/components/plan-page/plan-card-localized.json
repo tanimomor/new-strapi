@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_plan_page_plan_card_localized_s",
+  "info": {
+    "displayName": "Plan Card (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "card_title": {
+      "type": "string"
+    },
+    "card_description": {
+      "type": "text"
+    },
+    "price_amount": {
+      "type": "string"
+    },
+    "price_period": {
+      "type": "string"
+    },
+    "features": {
+      "type": "text",
+      "repeatable": true
+    },
+    "button_text": {
+      "type": "string"
+    },
+    "button_link": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

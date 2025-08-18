@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_plan_page_plan_page_localized_s",
+  "info": {
+    "displayName": "Plan Page (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "component": "plan-page.plan-hero-localized",
+      "repeatable": false
+    },
+    "starting_package": {
+      "type": "component",
+      "component": "plan-page.plan-card-localized",
+      "repeatable": false
+    },
+    "enterprise": {
+      "type": "component",
+      "component": "plan-page.plan-card-localized",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

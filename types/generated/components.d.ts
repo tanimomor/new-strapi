@@ -788,6 +788,89 @@ export interface OurStoryStatisticCard extends Struct.ComponentSchema {
   };
 }
 
+export interface PlanPagePlanCardLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_plan_page_plan_card_localized_s';
+  info: {
+    displayName: 'Plan Card (Localized)';
+  };
+  attributes: {
+    button_link: Schema.Attribute.String;
+    button_text: Schema.Attribute.String;
+    card_description: Schema.Attribute.Text;
+    card_title: Schema.Attribute.String;
+    features: Schema.Attribute.Text;
+    price_amount: Schema.Attribute.String;
+    price_period: Schema.Attribute.String;
+  };
+}
+
+export interface PlanPagePlanCardUnlocalized extends Struct.ComponentSchema {
+  collectionName: 'components_plan_page_plan_card_unlocalized_s';
+  info: {
+    displayName: 'Plan Card (Unlocalized)';
+  };
+  attributes: {
+    button_link: Schema.Attribute.String;
+    button_text: Schema.Attribute.String;
+    card_description: Schema.Attribute.Text;
+    card_title: Schema.Attribute.String;
+    features: Schema.Attribute.Text;
+    price_amount: Schema.Attribute.String;
+    price_period: Schema.Attribute.String;
+  };
+}
+
+export interface PlanPagePlanHeroLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_plan_page_plan_hero_localized_s';
+  info: {
+    displayName: 'Plan Hero (Localized)';
+  };
+  attributes: {
+    subtitle: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PlanPagePlanHeroUnlocalized extends Struct.ComponentSchema {
+  collectionName: 'components_plan_page_plan_hero_unlocalized_s';
+  info: {
+    displayName: 'Plan Hero (Unlocalized)';
+  };
+  attributes: {
+    subtitle: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PlanPagePlanPageLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_plan_page_plan_page_localized_s';
+  info: {
+    displayName: 'Plan Page (Localized)';
+  };
+  attributes: {
+    enterprise: Schema.Attribute.Component<
+      'plan-page.plan-card-localized',
+      false
+    >;
+    hero: Schema.Attribute.Component<'plan-page.plan-hero-localized', false>;
+    starting_package: Schema.Attribute.Component<
+      'plan-page.plan-card-localized',
+      false
+    >;
+  };
+}
+
+export interface PlanPagePlanPageUnlocalized extends Struct.ComponentSchema {
+  collectionName: 'components_plan_page_plan_page_unlocalized_s';
+  info: {
+    displayName: 'Plan Page (Unlocalized)';
+  };
+  attributes: {
+    background_image: Schema.Attribute.Component<'assets.image', false>;
+    logo: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
 export interface PlansPackageDetailAddonItem extends Struct.ComponentSchema {
   collectionName: 'components_plans_package_detail_addon_items';
   info: {
@@ -1923,6 +2006,12 @@ declare module '@strapi/strapi' {
       'our-story.our-story-hero-unlocalized': OurStoryOurStoryHeroUnlocalized;
       'our-story.review-section-localized': OurStoryReviewSectionLocalized;
       'our-story.statistic-card': OurStoryStatisticCard;
+      'plan-page.plan-card-localized': PlanPagePlanCardLocalized;
+      'plan-page.plan-card-unlocalized': PlanPagePlanCardUnlocalized;
+      'plan-page.plan-hero-localized': PlanPagePlanHeroLocalized;
+      'plan-page.plan-hero-unlocalized': PlanPagePlanHeroUnlocalized;
+      'plan-page.plan-page-localized': PlanPagePlanPageLocalized;
+      'plan-page.plan-page-unlocalized': PlanPagePlanPageUnlocalized;
       'plans-package-detail.addon-item': PlansPackageDetailAddonItem;
       'plans-package-detail.addons-section-localized': PlansPackageDetailAddonsSectionLocalized;
       'plans-package-detail.feature-accordion-localized': PlansPackageDetailFeatureAccordionLocalized;

@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "plan_pages",
+  "info": {
+    "singularName": "plan-page",
+    "pluralName": "plan-pages",
+    "displayName": "Plan Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "plan_page_localized": {
+      "type": "component",
+      "component": "plan-page.plan-page-localized",
+      "repeatable": false
+    },
+    "plan_page_unlocalized": {
+      "type": "component",
+      "component": "plan-page.plan-page-unlocalized",
+      "repeatable": false
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_plan_page_plan_hero_unlocalized_s",
+  "info": {
+    "displayName": "Plan Hero (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

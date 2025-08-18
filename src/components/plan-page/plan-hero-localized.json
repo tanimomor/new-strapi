@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_plan_page_plan_hero_localized_s",
+  "info": {
+    "displayName": "Plan Hero (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

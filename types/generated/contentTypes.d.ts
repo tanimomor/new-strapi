@@ -672,6 +672,41 @@ export interface ApiOurStoryOurStory extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiPlanPagePlanPage extends Struct.SingleTypeSchema {
+  collectionName: 'plan_pages';
+  info: {
+    displayName: 'Plan Page';
+    pluralName: 'plan-pages';
+    singularName: 'plan-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::plan-page.plan-page'
+    > &
+      Schema.Attribute.Private;
+    plan_page_localized: Schema.Attribute.Component<
+      'plan-page.plan-page-localized',
+      false
+    >;
+    plan_page_unlocalized: Schema.Attribute.Component<
+      'plan-page.plan-page-unlocalized',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPlansPackageDetailPlansPackageDetail
   extends Struct.SingleTypeSchema {
   collectionName: 'plans_package_details';
@@ -1497,6 +1532,7 @@ declare module '@strapi/strapi' {
       'api::contact.contact': ApiContactContact;
       'api::landing-page.landing-page': ApiLandingPageLandingPage;
       'api::our-story.our-story': ApiOurStoryOurStory;
+      'api::plan-page.plan-page': ApiPlanPagePlanPage;
       'api::plans-package-detail.plans-package-detail': ApiPlansPackageDetailPlansPackageDetail;
       'api::pms.pms': ApiPmsPms;
       'api::pricing.pricing': ApiPricingPricing;
