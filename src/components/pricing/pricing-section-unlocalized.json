@@ -5,10 +5,17 @@
   },
   "options": {},
   "attributes": {
-    "card_icon": {
+    "left_card_logo": {
       "type": "component",
       "component": "assets.image",
-      "repeatable": false
+      "repeatable": false,
+      "displayName": "Left Card Logo"
+    },
+    "right_card_logo": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false,
+      "displayName": "Right Card Logo"
     }
   }
 }

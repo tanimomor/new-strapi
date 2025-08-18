@@ -412,7 +412,7 @@ export interface ApiClientHotelDetailClientHotelDetail
 export interface ApiContactContact extends Struct.SingleTypeSchema {
   collectionName: 'contacts';
   info: {
-    displayName: 'Contact';
+    displayName: 'Contact Page';
     pluralName: 'contacts';
     singularName: 'contact';
   };
@@ -455,7 +455,7 @@ export interface ApiContactContact extends Struct.SingleTypeSchema {
 export interface ApiLandingPageLandingPage extends Struct.SingleTypeSchema {
   collectionName: 'landing_pages';
   info: {
-    displayName: 'LandingPage';
+    displayName: 'Landing Page';
     pluralName: 'landing-pages';
     singularName: 'landing-page';
   };
@@ -612,7 +612,7 @@ export interface ApiLandingPageLandingPage extends Struct.SingleTypeSchema {
 export interface ApiOurStoryOurStory extends Struct.SingleTypeSchema {
   collectionName: 'our_stories';
   info: {
-    displayName: 'Our Story';
+    displayName: 'Our Story Page';
     pluralName: 'our-stories';
     singularName: 'our-story';
   };
@@ -767,19 +767,11 @@ export interface ApiPmsPms extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     feature_section_localized: Schema.Attribute.Component<
       'pms.pms-feature-section-localized',
-      false
-    >;
-    feature_section_reverse_localized: Schema.Attribute.Component<
-      'pms.pms-feature-section-reverse-localized',
-      false
-    >;
-    feature_section_reverse_unlocalized: Schema.Attribute.Component<
-      'pms.pms-feature-section-reverse-unlocalized',
-      false
+      true
     >;
     feature_section_unlocalized: Schema.Attribute.Component<
       'pms.pms-feature-section-unlocalized',
-      false
+      true
     >;
     feature_tabs_localized: Schema.Attribute.Component<
       'pms.pms-feature-tabs-localized',
@@ -797,14 +789,6 @@ export interface ApiPmsPms extends Struct.SingleTypeSchema {
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::pms.pms'> &
       Schema.Attribute.Private;
-    ntouch_edge_localized: Schema.Attribute.Component<
-      'pms.pms-ntouch-edge-localized',
-      false
-    >;
-    ntouch_edge_unlocalized: Schema.Attribute.Component<
-      'pms.pms-ntouch-edge-unlocalized',
-      false
-    >;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -815,7 +799,7 @@ export interface ApiPmsPms extends Struct.SingleTypeSchema {
 export interface ApiPricingPricing extends Struct.SingleTypeSchema {
   collectionName: 'pricings';
   info: {
-    displayName: 'Pricing';
+    displayName: 'Pricing Page';
     pluralName: 'pricings';
     singularName: 'pricing';
   };
@@ -865,6 +849,11 @@ export interface ApiSharedFooterSharedFooter extends Struct.SingleTypeSchema {
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -872,17 +861,26 @@ export interface ApiSharedFooterSharedFooter extends Struct.SingleTypeSchema {
     footer_localized: Schema.Attribute.Component<
       'shared-footer.footer-localized',
       false
-    >;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     footer_unlocalized: Schema.Attribute.Component<
       'shared-footer.footer-unlocalized',
       false
-    >;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    locale: Schema.Attribute.String;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
       'api::shared-footer.shared-footer'
-    > &
-      Schema.Attribute.Private;
+    >;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -900,6 +898,56 @@ export interface ApiSharedNavbarSharedNavbar extends Struct.SingleTypeSchema {
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::shared-navbar.shared-navbar'
+    >;
+    navbar_localized: Schema.Attribute.Component<
+      'shared-navbar.navbar-localized',
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    navbar_unlocalized: Schema.Attribute.Component<
+      'shared-navbar.navbar-unlocalized',
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiSharedNtouchEdgeSharedNtouchEdge
+  extends Struct.SingleTypeSchema {
+  collectionName: 'shared_ntouch_edges';
+  info: {
+    displayName: 'Shared - Ntouch Edge';
+    pluralName: 'shared-ntouch-edges';
+    singularName: 'shared-ntouch-edge';
+  };
+  options: {
+    draftAndPublish: true;
+  };
   attributes: {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -907,15 +955,15 @@ export interface ApiSharedNavbarSharedNavbar extends Struct.SingleTypeSchema {
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
-      'api::shared-navbar.shared-navbar'
+      'api::shared-ntouch-edge.shared-ntouch-edge'
     > &
       Schema.Attribute.Private;
-    navbar_localized: Schema.Attribute.Component<
-      'shared-navbar.navbar-localized',
+    ntouch_edge_localized: Schema.Attribute.Component<
+      'landing-page.ntouch-edge-localized',
       false
     >;
-    navbar_unlocalized: Schema.Attribute.Component<
-      'shared-navbar.navbar-unlocalized',
+    ntouch_edge_unlocalized: Schema.Attribute.Component<
+      'landing-page.ntouch-edge-unlocalized',
       false
     >;
     publishedAt: Schema.Attribute.DateTime;
@@ -929,7 +977,7 @@ export interface ApiSolutionsByPropertySizeSolutionsByPropertySize
   extends Struct.SingleTypeSchema {
   collectionName: 'solutions_by_property_sizes';
   info: {
-    displayName: 'Solutions';
+    displayName: 'Solutions Pages';
     pluralName: 'solutions-by-property-sizes';
     singularName: 'solutions-by-property-size';
   };
@@ -946,14 +994,6 @@ export interface ApiSolutionsByPropertySizeSolutionsByPropertySize
       'api::solutions-by-property-size.solutions-by-property-size'
     > &
       Schema.Attribute.Private;
-    ntouch_edge_localized: Schema.Attribute.Component<
-      'pms.pms-ntouch-edge-localized',
-      false
-    >;
-    ntouch_edge_unlocalized: Schema.Attribute.Component<
-      'pms.pms-ntouch-edge-unlocalized',
-      false
-    >;
     product_suite_localized: Schema.Attribute.Component<
       'solutions-by-property-size.product-suite-localized',
       false
@@ -1540,6 +1580,7 @@ declare module '@strapi/strapi' {
       'api::pricing.pricing': ApiPricingPricing;
       'api::shared-footer.shared-footer': ApiSharedFooterSharedFooter;
       'api::shared-navbar.shared-navbar': ApiSharedNavbarSharedNavbar;
+      'api::shared-ntouch-edge.shared-ntouch-edge': ApiSharedNtouchEdgeSharedNtouchEdge;
       'api::solutions-by-property-size.solutions-by-property-size': ApiSolutionsByPropertySizeSolutionsByPropertySize;
       'api::summary-and-payment.summary-and-payment': ApiSummaryAndPaymentSummaryAndPayment;
       'plugin::content-releases.release': PluginContentReleasesRelease;

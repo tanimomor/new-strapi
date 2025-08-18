@@ -4,7 +4,7 @@
   "info": {
     "singularName": "solutions-by-property-size",
     "pluralName": "solutions-by-property-sizes",
-    "displayName": "Solutions"
+    "displayName": "Solutions Pages"
   },
   "options": {
     "draftAndPublish": true
@@ -19,16 +19,6 @@
     "property_type_section": {
       "type": "component",
       "component": "solutions-by-property-size.property-type-section",
-      "repeatable": false
-    },
-    "ntouch_edge_localized": {
-      "type": "component",
-      "component": "pms.pms-ntouch-edge-localized",
-      "repeatable": false
-    },
-    "ntouch_edge_unlocalized": {
-      "type": "component",
-      "component": "pms.pms-ntouch-edge-unlocalized",
       "repeatable": false
     },
     "product_suite_localized": {

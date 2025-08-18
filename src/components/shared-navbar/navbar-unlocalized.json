@@ -11,6 +11,12 @@
       "repeatable": false,
       "displayName": "Navbar Logo"
     },
+    "logo_black": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false,
+      "displayName": "Navbar Logo (Black)"
+    },
     "products_mega_menu_image": {
       "type": "component",
       "component": "assets.image",

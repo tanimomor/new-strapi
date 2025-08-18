@@ -6,17 +6,21 @@
   "options": {},
   "attributes": {
     "subtitle": {
-      "type": "string"
+      "type": "string",
+      "displayName": "Subtitle"
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "displayName": "Title"
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "displayName": "Description"
     },
     "feature_list": {
-      "type": "text",
-      "repeatable": true
+      "type": "json",
+      "repeatable": true,
+      "displayName": "Feature List"
     }
   },
   "config": {}

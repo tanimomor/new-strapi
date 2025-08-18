@@ -5,11 +5,8 @@
   },
   "options": {},
   "attributes": {
-    "section_subtitle": {
-      "type": "string"
-    },
-    "section_title": {
-      "type": "string"
+    "title": {
+      "type": "richtext"
     },
     "guide_steps": {
       "type": "component",

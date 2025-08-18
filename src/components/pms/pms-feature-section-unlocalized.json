@@ -9,6 +9,10 @@
       "type": "component",
       "component": "assets.image",
       "repeatable": false
+    },
+    "reverse": {
+      "type": "boolean",
+      "default": false
     }
   },
   "config": {}

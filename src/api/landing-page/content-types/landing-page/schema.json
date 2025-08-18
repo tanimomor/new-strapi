@@ -4,7 +4,7 @@
   "info": {
     "singularName": "landing-page",
     "pluralName": "landing-pages",
-    "displayName": "LandingPage"
+    "displayName": "Landing Page"
   },
   "options": {
     "draftAndPublish": true

@@ -4,5 +4,11 @@
     "displayName": "PMS Client (Unlocalized)"
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "client_cards": {
+      "type": "component",
+      "component": "pms.client-card",
+      "repeatable": true
+    }
+  }
 }

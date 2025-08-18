@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "shared_ntouch_edges",
+  "info": {
+    "singularName": "shared-ntouch-edge",
+    "pluralName": "shared-ntouch-edges",
+    "displayName": "Shared - Ntouch Edge"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ntouch_edge_localized": {
+      "type": "component",
+      "component": "landing-page.ntouch-edge-localized",
+      "repeatable": false
+    },
+    "ntouch_edge_unlocalized": {
+      "type": "component",
+      "component": "landing-page.ntouch-edge-unlocalized",
+      "repeatable": false
+    }
+  }
+}

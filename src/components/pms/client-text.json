@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_pms_client_texts",
+  "info": {
+    "displayName": "Client Text"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
+
+

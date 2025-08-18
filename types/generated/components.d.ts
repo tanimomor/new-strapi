@@ -1051,7 +1051,16 @@ export interface PmsClientCard extends Struct.ComponentSchema {
   };
   attributes: {
     client_image: Schema.Attribute.Component<'assets.image', false>;
-    image_caption: Schema.Attribute.String;
+  };
+}
+
+export interface PmsClientText extends Struct.ComponentSchema {
+  collectionName: 'components_pms_client_texts';
+  info: {
+    displayName: 'Client Text';
+  };
+  attributes: {
+    title: Schema.Attribute.String;
   };
 }
 
@@ -1066,33 +1075,13 @@ export interface PmsNtouchEdgeCard extends Struct.ComponentSchema {
   };
 }
 
-export interface PmsNtouchEdgeCardLocalized extends Struct.ComponentSchema {
-  collectionName: 'components_pms_ntouch_edge_card_localized_s';
-  info: {
-    displayName: 'nTouch Edge Card (Localized)';
-  };
-  attributes: {
-    feature_text: Schema.Attribute.String;
-  };
-}
-
-export interface PmsNtouchEdgeCardUnlocalized extends Struct.ComponentSchema {
-  collectionName: 'components_pms_ntouch_edge_card_unlocalized_s';
-  info: {
-    displayName: 'nTouch Edge Card (Unlocalized)';
-  };
-  attributes: {
-    feature_icon: Schema.Attribute.Component<'assets.image', false>;
-  };
-}
-
 export interface PmsPmsClientLocalized extends Struct.ComponentSchema {
   collectionName: 'components_pms_pms_client_localized_s';
   info: {
     displayName: 'PMS Client (Localized)';
   };
   attributes: {
-    client_cards: Schema.Attribute.Component<'pms.client-card', true>;
+    client_texts: Schema.Attribute.Component<'pms.client-text', true>;
     section_subtitle: Schema.Attribute.String;
     section_title: Schema.Attribute.String;
   };
@@ -1103,7 +1092,9 @@ export interface PmsPmsClientUnlocalized extends Struct.ComponentSchema {
   info: {
     displayName: 'PMS Client (Unlocalized)';
   };
-  attributes: {};
+  attributes: {
+    client_cards: Schema.Attribute.Component<'pms.client-card', true>;
+  };
 }
 
 export interface PmsPmsFeatureSectionLocalized extends Struct.ComponentSchema {
@@ -1113,7 +1104,7 @@ export interface PmsPmsFeatureSectionLocalized extends Struct.ComponentSchema {
   };
   attributes: {
     feature_description: Schema.Attribute.Text;
-    feature_list_items: Schema.Attribute.Text;
+    feature_list_items: Schema.Attribute.JSON;
     feature_subtitle: Schema.Attribute.String;
     feature_title: Schema.Attribute.String;
   };
@@ -1127,7 +1118,7 @@ export interface PmsPmsFeatureSectionReverseLocalized
   };
   attributes: {
     feature_description: Schema.Attribute.Text;
-    feature_list_items: Schema.Attribute.Text;
+    feature_list_items: Schema.Attribute.JSON;
     feature_subtitle: Schema.Attribute.String;
     feature_title: Schema.Attribute.String;
   };
@@ -1152,6 +1143,7 @@ export interface PmsPmsFeatureSectionUnlocalized
   };
   attributes: {
     feature_image: Schema.Attribute.Component<'assets.image', false>;
+    reverse: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
   };
 }
 
@@ -1194,73 +1186,6 @@ export interface PmsPmsHeroUnlocalized extends Struct.ComponentSchema {
   };
   attributes: {
     hero_image: Schema.Attribute.Component<'assets.image', false>;
-  };
-}
-
-export interface PmsPmsNtouchEdgeLocalized extends Struct.ComponentSchema {
-  collectionName: 'components_pms_pms_ntouch_edge_localized_s';
-  info: {
-    displayName: 'PMS nTouch Edge (Localized)';
-  };
-  attributes: {
-    feature_box_1: Schema.Attribute.Component<
-      'pms.ntouch-edge-card-localized',
-      false
-    >;
-    feature_box_2: Schema.Attribute.Component<
-      'pms.ntouch-edge-card-localized',
-      false
-    >;
-    feature_box_3: Schema.Attribute.Component<
-      'pms.ntouch-edge-card-localized',
-      false
-    >;
-    feature_box_4: Schema.Attribute.Component<
-      'pms.ntouch-edge-card-localized',
-      false
-    >;
-    feature_box_5: Schema.Attribute.Component<
-      'pms.ntouch-edge-card-localized',
-      false
-    >;
-    feature_box_6: Schema.Attribute.Component<
-      'pms.ntouch-edge-card-localized',
-      false
-    >;
-    section_title: Schema.Attribute.String;
-  };
-}
-
-export interface PmsPmsNtouchEdgeUnlocalized extends Struct.ComponentSchema {
-  collectionName: 'components_pms_pms_ntouch_edge_unlocalized_s';
-  info: {
-    displayName: 'PMS nTouch Edge (Unlocalized)';
-  };
-  attributes: {
-    ntouch_box_1: Schema.Attribute.Component<
-      'pms.ntouch-edge-card-unlocalized',
-      false
-    >;
-    ntouch_box_2: Schema.Attribute.Component<
-      'pms.ntouch-edge-card-unlocalized',
-      false
-    >;
-    ntouch_box_3: Schema.Attribute.Component<
-      'pms.ntouch-edge-card-unlocalized',
-      false
-    >;
-    ntouch_box_4: Schema.Attribute.Component<
-      'pms.ntouch-edge-card-unlocalized',
-      false
-    >;
-    ntouch_box_5: Schema.Attribute.Component<
-      'pms.ntouch-edge-card-unlocalized',
-      false
-    >;
-    ntouch_box_6: Schema.Attribute.Component<
-      'pms.ntouch-edge-card-unlocalized',
-      false
-    >;
   };
 }
 
@@ -1364,7 +1289,8 @@ export interface PricingPricingSectionUnlocalized
     displayName: 'Pricing Section (Unlocalized)';
   };
   attributes: {
-    card_icon: Schema.Attribute.Component<'assets.image', false>;
+    left_card_logo: Schema.Attribute.Component<'assets.image', false>;
+    right_card_logo: Schema.Attribute.Component<'assets.image', false>;
   };
 }
 
@@ -1579,6 +1505,7 @@ export interface SharedNavbarNavbarUnlocalized extends Struct.ComponentSchema {
   attributes: {
     guest_experience_icon: Schema.Attribute.Component<'assets.image', false>;
     logo: Schema.Attribute.Component<'assets.image', false>;
+    logo_black: Schema.Attribute.Component<'assets.image', false>;
     pms_icon: Schema.Attribute.Component<'assets.image', false>;
     products_mega_menu_image: Schema.Attribute.Component<'assets.image', false>;
     property_size_icon: Schema.Attribute.Component<'assets.image', false>;
@@ -1691,6 +1618,18 @@ export interface SharedNavbarSolutionsMenuLocalized
   };
 }
 
+export interface SolutionsByPropertySizeFeatureItemLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_solutions_by_property_size_feature_item_localized_s';
+  info: {
+    displayName: 'Feature Item (Localized)';
+  };
+  attributes: {
+    feature_description: Schema.Attribute.Text;
+    feature_title: Schema.Attribute.String;
+  };
+}
+
 export interface SolutionsByPropertySizeGuideStep
   extends Struct.ComponentSchema {
   collectionName: 'components_solutions_by_property_size_guide_steps';
@@ -1736,7 +1675,7 @@ export interface SolutionsByPropertySizeHotelGroupsLocalized
   };
   attributes: {
     description: Schema.Attribute.Text;
-    feature_list: Schema.Attribute.Text;
+    feature_list: Schema.Attribute.JSON;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -1856,7 +1795,7 @@ export interface SolutionsByPropertySizePropertySizeSection
     >;
     hotel_groups_unlocalized: Schema.Attribute.Component<
       'solutions-by-property-size.hotel-groups-unlocalized',
-      false
+      true
     >;
   };
 }
@@ -1882,7 +1821,7 @@ export interface SolutionsByPropertySizePropertyTypeSection
     >;
     hotel_groups_unlocalized: Schema.Attribute.Component<
       'solutions-by-property-type.hotel-groups-unlocalized',
-      false
+      true
     >;
   };
 }
@@ -1898,8 +1837,7 @@ export interface SolutionsByPropertySizeStartGuideLocalized
       'solutions-by-property-size.guide-step',
       true
     >;
-    section_subtitle: Schema.Attribute.String;
-    section_title: Schema.Attribute.String;
+    title: Schema.Attribute.RichText;
   };
 }
 
@@ -1959,7 +1897,7 @@ export interface SolutionsByPropertyTypeHotelGroupsLocalized
   };
   attributes: {
     description: Schema.Attribute.Text;
-    feature_list: Schema.Attribute.Text;
+    feature_list: Schema.Attribute.JSON;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -2347,9 +2285,8 @@ declare module '@strapi/strapi' {
       'plans-package-detail.progress-step': PlansPackageDetailProgressStep;
       'plans-package-detail.progress-steps-localized': PlansPackageDetailProgressStepsLocalized;
       'pms.client-card': PmsClientCard;
+      'pms.client-text': PmsClientText;
       'pms.ntouch-edge-card': PmsNtouchEdgeCard;
-      'pms.ntouch-edge-card-localized': PmsNtouchEdgeCardLocalized;
-      'pms.ntouch-edge-card-unlocalized': PmsNtouchEdgeCardUnlocalized;
       'pms.pms-client-localized': PmsPmsClientLocalized;
       'pms.pms-client-unlocalized': PmsPmsClientUnlocalized;
       'pms.pms-feature-section-localized': PmsPmsFeatureSectionLocalized;
@@ -2360,8 +2297,6 @@ declare module '@strapi/strapi' {
       'pms.pms-feature-tabs-unlocalized': PmsPmsFeatureTabsUnlocalized;
       'pms.pms-hero-localized': PmsPmsHeroLocalized;
       'pms.pms-hero-unlocalized': PmsPmsHeroUnlocalized;
-      'pms.pms-ntouch-edge-localized': PmsPmsNtouchEdgeLocalized;
-      'pms.pms-ntouch-edge-unlocalized': PmsPmsNtouchEdgeUnlocalized;
       'pricing.discover-localized': PricingDiscoverLocalized;
       'pricing.discover-section-localized': PricingDiscoverSectionLocalized;
       'pricing.discover-section-unlocalized': PricingDiscoverSectionUnlocalized;
@@ -2391,6 +2326,7 @@ declare module '@strapi/strapi' {
       'shared-navbar.property-size-section-localized': SharedNavbarPropertySizeSectionLocalized;
       'shared-navbar.property-type-section-localized': SharedNavbarPropertyTypeSectionLocalized;
       'shared-navbar.solutions-menu-localized': SharedNavbarSolutionsMenuLocalized;
+      'solutions-by-property-size.feature-item-localized': SolutionsByPropertySizeFeatureItemLocalized;
       'solutions-by-property-size.guide-step': SolutionsByPropertySizeGuideStep;
       'solutions-by-property-size.hero-localized': SolutionsByPropertySizeHeroLocalized;
       'solutions-by-property-size.hero-unlocalized': SolutionsByPropertySizeHeroUnlocalized;

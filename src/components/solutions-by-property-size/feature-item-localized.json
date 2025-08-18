@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_solutions_by_property_size_feature_item_localized_s",
+  "info": {
+    "displayName": "Feature Item (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "feature_title": {
+      "type": "string",
+      "displayName": "Feature Title"
+    },
+    "feature_description": {
+      "type": "text",
+      "displayName": "Feature Description"
+    }
+  },
+  "config": {}
+}

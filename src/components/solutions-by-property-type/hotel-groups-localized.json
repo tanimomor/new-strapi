@@ -15,7 +15,7 @@
       "type": "text"
     },
     "feature_list": {
-      "type": "text",
+      "type": "json",
       "repeatable": true
     }
   },

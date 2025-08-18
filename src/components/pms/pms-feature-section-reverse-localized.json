@@ -15,8 +15,7 @@
       "type": "text"
     },
     "feature_list_items": {
-      "type": "text",
-      "repeatable": true
+      "type": "json"
     }
   },
   "config": {}

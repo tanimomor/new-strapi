@@ -11,9 +11,9 @@
     "section_title": {
       "type": "string"
     },
-    "client_cards": {
+    "client_texts": {
       "type": "component",
-      "component": "pms.client-card",
+      "component": "pms.client-text",
       "repeatable": true
     }
   },

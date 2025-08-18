@@ -23,7 +23,7 @@
     "hotel_groups_unlocalized": {
       "type": "component",
       "component": "solutions-by-property-type.hotel-groups-unlocalized",
-      "repeatable": false
+      "repeatable": true
     }
   },
   "config": {}

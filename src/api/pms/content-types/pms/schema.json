@@ -34,33 +34,15 @@
     "feature_section_localized": {
       "type": "component",
       "component": "pms.pms-feature-section-localized",
-      "repeatable": false
+      "repeatable": true
     },
     "feature_section_unlocalized": {
       "type": "component",
       "component": "pms.pms-feature-section-unlocalized",
-      "repeatable": false
+      "repeatable": true
     },
-    "feature_section_reverse_localized": {
-      "type": "component",
-      "component": "pms.pms-feature-section-reverse-localized",
-      "repeatable": false
-    },
-    "feature_section_reverse_unlocalized": {
-      "type": "component",
-      "component": "pms.pms-feature-section-reverse-unlocalized",
-      "repeatable": false
-    },
-    "ntouch_edge_localized": {
-      "type": "component",
-      "component": "pms.pms-ntouch-edge-localized",
-      "repeatable": false
-    },
-    "ntouch_edge_unlocalized": {
-      "type": "component",
-      "component": "pms.pms-ntouch-edge-unlocalized",
-      "repeatable": false
-    },
+    
+
     "client_localized": {
       "type": "component",
       "component": "pms.pms-client-localized",
