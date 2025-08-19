@@ -17,9 +17,10 @@
       "type": "text",
       "default": "Got more questions?"
     },
-    "contact_button_text": {
-      "type": "text",
-      "default": "Contact Us"
+    "contact_button": {
+      "type": "component",
+      "component": "common.button",
+      "repeatable": false
     },
     "faq_tabs": {
       "type": "component",

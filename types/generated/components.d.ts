@@ -430,8 +430,7 @@ export interface LandingPagePmsFaqLocalized extends Struct.ComponentSchema {
     displayName: 'PMS FAQ (Localized)';
   };
   attributes: {
-    contact_button_text: Schema.Attribute.Text &
-      Schema.Attribute.DefaultTo<'Contact Us'>;
+    contact_button: Schema.Attribute.Component<'common.button', false>;
     faq_tabs: Schema.Attribute.Component<'landing-page.faq-tab', true> &
       Schema.Attribute.SetMinMax<
         {
@@ -1218,7 +1217,7 @@ export interface PricingDiscoverLocalized extends Struct.ComponentSchema {
     displayName: 'Discover (Localized)';
   };
   attributes: {
-    discover_button_text: Schema.Attribute.String;
+    discover_button: Schema.Attribute.Component<'common.button', false>;
     discover_description: Schema.Attribute.Text;
     discover_title: Schema.Attribute.RichText;
   };
@@ -1231,7 +1230,7 @@ export interface PricingDiscoverSectionLocalized
     displayName: 'Discover Section (Localized)';
   };
   attributes: {
-    discover_button_text: Schema.Attribute.String;
+    discover_button: Schema.Attribute.Component<'common.button', false>;
     discover_description: Schema.Attribute.Text;
     discover_title: Schema.Attribute.RichText;
   };
@@ -1366,8 +1365,7 @@ export interface SharedFooterFooterHeroLocalized
     displayName: 'Footer Hero (Localized)';
   };
   attributes: {
-    button_link: Schema.Attribute.String;
-    button_text: Schema.Attribute.String;
+    button: Schema.Attribute.Component<'common.button', false>;
     subtitle: Schema.Attribute.Text;
     title: Schema.Attribute.String;
   };
@@ -1428,6 +1426,10 @@ export interface SharedFooterFooterUnlocalized extends Struct.ComponentSchema {
   };
   attributes: {
     footer_logo: Schema.Attribute.Component<'assets.image', false>;
+    pms_section: Schema.Attribute.Component<
+      'shared-footer.pms-section-unlocalized',
+      false
+    >;
   };
 }
 
@@ -1440,6 +1442,33 @@ export interface SharedFooterLegalLinksLocalized
   attributes: {
     privacy_policy_link: Schema.Attribute.String;
     terms_of_use_link: Schema.Attribute.String;
+  };
+}
+
+export interface SharedFooterPmsSectionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_shared_footer_pms_section_localized_s';
+  info: {
+    displayName: 'PMS Section (Localized)';
+  };
+  attributes: {
+    button: Schema.Attribute.Component<'common.button', false>;
+    description: Schema.Attribute.Text;
+    features: Schema.Attribute.Component<'pms.feature-list-item', true>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface SharedFooterPmsSectionUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_shared_footer_pms_section_unlocalized_s';
+  info: {
+    displayName: 'PMS Section (Unlocalized)';
+  };
+  attributes: {
+    section_image: Schema.Attribute.Component<'assets.image', false>;
+    section_video: Schema.Attribute.Component<'assets.video', false>;
   };
 }
 
@@ -2339,6 +2368,8 @@ declare module '@strapi/strapi' {
       'shared-footer.footer-localized': SharedFooterFooterLocalized;
       'shared-footer.footer-unlocalized': SharedFooterFooterUnlocalized;
       'shared-footer.legal-links-localized': SharedFooterLegalLinksLocalized;
+      'shared-footer.pms-section-localized': SharedFooterPmsSectionLocalized;
+      'shared-footer.pms-section-unlocalized': SharedFooterPmsSectionUnlocalized;
       'shared-footer.social-links-localized': SharedFooterSocialLinksLocalized;
       'shared-navbar.guest-experience-section-localized': SharedNavbarGuestExperienceSectionLocalized;
       'shared-navbar.menu-item-localized': SharedNavbarMenuItemLocalized;

@@ -1,15 +1,20 @@
 {
-  "collectionName": "components_shared_footer_footer_unlocalized_s",
-  "info": {
-    "displayName": "Footer (Unlocalized)"
-  },
-  "options": {},
-  "attributes": {
-    "footer_logo": {
-      "type": "component",
-      "component": "assets.image",
-      "repeatable": false
-    }
-  },
-  "config": {}
+	"collectionName": "components_shared_footer_footer_unlocalized_s",
+	"info": {
+		"displayName": "Footer (Unlocalized)"
+	},
+	"options": {},
+	"attributes": {
+		"footer_logo": {
+			"type": "component",
+			"component": "assets.image",
+			"repeatable": false
+		},
+		"pms_section": {
+			"type": "component",
+			"component": "shared-footer.pms-section-unlocalized",
+			"repeatable": false
+		}
+	},
+	"config": {}
 }

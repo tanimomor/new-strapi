@@ -11,8 +11,10 @@
     "discover_description": {
       "type": "text"
     },
-    "discover_button_text": {
-      "type": "string"
+    "discover_button": {
+      "type": "component",
+      "component": "common.button",
+      "repeatable": false
     }
   },
   "config": {}

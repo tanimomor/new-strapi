@@ -1,0 +1,29 @@
+{
+	"collectionName": "components_shared_footer_pms_section_localized_s",
+	"info": {
+		"displayName": "PMS Section (Localized)"
+	},
+	"options": {},
+	"attributes": {
+		"title": {
+			"type": "string"
+		},
+		"subtitle": {
+			"type": "string"
+		},
+		"description": {
+			"type": "text"
+		},
+		"features": {
+			"type": "component",
+			"component": "pms.feature-list-item",
+			"repeatable": true
+		},
+		"button": {
+			"type": "component",
+			"component": "common.button",
+			"repeatable": false
+		}
+	},
+	"config": {}
+} 
