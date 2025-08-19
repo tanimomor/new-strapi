@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "shared_faqs",
+  "info": {
+    "singularName": "shared-faq",
+    "pluralName": "shared-faqs",
+    "displayName": "Shared - FAQ"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "faq_localized": {
+      "type": "component",
+      "component": "landing-page.pms-faq-localized",
+      "repeatable": false
+    },
+    "pms_faq_unlocalized": {
+      "type": "component",
+      "component": "landing-page.pms-faq-unlocalized",
+      "repeatable": false
+    }
+  }
+}

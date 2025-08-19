@@ -1,0 +1,14 @@
+{
+  "kind": "singleType",
+  "collectionName": "shared_product_suites",
+  "info": {
+    "singularName": "shared-product-suite",
+    "pluralName": "shared-product-suites",
+    "displayName": "Shared - Product Suite"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}

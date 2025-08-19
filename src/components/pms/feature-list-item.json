@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_pms_feature_list_items",
+  "info": {
+    "displayName": "Feature List Item"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
+
+

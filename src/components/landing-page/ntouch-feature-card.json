@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_landing_page_ntouch_feature_card_s",
+  "info": {
+    "displayName": "nTouch Feature Card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}
+
+

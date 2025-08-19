@@ -414,6 +414,16 @@ export interface LandingPageNtouchEdgeUnlocalized
   };
 }
 
+export interface LandingPageNtouchFeatureCard extends Struct.ComponentSchema {
+  collectionName: 'components_landing_page_ntouch_feature_card_s';
+  info: {
+    displayName: 'nTouch Feature Card';
+  };
+  attributes: {
+    title: Schema.Attribute.Text;
+  };
+}
+
 export interface LandingPagePmsFaqLocalized extends Struct.ComponentSchema {
   collectionName: 'components_landing_page_pms_faq_localized_s';
   info: {
@@ -1064,6 +1074,16 @@ export interface PmsClientText extends Struct.ComponentSchema {
   };
 }
 
+export interface PmsFeatureListItem extends Struct.ComponentSchema {
+  collectionName: 'components_pms_feature_list_items';
+  info: {
+    displayName: 'Feature List Item';
+  };
+  attributes: {
+    text: Schema.Attribute.String;
+  };
+}
+
 export interface PmsNtouchEdgeCard extends Struct.ComponentSchema {
   collectionName: 'components_pms_ntouch_edge_cards';
   info: {
@@ -1104,7 +1124,10 @@ export interface PmsPmsFeatureSectionLocalized extends Struct.ComponentSchema {
   };
   attributes: {
     feature_description: Schema.Attribute.Text;
-    feature_list_items: Schema.Attribute.JSON;
+    feature_list_items: Schema.Attribute.Component<
+      'pms.feature-list-item',
+      true
+    >;
     feature_subtitle: Schema.Attribute.String;
     feature_title: Schema.Attribute.String;
   };
@@ -1142,7 +1165,7 @@ export interface PmsPmsFeatureSectionUnlocalized
     displayName: 'PMS Feature Section (Unlocalized)';
   };
   attributes: {
-    feature_image: Schema.Attribute.Component<'assets.image', false>;
+    feature_image: Schema.Attribute.Component<'assets.image', true>;
     reverse: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
   };
 }
@@ -2249,6 +2272,7 @@ declare module '@strapi/strapi' {
       'landing-page.ntouch-edge-card': LandingPageNtouchEdgeCard;
       'landing-page.ntouch-edge-localized': LandingPageNtouchEdgeLocalized;
       'landing-page.ntouch-edge-unlocalized': LandingPageNtouchEdgeUnlocalized;
+      'landing-page.ntouch-feature-card': LandingPageNtouchFeatureCard;
       'landing-page.pms-faq-localized': LandingPagePmsFaqLocalized;
       'landing-page.pms-faq-unlocalized': LandingPagePmsFaqUnlocalized;
       'landing-page.review-section-localized': LandingPageReviewSectionLocalized;
@@ -2286,6 +2310,7 @@ declare module '@strapi/strapi' {
       'plans-package-detail.progress-steps-localized': PlansPackageDetailProgressStepsLocalized;
       'pms.client-card': PmsClientCard;
       'pms.client-text': PmsClientText;
+      'pms.feature-list-item': PmsFeatureListItem;
       'pms.ntouch-edge-card': PmsNtouchEdgeCard;
       'pms.pms-client-localized': PmsPmsClientLocalized;
       'pms.pms-client-unlocalized': PmsPmsClientUnlocalized;

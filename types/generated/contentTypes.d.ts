@@ -839,6 +839,41 @@ export interface ApiPricingPricing extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiSharedFaqSharedFaq extends Struct.SingleTypeSchema {
+  collectionName: 'shared_faqs';
+  info: {
+    displayName: 'Shared - FAQ';
+    pluralName: 'shared-faqs';
+    singularName: 'shared-faq';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    faq_localized: Schema.Attribute.Component<
+      'landing-page.pms-faq-localized',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::shared-faq.shared-faq'
+    > &
+      Schema.Attribute.Private;
+    pms_faq_unlocalized: Schema.Attribute.Component<
+      'landing-page.pms-faq-unlocalized',
+      false
+    >;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiSharedFooterSharedFooter extends Struct.SingleTypeSchema {
   collectionName: 'shared_footers';
   info: {
@@ -948,6 +983,56 @@ export interface ApiSharedNtouchEdgeSharedNtouchEdge
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::shared-ntouch-edge.shared-ntouch-edge'
+    >;
+    ntouch_edge_localized: Schema.Attribute.Component<
+      'pms.pms-feature-section-localized',
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    ntouch_edge_unlocalized: Schema.Attribute.Component<
+      'pms.pms-feature-section-unlocalized',
+      false
+    > &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiSharedProductSuiteSharedProductSuite
+  extends Struct.SingleTypeSchema {
+  collectionName: 'shared_product_suites';
+  info: {
+    displayName: 'Shared - Product Suite';
+    pluralName: 'shared-product-suites';
+    singularName: 'shared-product-suite';
+  };
+  options: {
+    draftAndPublish: true;
+  };
   attributes: {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -955,17 +1040,9 @@ export interface ApiSharedNtouchEdgeSharedNtouchEdge
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
-      'api::shared-ntouch-edge.shared-ntouch-edge'
+      'api::shared-product-suite.shared-product-suite'
     > &
       Schema.Attribute.Private;
-    ntouch_edge_localized: Schema.Attribute.Component<
-      'landing-page.ntouch-edge-localized',
-      false
-    >;
-    ntouch_edge_unlocalized: Schema.Attribute.Component<
-      'landing-page.ntouch-edge-unlocalized',
-      false
-    >;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1578,9 +1655,11 @@ declare module '@strapi/strapi' {
       'api::plans-package-detail.plans-package-detail': ApiPlansPackageDetailPlansPackageDetail;
       'api::pms.pms': ApiPmsPms;
       'api::pricing.pricing': ApiPricingPricing;
+      'api::shared-faq.shared-faq': ApiSharedFaqSharedFaq;
       'api::shared-footer.shared-footer': ApiSharedFooterSharedFooter;
       'api::shared-navbar.shared-navbar': ApiSharedNavbarSharedNavbar;
       'api::shared-ntouch-edge.shared-ntouch-edge': ApiSharedNtouchEdgeSharedNtouchEdge;
+      'api::shared-product-suite.shared-product-suite': ApiSharedProductSuiteSharedProductSuite;
       'api::solutions-by-property-size.solutions-by-property-size': ApiSolutionsByPropertySizeSolutionsByPropertySize;
       'api::summary-and-payment.summary-and-payment': ApiSummaryAndPaymentSummaryAndPayment;
       'plugin::content-releases.release': PluginContentReleasesRelease;

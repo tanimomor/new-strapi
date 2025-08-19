@@ -8,7 +8,7 @@
     "feature_image": {
       "type": "component",
       "component": "assets.image",
-      "repeatable": false
+      "repeatable": true
     },
     "reverse": {
       "type": "boolean",

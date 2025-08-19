@@ -15,7 +15,9 @@
       "type": "text"
     },
     "feature_list_items": {
-      "type": "json"
+      "type": "component",
+      "component": "pms.feature-list-item",
+      "repeatable": true
     }
   },
   "config": {}

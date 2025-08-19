@@ -9,16 +9,30 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "ntouch_edge_localized": {
       "type": "component",
-      "component": "landing-page.ntouch-edge-localized",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "pms.pms-feature-section-localized",
       "repeatable": false
     },
     "ntouch_edge_unlocalized": {
       "type": "component",
-      "component": "landing-page.ntouch-edge-unlocalized",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "pms.pms-feature-section-unlocalized",
       "repeatable": false
     }
   }
