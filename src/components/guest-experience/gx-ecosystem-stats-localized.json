@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_guest_experience_gx_ecosystem_stats_localized_s",
+  "info": {
+    "displayName": "GX Ecosystem Stats (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "stat_items": {
+      "type": "component",
+      "component": "guest-experience.gx-ecosystem-stat-item-localized",
+      "repeatable": true
+    }
+  },
+  "config": {}
+} 

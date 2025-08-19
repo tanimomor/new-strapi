@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_guest_experience_gx_ultimate_section_localized_s",
+  "info": {
+    "displayName": "GX Ultimate Section (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+} 

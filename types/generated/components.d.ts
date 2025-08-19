@@ -236,6 +236,177 @@ export interface ContactFormSection extends Struct.ComponentSchema {
   };
 }
 
+export interface GuestExperienceGxEcosystemLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_guest_experience_gx_ecosystem_localized_s';
+  info: {
+    displayName: 'GX Ecosystem (Localized)';
+  };
+  attributes: {
+    subtitle: Schema.Attribute.Text;
+    title: Schema.Attribute.Blocks;
+  };
+}
+
+export interface GuestExperienceGxEcosystemStatItemLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_guest_experience_gx_ecosystem_stat_item_localized_s';
+  info: {
+    displayName: 'GX Ecosystem Stat Item (Localized)';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+    value: Schema.Attribute.String;
+  };
+}
+
+export interface GuestExperienceGxEcosystemStatsLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_guest_experience_gx_ecosystem_stats_localized_s';
+  info: {
+    displayName: 'GX Ecosystem Stats (Localized)';
+  };
+  attributes: {
+    stat_items: Schema.Attribute.Component<
+      'guest-experience.gx-ecosystem-stat-item-localized',
+      true
+    >;
+  };
+}
+
+export interface GuestExperienceGxEcosystemUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_guest_experience_gx_ecosystem_unlocalized_s';
+  info: {
+    displayName: 'GX Ecosystem (Unlocalized)';
+  };
+  attributes: {
+    brand_logos: Schema.Attribute.Component<'assets.image', true>;
+  };
+}
+
+export interface GuestExperienceGxFeatureListItem
+  extends Struct.ComponentSchema {
+  collectionName: 'components_guest_experience_gx_feature_list_items';
+  info: {
+    displayName: 'GX Feature List Item';
+  };
+  attributes: {
+    text: Schema.Attribute.String;
+  };
+}
+
+export interface GuestExperienceGxFeatureSectionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_guest_experience_gx_feature_section_localized_s';
+  info: {
+    displayName: 'GX Feature Section (Localized)';
+  };
+  attributes: {
+    feature_description: Schema.Attribute.Text;
+    feature_subtitle: Schema.Attribute.String;
+    feature_title: Schema.Attribute.String;
+  };
+}
+
+export interface GuestExperienceGxFeatureSectionUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_guest_experience_gx_feature_section_unlocalized_s';
+  info: {
+    displayName: 'GX Feature Section (Unlocalized)';
+  };
+  attributes: {
+    feature_image: Schema.Attribute.Component<'assets.image', false>;
+    reverse: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+  };
+}
+
+export interface GuestExperienceGxHeroLocalized extends Struct.ComponentSchema {
+  collectionName: 'components_guest_experience_gx_hero_localized_s';
+  info: {
+    displayName: 'GX Hero (Localized)';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    primary_button: Schema.Attribute.Component<'common.button', false>;
+    subtitle: Schema.Attribute.Text;
+    title: Schema.Attribute.Blocks;
+  };
+}
+
+export interface GuestExperienceGxHeroUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_guest_experience_gx_hero_unlocalized_s';
+  info: {
+    displayName: 'GX Hero (Unlocalized)';
+  };
+  attributes: {
+    hero_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface GuestExperienceGxQuoteLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_guest_experience_gx_quote_localized_s';
+  info: {
+    displayName: 'GX Quote (Localized)';
+  };
+  attributes: {
+    quote_text: Schema.Attribute.Blocks;
+  };
+}
+
+export interface GuestExperienceGxQuoteUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_guest_experience_gx_quote_unlocalized_s';
+  info: {
+    displayName: 'GX Quote (Unlocalized)';
+  };
+  attributes: {
+    quote_icon: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface GuestExperienceGxUltimateCardLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_guest_experience_gx_ultimate_card_localized_s';
+  info: {
+    displayName: 'GX Ultimate Card (Localized)';
+  };
+  attributes: {
+    card_description: Schema.Attribute.Text;
+    card_subtitle: Schema.Attribute.String;
+    card_title: Schema.Attribute.String;
+    feature_list_items: Schema.Attribute.Component<
+      'guest-experience.gx-feature-list-item',
+      true
+    >;
+  };
+}
+
+export interface GuestExperienceGxUltimateCardUnlocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_guest_experience_gx_ultimate_card_unlocalized_s';
+  info: {
+    displayName: 'GX Ultimate Card (Unlocalized)';
+  };
+  attributes: {
+    card_image: Schema.Attribute.Component<'assets.image', false>;
+  };
+}
+
+export interface GuestExperienceGxUltimateSectionLocalized
+  extends Struct.ComponentSchema {
+  collectionName: 'components_guest_experience_gx_ultimate_section_localized_s';
+  info: {
+    displayName: 'GX Ultimate Section (Localized)';
+  };
+  attributes: {
+    heading: Schema.Attribute.Blocks;
+  };
+}
+
 export interface LandingPageAboutUsLocalized extends Struct.ComponentSchema {
   collectionName: 'components_landing_page_about_us_localized_s';
   info: {
@@ -2290,6 +2461,20 @@ declare module '@strapi/strapi' {
       'contact.contact-slider-localized': ContactContactSliderLocalized;
       'contact.contact-slider-unlocalized': ContactContactSliderUnlocalized;
       'contact.form-section': ContactFormSection;
+      'guest-experience.gx-ecosystem-localized': GuestExperienceGxEcosystemLocalized;
+      'guest-experience.gx-ecosystem-stat-item-localized': GuestExperienceGxEcosystemStatItemLocalized;
+      'guest-experience.gx-ecosystem-stats-localized': GuestExperienceGxEcosystemStatsLocalized;
+      'guest-experience.gx-ecosystem-unlocalized': GuestExperienceGxEcosystemUnlocalized;
+      'guest-experience.gx-feature-list-item': GuestExperienceGxFeatureListItem;
+      'guest-experience.gx-feature-section-localized': GuestExperienceGxFeatureSectionLocalized;
+      'guest-experience.gx-feature-section-unlocalized': GuestExperienceGxFeatureSectionUnlocalized;
+      'guest-experience.gx-hero-localized': GuestExperienceGxHeroLocalized;
+      'guest-experience.gx-hero-unlocalized': GuestExperienceGxHeroUnlocalized;
+      'guest-experience.gx-quote-localized': GuestExperienceGxQuoteLocalized;
+      'guest-experience.gx-quote-unlocalized': GuestExperienceGxQuoteUnlocalized;
+      'guest-experience.gx-ultimate-card-localized': GuestExperienceGxUltimateCardLocalized;
+      'guest-experience.gx-ultimate-card-unlocalized': GuestExperienceGxUltimateCardUnlocalized;
+      'guest-experience.gx-ultimate-section-localized': GuestExperienceGxUltimateSectionLocalized;
       'landing-page.about-us-localized': LandingPageAboutUsLocalized;
       'landing-page.about-us-unlocalized': LandingPageAboutUsUnlocalized;
       'landing-page.faq-accordion-item': LandingPageFaqAccordionItem;

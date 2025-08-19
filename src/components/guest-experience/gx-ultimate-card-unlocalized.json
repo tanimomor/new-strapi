@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_guest_experience_gx_ultimate_card_unlocalized_s",
+  "info": {
+    "displayName": "GX Ultimate Card (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "card_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+} 

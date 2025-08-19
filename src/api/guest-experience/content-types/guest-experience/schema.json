@@ -1,0 +1,75 @@
+{
+  "kind": "singleType",
+  "collectionName": "guest_experiences",
+  "info": {
+    "singularName": "guest-experience",
+    "pluralName": "guest-experiences",
+    "displayName": "Guest Experience"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_localized": {
+      "type": "component",
+      "component": "guest-experience.gx-hero-localized",
+      "repeatable": false
+    },
+    "hero_unlocalized": {
+      "type": "component",
+      "component": "guest-experience.gx-hero-unlocalized",
+      "repeatable": false
+    },
+    "feature_sections_localized": {
+      "type": "component",
+      "component": "guest-experience.gx-feature-section-localized",
+      "repeatable": true
+    },
+    "feature_sections_unlocalized": {
+      "type": "component",
+      "component": "guest-experience.gx-feature-section-unlocalized",
+      "repeatable": true
+    },
+    "quote_localized": {
+      "type": "component",
+      "component": "guest-experience.gx-quote-localized",
+      "repeatable": false
+    },
+    "quote_unlocalized": {
+      "type": "component",
+      "component": "guest-experience.gx-quote-unlocalized",
+      "repeatable": false
+    },
+    "ultimate_section_localized": {
+      "type": "component",
+      "component": "guest-experience.gx-ultimate-section-localized",
+      "repeatable": false
+    },
+    "ultimate_cards_localized": {
+      "type": "component",
+      "component": "guest-experience.gx-ultimate-card-localized",
+      "repeatable": true
+    },
+    "ultimate_cards_unlocalized": {
+      "type": "component",
+      "component": "guest-experience.gx-ultimate-card-unlocalized",
+      "repeatable": true
+    },
+    "ecosystem_localized": {
+      "type": "component",
+      "component": "guest-experience.gx-ecosystem-localized",
+      "repeatable": false
+    },
+    "ecosystem_unlocalized": {
+      "type": "component",
+      "component": "guest-experience.gx-ecosystem-unlocalized",
+      "repeatable": false
+    },
+    "ecosystem_stats_localized": {
+      "type": "component",
+      "component": "guest-experience.gx-ecosystem-stats-localized",
+      "repeatable": false
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_guest_experience_gx_feature_section_unlocalized_s",
+  "info": {
+    "displayName": "GX Feature Section (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "feature_image": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    },
+    "reverse": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+} 

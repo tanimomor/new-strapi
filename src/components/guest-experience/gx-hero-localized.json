@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_guest_experience_gx_hero_localized_s",
+  "info": {
+    "displayName": "GX Hero (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "blocks"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "primary_button": {
+      "type": "component",
+      "component": "common.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+} 

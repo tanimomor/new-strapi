@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_guest_experience_gx_ultimate_card_localized_s",
+  "info": {
+    "displayName": "GX Ultimate Card (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "card_subtitle": {
+      "type": "string"
+    },
+    "card_title": {
+      "type": "string"
+    },
+    "card_description": {
+      "type": "text"
+    },
+    "feature_list_items": {
+      "type": "component",
+      "component": "guest-experience.gx-feature-list-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+} 

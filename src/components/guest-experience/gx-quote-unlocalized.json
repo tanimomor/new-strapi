@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_guest_experience_gx_quote_unlocalized_s",
+  "info": {
+    "displayName": "GX Quote (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "quote_icon": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": false
+    }
+  },
+  "config": {}
+} 

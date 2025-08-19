@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_guest_experience_gx_feature_list_items",
+  "info": {
+    "displayName": "GX Feature List Item"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  },
+  "config": {}
+} 

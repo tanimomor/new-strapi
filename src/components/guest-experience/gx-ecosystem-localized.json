@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_guest_experience_gx_ecosystem_localized_s",
+  "info": {
+    "displayName": "GX Ecosystem (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "blocks"
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  },
+  "config": {}
+} 

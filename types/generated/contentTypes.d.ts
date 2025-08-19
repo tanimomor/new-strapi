@@ -452,6 +452,82 @@ export interface ApiContactContact extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiGuestExperienceGuestExperience
+  extends Struct.SingleTypeSchema {
+  collectionName: 'guest_experiences';
+  info: {
+    displayName: 'Guest Experience';
+    pluralName: 'guest-experiences';
+    singularName: 'guest-experience';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ecosystem_localized: Schema.Attribute.Component<
+      'guest-experience.gx-ecosystem-localized',
+      false
+    >;
+    ecosystem_stats_localized: Schema.Attribute.Component<
+      'guest-experience.gx-ecosystem-stats-localized',
+      false
+    >;
+    ecosystem_unlocalized: Schema.Attribute.Component<
+      'guest-experience.gx-ecosystem-unlocalized',
+      false
+    >;
+    feature_sections_localized: Schema.Attribute.Component<
+      'guest-experience.gx-feature-section-localized',
+      true
+    >;
+    feature_sections_unlocalized: Schema.Attribute.Component<
+      'guest-experience.gx-feature-section-unlocalized',
+      true
+    >;
+    hero_localized: Schema.Attribute.Component<
+      'guest-experience.gx-hero-localized',
+      false
+    >;
+    hero_unlocalized: Schema.Attribute.Component<
+      'guest-experience.gx-hero-unlocalized',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::guest-experience.guest-experience'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    quote_localized: Schema.Attribute.Component<
+      'guest-experience.gx-quote-localized',
+      false
+    >;
+    quote_unlocalized: Schema.Attribute.Component<
+      'guest-experience.gx-quote-unlocalized',
+      false
+    >;
+    ultimate_cards_localized: Schema.Attribute.Component<
+      'guest-experience.gx-ultimate-card-localized',
+      true
+    >;
+    ultimate_cards_unlocalized: Schema.Attribute.Component<
+      'guest-experience.gx-ultimate-card-unlocalized',
+      true
+    >;
+    ultimate_section_localized: Schema.Attribute.Component<
+      'guest-experience.gx-ultimate-section-localized',
+      false
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiLandingPageLandingPage extends Struct.SingleTypeSchema {
   collectionName: 'landing_pages';
   info: {
@@ -746,7 +822,7 @@ export interface ApiPlansPackageDetailPlansPackageDetail
 export interface ApiPmsPms extends Struct.SingleTypeSchema {
   collectionName: 'pmss';
   info: {
-    displayName: 'Pms';
+    displayName: 'Pms Page';
     pluralName: 'pmss';
     singularName: 'pms';
   };
@@ -1649,6 +1725,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::client-hotel-detail.client-hotel-detail': ApiClientHotelDetailClientHotelDetail;
       'api::contact.contact': ApiContactContact;
+      'api::guest-experience.guest-experience': ApiGuestExperienceGuestExperience;
       'api::landing-page.landing-page': ApiLandingPageLandingPage;
       'api::our-story.our-story': ApiOurStoryOurStory;
       'api::plan-page.plan-page': ApiPlanPagePlanPage;

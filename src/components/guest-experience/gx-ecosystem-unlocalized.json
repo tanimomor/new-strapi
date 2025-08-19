@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_guest_experience_gx_ecosystem_unlocalized_s",
+  "info": {
+    "displayName": "GX Ecosystem (Unlocalized)"
+  },
+  "options": {},
+  "attributes": {
+    "brand_logos": {
+      "type": "component",
+      "component": "assets.image",
+      "repeatable": true
+    }
+  },
+  "config": {}
+} 

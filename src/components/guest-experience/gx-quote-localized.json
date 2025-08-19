@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_guest_experience_gx_quote_localized_s",
+  "info": {
+    "displayName": "GX Quote (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "quote_text": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+} 

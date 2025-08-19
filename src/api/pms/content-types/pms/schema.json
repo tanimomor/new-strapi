@@ -4,7 +4,7 @@
   "info": {
     "singularName": "pms",
     "pluralName": "pmss",
-    "displayName": "Pms"
+    "displayName": "Pms Page"
   },
   "options": {
     "draftAndPublish": true
@@ -41,8 +41,6 @@
       "component": "pms.pms-feature-section-unlocalized",
       "repeatable": true
     },
-    
-
     "client_localized": {
       "type": "component",
       "component": "pms.pms-client-localized",

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_guest_experience_gx_feature_section_localized_s",
+  "info": {
+    "displayName": "GX Feature Section (Localized)"
+  },
+  "options": {},
+  "attributes": {
+    "feature_subtitle": {
+      "type": "string"
+    },
+    "feature_title": {
+      "type": "string"
+    },
+    "feature_description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+} 
