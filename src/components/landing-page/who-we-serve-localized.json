@@ -13,9 +13,10 @@
       "type": "text",
       "default": "Serving Iconic Hospitality in Saudi Arabia"
     },
-    "button_text": {
-      "type": "text",
-      "default": "Reimagine Your Space"
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.button"
     },
     "image_overlay_texts": {
       "type": "json",

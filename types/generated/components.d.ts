@@ -413,8 +413,7 @@ export interface LandingPageAboutUsLocalized extends Struct.ComponentSchema {
     displayName: 'About Us (Localized)';
   };
   attributes: {
-    button_text: Schema.Attribute.Text &
-      Schema.Attribute.DefaultTo<'Discover our Journey'>;
+    button: Schema.Attribute.Component<'common.button', false>;
     description_1: Schema.Attribute.Text &
       Schema.Attribute.DefaultTo<'Born in Saudi Arabia and inspired by the timeless grace of Arabian hospitality, nTouch blends years of industry insight with cutting-edge AI to transform how luxury is delivered.'>;
     description_2: Schema.Attribute.Text &
@@ -500,8 +499,7 @@ export interface LandingPageLandingPmsLocalized extends Struct.ComponentSchema {
     displayName: 'Landing PMS (Localized)';
   };
   attributes: {
-    button_text: Schema.Attribute.Text &
-      Schema.Attribute.DefaultTo<'Explore PMS'>;
+    button: Schema.Attribute.Component<'common.button', false>;
     description: Schema.Attribute.Text &
       Schema.Attribute.DefaultTo<'Property Management, Perfected. Seamlessly manage every touchpoint of your property, from reservations to housekeeping, all within one beautifully intuitive system. Designed to simplify operations, empower staff, and deliver a flawless guest experience at every stage.'>;
     feature_list: Schema.Attribute.JSON &
@@ -712,8 +710,7 @@ export interface LandingPageWhoWeServeLocalized extends Struct.ComponentSchema {
     displayName: 'Who We Serve (Localized)';
   };
   attributes: {
-    button_text: Schema.Attribute.Text &
-      Schema.Attribute.DefaultTo<'Reimagine Your Space'>;
+    button: Schema.Attribute.Component<'common.button', false>;
     image_overlay_texts: Schema.Attribute.JSON &
       Schema.Attribute.DefaultTo<
         [
@@ -978,7 +975,7 @@ export interface PlanPagePlanCardLocalized extends Struct.ComponentSchema {
     button_text: Schema.Attribute.String;
     card_description: Schema.Attribute.Text;
     card_title: Schema.Attribute.String;
-    features: Schema.Attribute.Text;
+    features: Schema.Attribute.JSON;
     price_amount: Schema.Attribute.String;
     price_period: Schema.Attribute.String;
   };

@@ -31,9 +31,10 @@
         "Centralized Command for Multi-property Chains"
       ]
     },
-    "button_text": {
-      "type": "text",
-      "default": "Explore PMS"
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.button"
     }
   },
   "config": {}

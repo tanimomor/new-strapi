@@ -18,8 +18,7 @@
       "type": "string"
     },
     "features": {
-      "type": "text",
-      "repeatable": true
+      "type": "json"
     },
     "button_text": {
       "type": "string"

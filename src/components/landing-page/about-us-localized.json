@@ -25,9 +25,10 @@
       "type": "text",
       "default": "We don't just automate—we elevate. Every solution is crafted with elegance, precision, and a deep understanding of what today's guests truly value."
     },
-    "button_text": {
-      "type": "text",
-      "default": "Discover our Journey"
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.button"
     }
   },
   "config": {}
