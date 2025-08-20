@@ -1,7 +1,7 @@
 {
   "collectionName": "components_landing_page_review_section_unlocalized_s",
   "info": {
-    "displayName": "Review Section (Unlocalized)"
+    "displayName": "Review Section (Assets)"
   },
   "options": {},
   "attributes": {
@@ -9,17 +9,20 @@
       "type": "component",
       "component": "assets.image",
       "repeatable": true,
-      "max": 6
+      "max": 6,
+      "displayName": "Profile Images"
     },
     "quote_icon": {
       "type": "component",
       "component": "assets.image",
-      "repeatable": false
+      "repeatable": false,
+      "displayName": "Quote Icon"
     },
     "video_icon": {
       "type": "component",
       "component": "assets.image",
-      "repeatable": false
+      "repeatable": false,
+      "displayName": "Video Icon"
     }
   },
   "config": {}

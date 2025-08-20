@@ -429,7 +429,7 @@ export interface LandingPageAboutUsLocalized extends Struct.ComponentSchema {
 export interface LandingPageAboutUsUnlocalized extends Struct.ComponentSchema {
   collectionName: 'components_landing_page_about_us_unlocalized_s';
   info: {
-    displayName: 'About Us (Unlocalized)';
+    displayName: 'About Us (Assets)';
   };
   attributes: {
     about_us_image: Schema.Attribute.Component<'assets.image', false>;
@@ -485,7 +485,7 @@ export interface LandingPageHeroLocalized extends Struct.ComponentSchema {
 export interface LandingPageHeroUnlocalized extends Struct.ComponentSchema {
   collectionName: 'components_landing_page_hero_unlocalized_s';
   info: {
-    displayName: 'Hero (Unlocalized)';
+    displayName: 'Hero (Assets)';
   };
   attributes: {
     background_video: Schema.Attribute.Component<'assets.video', false>;
@@ -525,7 +525,7 @@ export interface LandingPageLandingPmsUnlocalized
   extends Struct.ComponentSchema {
   collectionName: 'components_landing_page_landing_pms_unlocalized_s';
   info: {
-    displayName: 'Landing PMS (Unlocalized)';
+    displayName: 'Landing PMS (Assets)';
   };
   attributes: {
     background_ellipse: Schema.Attribute.Component<'assets.image', false>;
@@ -570,7 +570,7 @@ export interface LandingPageNtouchEdgeUnlocalized
   extends Struct.ComponentSchema {
   collectionName: 'components_landing_page_ntouch_edge_unlocalized_s';
   info: {
-    displayName: 'nTouch Edge (Unlocalized)';
+    displayName: 'nTouch Edge (Assets)';
   };
   attributes: {
     card_images: Schema.Attribute.Component<'assets.image', true> &
@@ -619,7 +619,7 @@ export interface LandingPagePmsFaqLocalized extends Struct.ComponentSchema {
 export interface LandingPagePmsFaqUnlocalized extends Struct.ComponentSchema {
   collectionName: 'components_landing_page_pms_faq_unlocalized_s';
   info: {
-    displayName: 'PMS FAQ (Unlocalized)';
+    displayName: 'PMS FAQ (Assets)';
   };
   attributes: {
     faq_image: Schema.Attribute.Component<'assets.image', false>;
@@ -660,7 +660,7 @@ export interface LandingPageReviewSectionUnlocalized
   extends Struct.ComponentSchema {
   collectionName: 'components_landing_page_review_section_unlocalized_s';
   info: {
-    displayName: 'Review Section (Unlocalized)';
+    displayName: 'Review Section (Assets)';
   };
   attributes: {
     profile_images: Schema.Attribute.Component<'assets.image', true> &
@@ -732,7 +732,7 @@ export interface LandingPageWhoWeServeUnlocalized
   extends Struct.ComponentSchema {
   collectionName: 'components_landing_page_who_we_serve_unlocalized_s';
   info: {
-    displayName: 'Who We Serve (Unlocalized)';
+    displayName: 'Who We Serve (Assets)';
   };
   attributes: {
     image_1: Schema.Attribute.Component<'assets.image', false>;

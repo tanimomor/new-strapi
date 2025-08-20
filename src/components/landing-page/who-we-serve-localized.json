@@ -7,19 +7,23 @@
   "attributes": {
     "main_title": {
       "type": "text",
+      "displayName": "Main Title",
       "default": "Who We Serve"
     },
     "subtitle": {
       "type": "text",
+      "displayName": "Subtitle",
       "default": "Serving Iconic Hospitality in Saudi Arabia"
     },
     "button": {
       "type": "component",
+      "displayName": "CTA Button",
       "repeatable": false,
       "component": "common.button"
     },
     "image_overlay_texts": {
       "type": "json",
+      "displayName": "Image Overlay Texts",
       "default": [
         "Apartments Hotels",
         "Office Spaces",

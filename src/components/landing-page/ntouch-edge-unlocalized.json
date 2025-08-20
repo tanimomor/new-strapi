@@ -1,7 +1,7 @@
 {
   "collectionName": "components_landing_page_ntouch_edge_unlocalized_s",
   "info": {
-    "displayName": "nTouch Edge (Unlocalized)"
+    "displayName": "nTouch Edge (Assets)"
   },
   "options": {},
   "attributes": {
@@ -9,7 +9,8 @@
       "type": "component",
       "component": "assets.image",
       "repeatable": true,
-      "max": 5
+      "max": 5,
+      "displayName": "Card Images"
     }
   },
   "config": {}

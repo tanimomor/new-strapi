@@ -1,19 +1,21 @@
 {
   "collectionName": "components_landing_page_hero_unlocalized_s",
   "info": {
-    "displayName": "Hero (Unlocalized)"
+    "displayName": "Hero (Assets)"
   },
   "options": {},
   "attributes": {
     "background_video": {
       "type": "component",
       "component": "assets.video",
-      "repeatable": false
+      "repeatable": false,
+      "displayName": "Background Video"
     },
     "banner_logo": {
       "type": "component",
       "component": "assets.image",
-      "repeatable": false
+      "repeatable": false,
+      "displayName": "Banner Logo"
     }
   },
   "config": {}

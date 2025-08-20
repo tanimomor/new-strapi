@@ -6,7 +6,8 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "text"
+      "type": "text",
+      "displayName": "Title"
     }
   },
   "config": {}

@@ -7,10 +7,12 @@
   "attributes": {
     "question": {
       "type": "text",
+      "displayName": "Question",
       "default": "What makes nTouch different from other PMS or automation providers?"
     },
     "answer": {
       "type": "text",
+      "displayName": "Answer",
       "default": "nTouch PMS is an AI-driven platform designed to simplify property management across multiple properties, enhancing productivity and guest experiences."
     }
   },

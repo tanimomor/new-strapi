@@ -7,22 +7,27 @@
   "attributes": {
     "mini_title": {
       "type": "text",
+      "displayName": "Mini Title",
       "default": "Our premium products"
     },
     "main_title": {
       "type": "text",
+      "displayName": "Main Title",
       "default": "nTouch PMS:"
     },
     "subtitle": {
       "type": "text",
+      "displayName": "Subtitle",
       "default": "The AI-Enhanced Solution for Modern Hospitality"
     },
     "description": {
       "type": "text",
+      "displayName": "Description",
       "default": "Property Management, Perfected. Seamlessly manage every touchpoint of your property, from reservations to housekeeping, all within one beautifully intuitive system. Designed to simplify operations, empower staff, and deliver a flawless guest experience at every stage."
     },
     "feature_list": {
       "type": "json",
+      "displayName": "Feature List",
       "default": [
         "Intuitive Front Desk & Reservation Controls",
         "Real-time Room Status & Housekeeping Coordination",
@@ -33,6 +38,7 @@
     },
     "button": {
       "type": "component",
+      "displayName": "CTA Button",
       "repeatable": false,
       "component": "common.button"
     }

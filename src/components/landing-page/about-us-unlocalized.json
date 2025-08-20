@@ -1,14 +1,15 @@
 {
   "collectionName": "components_landing_page_about_us_unlocalized_s",
   "info": {
-    "displayName": "About Us (Unlocalized)"
+    "displayName": "About Us (Assets)"
   },
   "options": {},
   "attributes": {
     "about_us_image": {
       "type": "component",
       "component": "assets.image",
-      "repeatable": false
+      "repeatable": false,
+      "displayName": "About Us Image"
     }
   },
   "config": {}

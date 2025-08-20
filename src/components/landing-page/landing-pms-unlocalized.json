@@ -1,19 +1,21 @@
 {
   "collectionName": "components_landing_page_landing_pms_unlocalized_s",
   "info": {
-    "displayName": "Landing PMS (Unlocalized)"
+    "displayName": "Landing PMS (Assets)"
   },
   "options": {},
   "attributes": {
     "product_image": {
       "type": "component",
       "component": "assets.image",
-      "repeatable": false
+      "repeatable": false,
+      "displayName": "Product Image"
     },
     "background_ellipse": {
       "type": "component",
       "component": "assets.image",
-      "repeatable": false
+      "repeatable": false,
+      "displayName": "Background Ellipse"
     }
   },
   "config": {}

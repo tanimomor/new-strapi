@@ -7,18 +7,22 @@
   "attributes": {
     "profile_name": {
       "type": "text",
+      "displayName": "Profile Name",
       "default": "Omar Al-Fahad"
     },
     "profile_title": {
       "type": "text",
+      "displayName": "Profile Title",
       "default": "General Manager, Zayana Luxury Hotels"
     },
     "testimonial_text": {
       "type": "text",
+      "displayName": "Testimonial Text",
       "default": "With ntouch PMS, we finally have a system that understands how a luxury hotel operates—smart, seamless, and surprisingly intuitive. It's become the silent engine behind our elevated guest experience."
     },
     "button_text": {
       "type": "text",
+      "displayName": "Button Text",
       "default": "Watch Video"
     }
   },
